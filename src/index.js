@@ -39,7 +39,7 @@ class Board extends React.Component {
   }
 
   render() {
-    const status = victory(this.state.squares) ? "Congrats, you did it !" : "Let's have some fun !";
+    const status = victory(this.state.squares) ? "Congrats, you did it !" : "Let\'s have some fun !";
 
     var columns = [];
     for (let i = 0; i < 8*8; i++) {
