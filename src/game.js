@@ -1,5 +1,5 @@
 import React from 'react';
-import './Game.css';
+import './game.css';
 import {Link} from "react-router-dom";
 
 class Square extends React.Component {

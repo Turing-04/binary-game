@@ -1,5 +1,5 @@
 import React from 'react';
-import './Common.css';
+import './common.css';
 import {Link} from 'react-router-dom';
 
 class MainLayout extends React.Component {

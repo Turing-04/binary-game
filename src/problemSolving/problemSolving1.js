@@ -1,6 +1,6 @@
 import React from 'react';
-import './../Common.css';
-import MainLayout from "../MainLayout";
+import '../common.css';
+import MainLayout from "../mainLayout";
 
 class ProblemSolving1 extends React.Component {
     render() {
