@@ -1,7 +1,7 @@
 import React from 'react';
 import '../common.css';
 import MainLayout from "../mainLayout";
-import getResults from "../utils/firebase";
+import {getResults, addResults} from "../utils/firebase";
 
 class Instruction1 extends React.Component {
 
@@ -29,7 +29,16 @@ class Instruction1 extends React.Component {
         return (
             <MainLayout content={
                 <div>
+                    <h1>List data</h1>
                     {this.state.data ? <p>{this.state.data}</p> : <p>Loading...</p> }
+                    <h1>Upload data</h1>
+                    <button onClick={
+                        () => {
+                            addResults("test").then(r => {
+                                this.renderMyData();
+                            });
+                        }
+                    }>Upload</button>
                 </div>
             } next="/instruction-2"/>
         );

@@ -1,5 +1,5 @@
 import {initializeApp} from 'firebase/app';
-import {collection, getDocs, getFirestore} from 'firebase/firestore/lite';
+import {collection, getDocs, getFirestore, setDoc, doc} from 'firebase/firestore/lite';
 
 // TODO: Replace the following with your app's Firebase project configuration
 const firebaseConfig = {
@@ -16,10 +16,16 @@ const db = getFirestore(app);
 
 // Get a list of cities from your database
 async function getResults() {
-    const resultsCol = collection(db, 'results');
+    const resultsCol = collection(db, "results");
     const resultsSnapshot = await getDocs(resultsCol);
     return resultsSnapshot.docs.map(doc => doc.get("answer_1"));
 }
 
-export default getResults;
+async function addResults(answer) {
+    const resultsCol = collection(db, "results");
+    await setDoc(doc(resultsCol), {
+        answer_1: answer
+    });
+}
 
+export {getResults, addResults};
