@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    font: 14px "Calibri", Futura, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 60px;
+    letter-spacing: 4px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+.button {
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    font-family: 'Comfortaa', serif;
+    text-decoration: none;
+    background: #FF6363;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.floating-button {
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    font-family: 'Comfortaa', serif;
+    text-decoration: none;
+    background: #FF6363;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+
+    position: absolute;
+    bottom: 100px;
+    right: 200px;
+}
