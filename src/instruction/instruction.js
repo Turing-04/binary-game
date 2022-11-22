@@ -7,7 +7,7 @@ class Instruction extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            index: 19,
+            index: 0,
         };
     }
 
@@ -71,7 +71,9 @@ class Instruction extends React.Component {
             case 42:return Instructions.Instruction42();
             case 43:return Instructions.Instruction43();
             case 44:return Instructions.Instruction44();
-            default:return Instructions.Instruction45();
+            case 45:return Instructions.Instruction45();
+            default: return null;
+                // Need to handle IPS or PSI to redirect correctly !
         }
     }
 

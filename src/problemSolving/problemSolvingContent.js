@@ -4,10 +4,12 @@ import Board from "../interactive/board";
 export function ProblemSolving0() {
     return (
         <div>
-            <h1>0</h1>
-            <p style={{width: 600}}>
-                ProblemSolving 1
-            </p>
+            <h1>Let's explore !</h1>
+            <h2 > In this Activity, you are going to send a <br/>
+            secret message to your friend ! Try <br/>
+            finding a way to transmit your message <br/>
+            using only black and white boxes. 
+            </h2>
         </div>
     );
 }

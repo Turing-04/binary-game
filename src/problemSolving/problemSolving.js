@@ -1,7 +1,5 @@
 import React from "react";
-import {
-    ProblemSolving0, ProblemSolving1, ProblemSolving2, ProblemSolving3, ProblemSolving4, ProblemSolving5
-} from "./problemSolvingContent";
+import * as Problems from "./problemSolvingContent";
 
 
 class ProblemSolving extends React.Component {
@@ -9,7 +7,7 @@ class ProblemSolving extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            index: 1,
+            index: 0,
         };
     }
 
@@ -29,17 +27,17 @@ class ProblemSolving extends React.Component {
     getContent() {
         switch (this.state.index) {
             case 0:
-                return ProblemSolving0();
+                return Problems.ProblemSolving0();
             case 1:
-                return ProblemSolving1();
+                return Problems.ProblemSolving1();
             case 2:
-                return ProblemSolving2();
+                return Problems.ProblemSolving2();
             case 3:
-                return ProblemSolving3();
+                return Problems.ProblemSolving3();
             case 4:
-                return ProblemSolving4();
+                return Problems.ProblemSolving4();
             default:
-                return ProblemSolving5();
+                return Problems.ProblemSolving5();
         }
     }
 
