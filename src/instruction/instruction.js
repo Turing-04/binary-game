@@ -7,7 +7,7 @@ class Instruction extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            index: 0,
+            index: 19,
         };
     }
 
