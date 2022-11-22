@@ -21,6 +21,7 @@ export function Instruction1() {
             <h1>You can say the name of the number, <br/></h1>
             <h1 style={{textAlign:'left'}}>For instance for 5 : </h1>
             <img
+            width={"50%"}
             src={BubbleMessage}
             alt="message_bubble"
             />
@@ -34,6 +35,7 @@ export function Instruction2() {
             <h1>You can also hold up your fingers to show <br/>
             a number, like this:</h1>
             <img
+            style={{alignSelf: 'center'}}
             src={Fingers}
             alt="fingers_count"
             />
@@ -47,7 +49,7 @@ export function Instruction3() {
             <h1>You can also write the symbol of the <br/>
             number, as you have learnt in school:</h1>
             <img 
-            class= "center"
+            class= "image-layout"
             src={Five}
             alt="five_digit"
             />
@@ -61,7 +63,7 @@ export function Instruction4() {
             <h1>You can even write down the name of the <br/>
             number like this:</h1>
             <img 
-            class = "center"
+            class = "image-layout"
             src={FiveHandwritten}
             alt="handwritten_five"
             />
