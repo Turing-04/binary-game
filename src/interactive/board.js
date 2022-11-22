@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import LightOff from '../light_off.png';
-import LightOn from '../light_on.png';
+import LightOff from '../resources/light_off.png';
+import LightOn from '../resources/light_on.png';
 
 class Square extends React.Component {
     render() {
