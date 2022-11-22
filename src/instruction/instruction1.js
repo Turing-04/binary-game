@@ -5,7 +5,7 @@ import {getResults, addResults} from "../utils/firebase";
 
 class Instruction1 extends React.Component {
 
-    constructor(props) {
+    constructor(props) { 
         super(props);
         this.state = {
             data : null
