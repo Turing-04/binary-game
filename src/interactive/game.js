@@ -34,7 +34,7 @@ class Board extends React.Component {
     //update state of squares when one is clicked
     handleClick(i) {
         const squares = this.state.squares.slice();
-        squares[i] = this.state.squares[i] ? false : true;
+        squares[i] = !this.state.squares[i];
         this.setState({squares: squares});
     }
 
@@ -85,14 +85,15 @@ export default Game;
 
 function victory(colors) {
     const vic = // smiley face combination
-        [false, false, true, true, true, true, false, false,
-            false, true, false, false, false, false, true, false,
-            true, false, true, false, false, true, false, true,
-            true, false, false, false, false, false, false, true,
-            true, false, true, false, false, true, false, true,
-            true, false, false, true, true, false, false, true,
-            false, true, false, false, false, false, true, false,
-            false, false, true, true, true, true, false, false,
+        [
+            0, 0, 1, 1, 1, 1, 0, 0,
+            0, 1, 0, 0, 0, 0, 1, 0,
+            1, 0, 1, 0, 0, 1, 0, 1,
+            1, 0, 0, 0, 0, 0, 0, 1,
+            1, 0, 1, 0, 0, 1, 0, 1,
+            1, 0, 0, 1, 1, 0, 0, 1,
+            0, 1, 0, 0, 0, 0, 1, 0,
+            0, 0, 1, 1, 1, 1, 0, 0,
         ]
 
     return JSON.stringify(colors) === JSON.stringify(vic);

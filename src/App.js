@@ -1,5 +1,5 @@
 import React from 'react';
-import Game from './game';
+import Game from './interactive/game';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import ActivitySelection from "./activitySelection";
 import Instruction from "./instruction/instruction";

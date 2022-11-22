@@ -5,10 +5,8 @@ import Row from 'react-bootstrap/Row';
 import constants from "./constants";
 
 class ActivitySelection extends React.Component {
-    //create button routing to game
     render() {
         return (
-            //center row in middle of page
             <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}>
                 <Row>
                     <h1>Hello!</h1>

@@ -41,18 +41,28 @@ ol, ul {
 }
 
 .square {
-    background: #fff;
+    height: 40px;
+    width: 40px;
+    /*background: url("../light_off.png");*/
+
+    /*
     border: 1px solid #999;
     float: left;
     font-size: 24px;
     font-weight: bold;
     line-height: 34px;
-    height: 34px;
     margin-right: -1px;
     margin-top: -1px;
     padding: 0;
     text-align: center;
-    width: 34px;
+    */
+}
+
+.images {
+    height: 50px;
+    width: 50px;
+    /*align top left*/
+    /*position: absolute;*/
 }
 
 .square:focus {

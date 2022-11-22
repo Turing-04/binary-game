@@ -1,4 +1,5 @@
 import React from "react";
+import Board from "../interactive/board";
 
 export function ProblemSolving0() {
     return (
@@ -51,6 +52,15 @@ export function ProblemSolving4() {
             <p style={{width: 600}}>
                 ProblemSolving 1
             </p>
+        </div>
+    );
+}
+
+export function ProblemSolving5() {
+    return (
+        <div>
+            <h1>5</h1>
+            <Board width={8} height={8}/>
         </div>
     );
 }

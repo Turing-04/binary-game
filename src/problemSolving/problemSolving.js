@@ -1,6 +1,6 @@
 import React from "react";
 import {
-    ProblemSolving0, ProblemSolving1, ProblemSolving2, ProblemSolving3, ProblemSolving4
+    ProblemSolving0, ProblemSolving1, ProblemSolving2, ProblemSolving3, ProblemSolving4, ProblemSolving5
 } from "./problemSolvingContent";
 
 
@@ -36,8 +36,10 @@ class ProblemSolving extends React.Component {
                 return ProblemSolving2();
             case 3:
                 return ProblemSolving3();
-            default:
+            case 4:
                 return ProblemSolving4();
+            default:
+                return ProblemSolving5();
         }
     }
 
