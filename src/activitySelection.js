@@ -26,13 +26,13 @@ class ActivitySelection extends React.Component {
                     <div style={{width: 100}}></div>
                 </Row>
                 <Row>
-                    <Link className="button" to="/problem-solving-1">Group 1</Link>
+                    <Link className="button" to="/problem-solving">Group 1</Link>
                 </Row>
                 <Row>
                     <div style={{width: 100}}></div>
                 </Row>
                 <Row>
-                    <Link className="button" to="/instruction-1">Group 2</Link>
+                    <Link className="button" to="/instruction">Group 2</Link>
                 </Row>
 
             </div>
