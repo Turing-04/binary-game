@@ -25,7 +25,7 @@ export function Instruction0(_index) {
 export function Instruction1(_index) {
     return (
         <div>
-            <h1> Du kannst den Namen der Zahl sagen, zum <br/></h1>
+            <h1> Du kannst den Namen der Zahl ausprechen, zum <br/></h1>
             <h1> Beispiel fünf: </h1>
             <img
             width={"65%"}
@@ -167,7 +167,7 @@ export function Instruction11(_index) {
     return(
         <div>   
             <h1> Oder in geordneter Weise! <br/>
-            Es spielt keiner rolle. </h1>
+            Es spielt keine Rolle. </h1>
             <Board binary={false} width={9} height={1} interactive={false} key={_index} labels={false}
                    initial={[false, false, false, false, false, false, true, true, true]}>
             </Board>
@@ -195,9 +195,9 @@ export function Instruction13(_index) {
     return(
         <div>   
             <h1> Ja! <br/><br/>
-            Zünde einfach eine Glühbirne an der  <br/>
+            Zünde einfach die Glühbirne an der  <br/>
             entsprechenden Stelle an. <br/>
-            Wir können jede Glühbirne nummerieren...
+            Wir nummerieren jede Glühbirne...
             </h1>
             <Board binary={false} width={9} height={1} interactive={false} key={_index} labels={true}>
             </Board>
@@ -404,7 +404,7 @@ export function Instruction27(_index) {
     return(
         <div>   
             <h1>Was wäre, wenn wir Folgendes darstellen <br/>
-            wollten :
+            wollten:
             </h1>
             <h1 style={{fontSize: '8vw', fontWeight:'800', fontFamily:'DejaVu'}} > 9? 
             </h1>
@@ -416,7 +416,7 @@ export function Instruction27(_index) {
 export function Instruction28(_index) {
     return(
         <div>   
-            <h1> Die Glühbirnen '8' und '1' zum Leuchten bringen!
+            <h1> Wir zünden die Glühbirnen '8' und '1' an!
             </h1>
             <h1 style={{fontSize: '8vw', fontWeight:'800', fontFamily:'DejaVu'}} > 9 = 8 + 1
             </h1>
@@ -432,7 +432,7 @@ export function Instruction29(_index) {
     return(
         <div>   
             <h1>Was wäre, wenn wir Folgendes darstellen <br/>
-            wollten :
+            wollten:
             </h1>
             <h1 style={{fontSize: '8vw', fontWeight:'800', fontFamily:'DejaVu'}} > 4?
             </h1>
@@ -447,7 +447,7 @@ export function Instruction29(_index) {
 export function Instruction30(_index) {
     return(
         <div>   
-            <h1> Nur Glühbirne 4 einschalten!
+            <h1> Wir schalten nur Glühbirne 4 ein!
             </h1>
             <h1 style={{fontSize: '8vw', fontWeight:'800', fontFamily:'DejaVu'}} > 4 = 4 
             </h1>
@@ -464,7 +464,7 @@ export function Instruction31(_index) {
     return(
         <div>   
             <h1>Was wäre, wenn wir Folgendes darstellen <br/>
-            wollten :
+            wollten:
             </h1>
             <h1 style={{fontSize: '8vw', fontWeight:'800', fontFamily:'DejaVu'}} > 0?
             </h1>
@@ -489,7 +489,7 @@ export function Instruction33(_index) {
     return(
         <div>   
         <h1> Schau, jetzt können wir alle Ziffern von 0 bis 9  <br/>
-        mit nur vier Glühbirnen darstellen !
+        mit nur vier Glühbirnen darstellen!
         </h1>
             <Board key={_index} width={4} height={1} interactive={false} labels={true} binary={true}>
             </Board>
@@ -533,7 +533,7 @@ export function Instruction35(_index) {
 export function Instruction36(_index) {
     return(
         <div>   
-            <h1> Mit 4 Glühbirnen können wir bis zu 15 erreichen!
+            <h1> Mit 4 Glühbirnen können wir bis zu 15 zählen!
             </h1>
             <h1 style={{fontSize: '8vw', fontWeight:'800', fontFamily:'DejaVu'}} > 8 + 4 + 2 + 1 = 15
             </h1>
@@ -680,7 +680,7 @@ export function Instruction45(_index) {
         <div>
             <h1>Man braucht nicht einmal Glühbirnen, man   <br/>
             kann auch andere Dinge verwenden, wie z.B.  <br/>
-            Kästchen, die schwarz oder weiß angemalt sind ! <br/>
+            Kästchen, die schwarz oder weiss angemalt sind ! <br/>
             Das ist im Wesentlichen die Art und Weise, wie <br/>
             Maschinen funktionieren und miteinander kommunizieren !
             </h1>
