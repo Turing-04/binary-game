@@ -70,7 +70,10 @@ class ProblemSolving extends React.Component {
                 {0 < this.state.index &&
                     <button className="floating-button-previous" onClick={() => this.previousIndex()}>Previous</button>
                 }
-                <button className="floating-button-next" onClick={() => this.nextIndex()}>Next</button>
+                {this.state.index < 17
+                    ? <button className="floating-button-next" onClick={() => this.nextIndex()}>Next</button>
+                    : <button className="floating-button-next" onClick={() => this.nextIndex()}>Next step</button>
+                }
             </div>
         );
     }
