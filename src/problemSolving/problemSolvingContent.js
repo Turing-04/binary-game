@@ -62,7 +62,42 @@ export function ProblemSolving5() {
     return (
         <div>
             <h1>5</h1>
-            <Board width={8} height={8}/>
+            <Board width={8} height={4} interactive={false} key={5}
+                   initial={[
+                       true, false, false, false, false, false, false, false,
+                       false, true, false, false, false, false, false, false,
+                       false, false, true, false, false, false, false, false,
+                       false, false, false, true, false, false, false, false,
+                       ]}></Board>
+
+        </div>
+    );
+}
+
+export function ProblemSolving6() {
+    return (
+        <div>
+            <h1>6</h1>
+            <Board key={6} width={4} height={8} interactive={true}></Board>
+        </div>
+    );
+}
+
+export function ProblemSolving7() {
+    return (
+        <div>
+            <h1>7</h1>
+            <Board key={7} width={8} height={8} interactive={true}
+                answer={[
+                    true, false, false, false, false, false, false, false,
+                    false, true, false, false, false, false, false, false,
+                    false, false, true, false, false, false, false, false,
+                    false, false, false, true, false, false, false, false,
+                    false, false, false, false, true, false, false, false,
+                    false, false, false, false, false, true, false, false,
+                    false, false, false, false, false, false, true, false,
+                    false, false, false, false, false, false, false, true,
+                ]}></Board>
         </div>
     );
 }

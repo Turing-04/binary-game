@@ -5,8 +5,9 @@ import Fingers from "../resources/finger_count.png"
 import Five from "../resources/five.png"
 import FiveHandwritten from "../resources/five_handwritten.png"
 import Smiley from "../resources/smiley_face.png"
+import Board from "../interactive/board";
 
-export function Instruction0() {
+export function Instruction0(_index) {
     return (
         <div>
             <h1>Let's start with a question: <br/>
@@ -16,7 +17,7 @@ export function Instruction0() {
     );
 }
 
-export function Instruction1() {
+export function Instruction1(_index) {
     return (
         <div>
             <h1>You can say the name of the number, <br/></h1>
@@ -30,7 +31,7 @@ export function Instruction1() {
     );
 }
 
-export function Instruction2() {
+export function Instruction2(_index) {
     return (
         <div>
             <h1>You can also hold up your fingers to show <br/>
@@ -44,7 +45,7 @@ export function Instruction2() {
     );
 }
 
-export function Instruction3() {
+export function Instruction3(_index) {
     return (
         <div>
             <h1>You can also write the symbol of the <br/>
@@ -58,7 +59,7 @@ export function Instruction3() {
     );
 }
 
-export function Instruction4() {
+export function Instruction4(_index) {
     return (
         <div>
             <h1>You can even write down the name of the <br/>
@@ -73,7 +74,7 @@ export function Instruction4() {
 }
 
 
-export function Instruction5() {
+export function Instruction5(_index) {
     return (
         <div>
             <h1>Can we represent the numbers differently? <br/><br/>
@@ -84,41 +85,41 @@ export function Instruction5() {
     );
 }
 
-export function Instruction6() {
+export function Instruction6(_index) {
     return (
         <div>
             <h1>Can I display a number with something like ...<br/><br/>
             ... a row of lightbulbs?!
             </h1>
+            <Board binary={false} width={9} height={1} interactive={false} key={6} labels={false}></Board>
         </div>
     );
 }
 
 
-export function Instruction7() {
+export function Instruction7(_index) {
     return (
         <div>
             <h1>Yes we can! <br/><br/>
              This is what binary essentially is about. <br/><br/>
              But first, let's get back to our row of lightbulbs. <br/>
              </h1>
-             {/* TODO: Add row of lightbulbs */}
         </div>
     );
 }
 
-export function Instruction8() {
+export function Instruction8(_index) {
     return(
         <div>
             <h1>Here, I have a row of 9 lightbulbs, how could I <br/>
              represent each digit with them? <br/><br/>
              </h1>
-             {/* TODO: add lightbulbs */}
+            <Board binary={false} width={9} height={1} interactive={false} key={_index} labels={false}></Board>
         </div>  
     );
 }
 
-export function Instruction9() {
+export function Instruction9(_index) {
     return(
         <div>
             <h1>Here, I have a row of 9 lightbulbs, how could I <br/>
@@ -131,85 +132,100 @@ export function Instruction9() {
 
 
 
-export function Instruction10() {
+export function Instruction10(_index) {
     return(
         <div>
             <h1>There are several ways to do so! </h1>
             <h1 style={{fontStyle:'italic'}}>One way would be to turn on the appropriate number of lightbulbs,<br/>
                 For instance, you could turn on three lightbulbs to show the number 3: 
             </h1>
-        </div>  
-        /* TODO: lightbulb row with 3 random lights on */
+            <Board binary={false} width={9} height={1} interactive={false} key={_index} labels={false}
+                        initial={[false, false, true, false, true, true, false, false, false]}>
+            </Board>
+        </div>
+
 
     );
 
 
 }
-export function Instruction11() {
+export function Instruction11(_index) {
 return(
     <div>   
         <h1> You could do this in an unordered manner ...</h1>
+        <Board binary={false} width={9} height={1} interactive={false} key={_index} labels={false}
+               initial={[false, false, true, false, true, true, false, false, false]}>
+        </Board>
     </div>
-    // TODO : lightbulbs
 )
 
 }
 
 
-export function Instruction12() {
+export function Instruction12(_index) {
     return(
         <div>   
             <h1> Or in an ordered manner! <br/>
             It doesn't matter. </h1>
+            <Board binary={false} width={9} height={1} interactive={false} key={_index} labels={false}
+                   initial={[false, false, false, false, false, false, true, true, true]}>
+            </Board>
         </div>
     )
 }
 
-export function Instruction13() {
+export function Instruction13(_index) {
     return(
         <div>   
             <h1> What if we wanted to save energy? <br/><br/>
             Can I represent each number by lightning up only <br/>
             one lightbulb at the time? 
             </h1>
+            <Board binary={false} width={1} height={1} interactive={false} key={_index} labels={false}
+                   initial={[true]}>
+            </Board>
         </div>
     )
-    // TODO : one turned on lightbulb
 
 }
 
-export function Instruction14() {
+export function Instruction14(_index) {
     return(
         <div>   
             <h1> Yes! <br/><br/>
             Just light one lightbulb at a given position. <br/>
             We could add a label to each lightbulb. 
             </h1>
+            <Board binary={false} width={9} height={1} interactive={false} key={_index} labels={true}>
+            </Board>
         </div>
-        //TODO : Row of lightbulbs with numbers
     )
 
 }
 
 
-export function Instruction15(){
+export function Instruction15(_index) {
     return(
         <div>   
             <h1> And light the correct bulb! <br/>
             If we want to show five, all we need is  <br/>
             to light up the fifth lightbulb.
             </h1>
+            <Board binary={false} key={_index} width={9} height={1} interactive={false} labels={true}
+                   initial={[false, false, false, false, true, false, false, false, false]}>
+            </Board>
         </div>
-        //TODO : lightbulb with one on
     )
 }
 
-export function Instruction16(){
+export function Instruction16(_index) {
     return(
         <div>   
             <h1> What if we want to show 0? <br/>
             We can just leave all the lights off!
             </h1>
+            <Board binary={false} key={_index} width={9} height={1} interactive={false} labels={true}>
+            </Board>
         </div>
     )
         /*TODO light bulbs off : 
@@ -217,26 +233,27 @@ export function Instruction16(){
 }
 
 
-export function Instruction17(){
+export function Instruction17(_index) {
     return(
         <div>   
             <h1> This is called  <br/> </h1>
             <h1 style={{fontWeight: '900', fontSize:'3.8vw'}}> One-hot encoding <br/></h1> 
             <h2> Only one lightbulb is hot for a given number! </h2>
+            <Board binary={false} key={_index} width={9} height={1} interactive={false} labels={true}
+                   initial={[false, false, false, false, true, false, false, false, false]}>
+            </Board>
         </div>
-         //Problème de gras ici! Sois on change la police de charactère pour le one hot encoding sois moyen d'avoir du gras avec sans Cherif? 
-        //TODO : lightbulbs
+         //Problème de gras ici ! Sois on change la police de charactère pour le one hot encoding sois moyen d'avoir du gras avec sans Cherif ? 
     )
 
 }
-export function Instruction18(){
+export function Instruction18(_index) {
     return(
         <div>
             <h1>  With this new technique, we can now <br/> 
             represent a bunch of digits.</h1>
             <h1 style={{fontWeight: 'italic'}}> But can we do better?  <br/></h1>
         </div>
-        //TODO : lightbulbs
     )
 
 
@@ -244,7 +261,7 @@ export function Instruction18(){
 
 
 
-export function Instruction19(){
+export function Instruction19(_index) {
     return(
         <div>
             <h1 >  Introducing ...  </h1> 
@@ -257,46 +274,53 @@ export function Instruction19(){
 }
 
 
-export function Instruction20(){
+export function Instruction20(_index) {
     return(
         <div>   
             <h1> Remember what we did for one-hot encoding :  <br/><br/> 
-            We labelled the lightbulbs accoring to their <br/>
+            We labelled the lightbulbs according to their <br/>
             position. However, only one lightbulb is lit at a <br/>
             time, while the others do nothing.
             </h1>
+            <Board binary={false} key={_index} width={9} height={1} interactive={false} labels={true}
+                   initial={[false, false, false, false, true, false, false, false, false]}>
+            </Board>
         </div>
-        //TODO : arrow + lightbulbs
+        //TODO : arrow
     )
 }
 
 
-export function Instruction21(){
+export function Instruction21(_index) {
     return(
         <div>   
             <h1> Can we light multiple bulbs at the same time?
             </h1>
+            <Board binary={false} key={_index} width={9} height={1} interactive={false} labels={true}
+                   initial={[false, true, false, false, true, false, true, false, false]}>
+            </Board>
         </div>
-        //TODO : lightbulbs
     )
 }
 
 
-export function Instruction22(){
+export function Instruction22(_index) {
     return(
         <div>   
             <h1> What if we were to label the lightbulbs <br/>
             differently?
             </h1>
+            <Board key={_index} width={9} height={1} interactive={false} labels={true} binary={true}
+                   initial={[false, true, false, false, true, false, true, false, false]}>
+            </Board>
         </div>
-        //TODO : lightbulbs
     )
 
 }
 
 
 
-export function Instruction23(){
+export function Instruction23(_index) {
     return(
         <div>   
             <h1>Let's see what we have here. <br/><br/>
@@ -304,134 +328,150 @@ export function Instruction23(){
             labelled with 1, 2, 4 and 8. <br/><br/>
             How can we represent the digits 0 to 9 now?
             </h1>
+            <Board binary={true} key={_index} width={4} height={1} interactive={false} labels={true}>
+            </Board>
         </div>
-        //TODO : lightbulbs + labels
     )
 }
 
 
-export function Instruction24(){
+export function Instruction24(_index) {
     return(
         <div>   
             <h1>let's try to turn on lightbulbs labelled with  <br/>
             1 and 4.
             </h1>
+            <Board key={_index} width={4} height={1} interactive={false} labels={true} binary={true}
+                   initial={[false, true, false, true]}>
+            </Board>
         </div>
-        //TODO : 4 correct lightbulbs
     )
 }
 
 
-export function Instruction25(){
+export function Instruction25(_index) {
     return(
         <div>   
             <h1>What do we get if we add those up together?
             </h1>
             <h1 style={{fontSize: '8vw', fontWeight:'800', fontFamily:'DejaVu'}} > 4 + 1 ...
             </h1>
+            <Board key={_index} width={4} height={1} interactive={false} labels={true} binary={true}
+                   initial={[false, true, false, true]}>
+            </Board>
         </div>
-        //TODO : lightbulbs
     )
 
 }
 
 
-export function Instruction26(){
+export function Instruction26(_index) {
     return(
         <div>   
             <h1>What do we get if we add those up together?
             </h1>
             <h1 style={{fontSize: '8vw', fontWeight:'800', fontFamily:'DejaVu'}} > 4 + 1 = 5 
             </h1>
+            <Board key={_index} width={4} height={1} interactive={false} labels={true} binary={true}
+                   initial={[false, true, false, true]}>
+            </Board>
         </div>
-        //TODO : lightbulbs
     )
 }
 
 
 
-export function Instruction27(){
+export function Instruction27(_index) {
     return(
         <div>   
             <h1>What if we wanted to represent
             </h1>
             <h1 style={{fontSize: '8vw', fontWeight:'800', fontFamily:'DejaVu'}} > 9? 
             </h1>
+            <Board key={_index} width={4} height={1} interactive={false} labels={true} binary={true}>
+            </Board>
         </div>
-        //TODO : lightbulbs
     )
 }
-export function Instruction28(){
+export function Instruction28(_index) {
     return(
         <div>   
             <h1>Light up lightbulbs '8' and '1'!
             </h1>
             <h1 style={{fontSize: '8vw', fontWeight:'800', fontFamily:'DejaVu'}} > 8 + 1 = 9 
             </h1>
+            <Board key={_index} width={4} height={1} interactive={false} labels={true} binary={true}
+                   initial={[true, false, false, true]}>
+            </Board>
         </div>
-        //TODO : lightbulbs
     )
 }
 
 
-export function Instruction29(){
+export function Instruction29(_index) {
     return(
         <div>   
             <h1>What if we wanted to represent
             </h1>
             <h1 style={{fontSize: '8vw', fontWeight:'800', fontFamily:'DejaVu'}} > 4?
             </h1>
+            <Board key={_index} width={4} height={1} interactive={false} labels={true} binary={true}>
+            </Board>
         </div>
-        //TODO : lightbulbs
     )
 
 }
 
 
-export function Instruction30(){
+export function Instruction30(_index) {
     return(
         <div>   
             <h1>Turn on lightbulb '4' only!
             </h1>
             <h1 style={{fontSize: '8vw', fontWeight:'800', fontFamily:'DejaVu'}} > 4 = 4 
             </h1>
+            <Board key={_index} width={4} height={1} interactive={false} labels={true} binary={true}
+                   initial={[false, true, false, false]}>
+            </Board>
         </div>
-        //TODO : lightbulbs
     )
 
 }
 
 
-export function Instruction31(){
+export function Instruction31(_index) {
     return(
         <div>   
             <h1>What if we wanted to represent
             </h1>
             <h1 style={{fontSize: '8vw', fontWeight:'800', fontFamily:'DejaVu'}} > 0?
             </h1>
+            <Board key={_index} width={4} height={1} interactive={false} labels={true} binary={true}>
+            </Board>
         </div>
-        //TODO : lightbulbs
     )
 }
 
-export function Instruction32(){
+export function Instruction32(_index) {
     return(
         <div>   
             <h1>Just as for the one-hot encoding representation : <br/>
             We don't light any bulb!
             </h1>
-
+            <Board key={_index} width={4} height={1} interactive={false} labels={true} binary={true}>
+            </Board>
         </div>
-        //TODO : lightbulbs
     )
 }
 
-export function Instruction33(){
+export function Instruction33(_index) {
     return(
         <div>   
         <h1>See, now we can represent all the digits from 0 <br/>
         to 9 using only four lightbulbs!
         </h1>
+            <Board key={_index} width={4} height={1} interactive={false} labels={true} binary={true}>
+            </Board>
     </div>
         );
 
@@ -439,13 +479,16 @@ export function Instruction33(){
 }
 
 
-export function Instruction34(){
+export function Instruction34(_index) {
     return (
         <div>   
             <h1>And we can even go higher! <br/>
             What if we light up all the lightbulbs at once ... <br/>
             What do we get?
             </h1>
+            <Board key={_index} width={4} height={1} interactive={false} labels={true} binary={true}
+                   initial={[true, true, true, true]}>
+            </Board>
     
         </div>  
         );
@@ -453,45 +496,49 @@ export function Instruction34(){
 }
 
 
-export function Instruction35(){
+export function Instruction35(_index) {
     return (
         <div>   
             <h1 style={{fontSize: '8vw', fontWeight:'800', fontFamily:'DejaVu'}} > 8 + 4 + 2 + 1 = ...
             </h1>
-    
+            <Board key={_index} width={4} height={1} interactive={false} labels={true} binary={true}
+                   initial={[true, true, true, true]}>
+            </Board>
         </div>
-    
-        //TODO : lightbulbs
     )
 }
 
 
-export function Instruction36(){
+export function Instruction36(_index) {
     return(
         <div>   
             <h1>With only four lightbulbs, we can encode numbers up to 15!
             </h1>
             <h1 style={{fontSize: '8vw', fontWeight:'800', fontFamily:'DejaVu'}} > 8 + 4 + 2 + 1 = 15
             </h1>
+            <Board key={_index} width={4} height={1} interactive={false} labels={true} binary={true}
+                   initial={[true, true, true, true]}>
+            </Board>
         </div>
-        //TODO : lightbulbs
     )
 }
 
 
-export function Instruction37(){
+export function Instruction37(_index) {
     return(
         <div>   
             <h1>With one-hot encoding, <br/>
             We would have needed 15 lightbulbs to achieve the same!
             </h1>
+            <Board key={_index} width={15} height={1} interactive={false} labels={true} binary={false}
+                   initial={[true, false, false, false, false, false, false, false, false, false, false, false, false, false, false]}>
+            </Board>
         </div>
     )
-    //TODO : lightbulbs
 }
 
 
-export function Instruction38(){
+export function Instruction38(_index) {
     return (
         <div>
             <h1>But why do we even care about this?</h1>
@@ -505,7 +552,7 @@ export function Instruction38(){
 }
 
 
-export function Instruction39(){
+export function Instruction39(_index) {
     return (
         <div>
             <h1>Isn't it simpler to just write down 5 after all? <br/>
@@ -521,7 +568,7 @@ export function Instruction39(){
 }
 
 
-export function Instruction40(){
+export function Instruction40(_index) {
     return (
         <div>
             <h1>But imagine you're trying to send your friend a <br/>
@@ -536,7 +583,7 @@ export function Instruction40(){
 }
 
 
-export function Instruction41(){
+export function Instruction41(_index) {
     return (
         <div>
             <h1>You could send your friends an entire <br/>
@@ -548,7 +595,7 @@ export function Instruction41(){
 }
 
 
-export function Instruction42(){
+export function Instruction42(_index) {
     return (
         <div>
             <h1>And what if you wanted to send letterss instead <br/>
@@ -562,13 +609,13 @@ export function Instruction42(){
     );
 
 }
-export function Instruction43(){
+export function Instruction43(_index) {
     return(
         <div>   
             <h1>Easy! Just number the letters ... <br/>
             A can be 1, B can be 2, c can be 3 ...
             </h1>
-            <h1 style={{fontSize: '6vw', fontWeight:'500', fontFamily:'DejaVu', fontStyle:'italic'}} > 
+            <h1 style={{fontSize: '4vw', fontWeight:'500', fontFamily:'DejaVu', fontStyle:'italic'}} >
             A = 1 <br/>
             B = 2 <br/>
             C = 3 <br/>
@@ -582,7 +629,7 @@ export function Instruction43(){
         )
     //FIXME: trop grand pour mon écran
 }
-export function Instruction44(){
+export function Instruction44(_index) {
     return (
         <div>
             <h1>With enough lightbulbs, you can send  <br/>
@@ -594,7 +641,7 @@ export function Instruction44(){
     // TODO : implement image or nice html objects as in Figma
 
 }
-export function Instruction45() {
+export function Instruction45(_index) {
     return (
         <div>
             <h1>You don't even need lightbulbs, you can use other  <br/>

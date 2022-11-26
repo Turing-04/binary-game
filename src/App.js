@@ -1,5 +1,4 @@
 import React from 'react';
-import Game from './interactive/game';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import ActivitySelection from "./activitySelection";
 import Instruction from "./instruction/instruction";
@@ -11,7 +10,6 @@ class App extends React.Component {
             <Router>
                 <Routes>
                     <Route path="/" element={<ActivitySelection/>} />
-                    <Route path="/game" element={<Game/>} />
                     <Route path="/problem-solving" element={<ProblemSolving/>} />
                     <Route path="/instruction" element={<Instruction/>} />
                 </Routes>

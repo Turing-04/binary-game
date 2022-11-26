@@ -34,6 +34,24 @@ p {
     width: 50%;
   }
 
+.bulbs {
+    height: 4vw;
+    width: 4vw;
+}
+
+.labels {
+    height: 3vw;
+    width: 4vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-family: 'Comfortaa', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
 .button {
     align-items: center;
     color: white;
