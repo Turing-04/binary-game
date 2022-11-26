@@ -1,6 +1,8 @@
 import React from "react";
 import * as Instructions from "./instructionContent_de";
 import {logScreenChange} from "../utils/firebase"
+import constants from "../constants";
+import {useNavigate} from "react-router-dom";
 
 class InstructionDe extends React.Component {
 
@@ -13,6 +15,14 @@ class InstructionDe extends React.Component {
     }
 
     nextIndex() {
+        if (this.state.index === 45) {
+            if (constants.group === "ips") {
+                this.props.navigation("/problem-solving-de");
+            }
+            else {
+                this.props.navigation("/assessment-de");
+            }
+        }
         logScreenChange('wengle','instruction', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index+1)
         this.setState({index: this.state.index + 1, time_started: new Date().getTime()}, () => {
             console.log(this.state.index);
@@ -21,6 +31,9 @@ class InstructionDe extends React.Component {
     }
 
     previousIndex() {
+        if (this.state.index === 0) {
+            return;
+        }
         this.setState({index:Math.max(this.state.index - 1,0)}, () => {
             console.log(this.state.index)
         });
@@ -86,9 +99,7 @@ class InstructionDe extends React.Component {
                 {0 < this.state.index &&
                     <button className="floating-button-previous" onClick={() => this.previousIndex()}>Previous</button>
                 }
-                {this.state.index < 45 &&
-                    <button className="floating-button-next" onClick={() => this.nextIndex()}>Next</button>
-                }
+                <button className="floating-button-next" onClick={() => this.nextIndex()}>Next</button>
             </div>
         );
     }

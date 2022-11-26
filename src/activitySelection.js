@@ -30,13 +30,17 @@ class ActivitySelection extends React.Component {
                     <div style={{width: 100}}></div>
                 </Row>
                 <Row>
-                    <Link className="button" to="/problem-solving" onClick={() => constants.group = 1}>Group 1</Link>
+                    <Link className="button" to="/problem-solving"
+                          onClick={() => {constants.group = "psi"; constants.language = "en";}}
+                    >Group 1</Link>
                 </Row>
                 <Row>
                     <div style={{width: 100}}></div>
                 </Row>
                 <Row>
-                    <Link className="button" to="/instruction" onClick={() => constants.group = 2}>Group 2</Link>
+                    <Link className="button" to="/instruction"
+                          onClick={() => {constants.group = "ips"; constants.language = "en";}}
+                    >Group 2</Link>
                 </Row>
 
             </div>

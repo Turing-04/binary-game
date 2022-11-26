@@ -1,5 +1,6 @@
 import React from "react";
 import * as Problems from "./problemSolvingContent";
+import constants from "../constants";
 
 
 class ProblemSolving extends React.Component {
@@ -12,6 +13,14 @@ class ProblemSolving extends React.Component {
     }
 
     nextIndex() {
+        if (this.state.index === 17) {
+            if (constants.group === "psi") {
+                this.props.navigation("/instruction");
+            }
+            else {
+                this.props.navigation("/assessment");
+            }
+        }
         this.setState({index: this.state.index + 1}, () => {
             console.log(this.state.index);
         });
@@ -19,6 +28,9 @@ class ProblemSolving extends React.Component {
     }
 
     previousIndex() {
+        if (this.state.index === 0) {
+            return;
+        }
         this.setState({index: this.state.index - 1}, () => {
             console.log(this.state.index);
         });
@@ -58,9 +70,8 @@ class ProblemSolving extends React.Component {
                 {0 < this.state.index &&
                     <button className="floating-button-previous" onClick={() => this.previousIndex()}>Previous</button>
                 }
-                {this.state.index < 15 &&
-                    <button className="floating-button-next" onClick={() => this.nextIndex()}>Next</button>
-                }            </div>
+                <button className="floating-button-next" onClick={() => this.nextIndex()}>Next</button>
+            </div>
         );
     }
 }
