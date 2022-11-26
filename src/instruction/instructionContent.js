@@ -6,6 +6,11 @@ import Five from "../resources/five.png"
 import FiveHandwritten from "../resources/five_handwritten.png"
 import Smiley from "../resources/smiley_face.png"
 import Board from "../interactive/board";
+import Instruction40_ from "../resources/instruction_40.png"
+import Instruction41_ from "../resources/instruction_41.png"
+import Instruction44_ from "../resources/instruction_44.png"
+import Instruction45_ from "../resources/instruction_45.png"
+
 
 export function Instruction0(_index) {
     return (
@@ -51,7 +56,7 @@ export function Instruction3(_index) {
             <h1>You can also write the symbol of the <br/>
             number, as you have learnt in school:</h1>
             <img 
-            class= "image-layout"
+            class= "square-image-layout"
             src={Five}
             alt="five_digit"
             />
@@ -543,7 +548,7 @@ export function Instruction38(_index) {
         <div>
             <h1>But why do we even care about this?</h1>
             <img 
-            class= "image-layout"
+            class= "square-image-layout"
             src={Smiley}
             alt="confused_smiley"
             />
@@ -559,7 +564,7 @@ export function Instruction39(_index) {
             It's what we all learnt in school after all...
             </h1>
             <img 
-            class= "image-layout"
+            class= "square-image-layout"
             src={Five}
             alt="handwritten_five"
             />
@@ -575,10 +580,14 @@ export function Instruction40(_index) {
             message without drawing, speaking, writing, <br/>
             or seeing them!
             </h1>
+            <img 
+            class= "image-layout"
+            src={Instruction40_}
+            alt="instruction_40"
+            />
         </div>
     );
 
-    //TODO : ajouter schéma de Figma -> Image ou alors smart layout avec différents objets?
 
 }
 
@@ -587,8 +596,12 @@ export function Instruction41(_index) {
     return (
         <div>
             <h1>You could send your friends an entire <br/>
-            message using only lightbulbs!
-            </h1>
+            message using only lightbulbs!</h1>
+            <img 
+            class= "image-layout"
+            src={Instruction41_}
+            alt="instruction_41"
+            />
         </div>
     );
 
@@ -598,10 +611,10 @@ export function Instruction41(_index) {
 export function Instruction42(_index) {
     return (
         <div>
-            <h1>And what if you wanted to send letterss instead <br/>
+            <h1>And what if you wanted to send letters instead <br/>
             of numbers?</h1>
             <img 
-            class= "image-layout"
+            class="square-image-layout"           
             src={Smiley}
             alt="confused_smiley"
             />
@@ -615,7 +628,7 @@ export function Instruction43(_index) {
             <h1>Easy! Just number the letters ... <br/>
             A can be 1, B can be 2, c can be 3 ...
             </h1>
-            <h1 style={{fontSize: '4vw', fontWeight:'500', fontFamily:'DejaVu', fontStyle:'italic'}} >
+            <h1 style={{fontSize: '4vw', fontWeight:'500', fontFamily:'DejaVu', fontStyle:'italic', lineHeight:'0.8'}} >
             A = 1 <br/>
             B = 2 <br/>
             C = 3 <br/>
@@ -627,7 +640,7 @@ export function Instruction43(_index) {
         </div>
         
         )
-    //FIXME: trop grand pour mon écran
+    //FIXME: trop grand pour mon écran - ok now ?
 }
 export function Instruction44(_index) {
     return (
@@ -635,10 +648,14 @@ export function Instruction44(_index) {
             <h1>With enough lightbulbs, you can send  <br/>
             entire messages!
             </h1>
+            <img 
+            class= "image-layout"
+            src={Instruction44_}
+            alt="instruction_44"
+            />
         </div>
     );
 
-    // TODO : implement image or nice html objects as in Figma
 
 }
 export function Instruction45(_index) {
@@ -646,9 +663,14 @@ export function Instruction45(_index) {
         <div>
             <h1>You don't even need lightbulbs, you can use other  <br/>
             things like boxes which are black and white! <br/>
-            They could also use zeros and ones, this is how  <br/>
-            computers interact together!
+            You could also use zeros and ones, this is actually  <br/>
+            how computers interact together!
             </h1>
+            <img 
+            class= "image-layout"
+            src={Instruction45_}
+            alt="instruction_45"
+            />
         </div>
     );
 

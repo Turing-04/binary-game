@@ -43,6 +43,13 @@ p {
     width: 50%;
   }
 
+  .square-image-layout {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+  }
+
 .bulbs {
     height: 4vw;
     width: 4vw;
