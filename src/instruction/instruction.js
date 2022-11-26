@@ -1,6 +1,6 @@
 import React from "react";
 import * as Instructions from "./instructionContent";
-
+import {logScreenChange} from "../utils/firebase"
 
 class Instruction extends React.Component {
 
@@ -8,11 +8,13 @@ class Instruction extends React.Component {
         super(props);
         this.state = {
             index: 0,
+            time_started: new Date().getTime()
         };
     }
 
     nextIndex() {
-        this.setState({index: this.state.index + 1}, () => {
+        logScreenChange('wengle','instruction', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index+1)
+        this.setState({index: this.state.index + 1, time_started: new Date().getTime()}, () => {
             console.log(this.state.index);
         });
 

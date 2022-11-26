@@ -28,4 +28,16 @@ async function addResults(answer) {
     });
 }
 
-export {getResults, addResults};
+
+async function logScreenChange(user, group, timestamp, timespent, nextactivity) {
+    const resultsCol = collection(db, "logs");
+    await setDoc(doc(resultsCol), {
+        user: user,
+        group: group,
+        timestamp: timestamp,
+        timespent: timespent,
+        nextactivity: nextactivity
+    });
+}
+
+export {getResults, addResults, logScreenChange};
