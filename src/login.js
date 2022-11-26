@@ -43,28 +43,30 @@ class LoginForm extends React.Component {
       >
         <form onSubmit={this.handleSubmit}>
           <Row>
-            <label style={{ fontSize: 30 }}>
+            <label style={{ fontSize: "3vw" }}>
               <Row>Your Name:</Row>
 
               <input
+                style={{height:"1.8vw", fontSize:"2vw"}}
                 type="text"
                 value={this.state.name}
                 onChange={this.handleNameChange}
               />
             </label>
           </Row>
-          <div style={{ height: 30 }}></div>
+          <div style={{ height: "3vw" }}></div>
           <Row>
-            <label style={{ fontSize: 30 }}>
+            <label style={{ fontSize: "3vw" }}>
               <Row>Your Age:</Row>
               <input
+                style={{height:"1.8vw", fontSize:"2vw"}}
                 type="number"
                 value={this.state.age}
                 onChange={this.handleAgeChange}
               />
             </label>
           </Row>
-          <div style={{ height: 30 }}></div>
+          <div style={{ height: "3vw" }}></div>
           <Row>
             {this.state.name != '' && this.state.age > 0 && <Link className='button' to='/activityselection' onClick={() => this.doSubmit()}> Submit </Link>}
           </Row>

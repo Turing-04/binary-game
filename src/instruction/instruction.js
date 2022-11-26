@@ -21,8 +21,8 @@ class Instruction extends React.Component {
     }
 
     previousIndex() {
-        this.setState({index: this.state.index - 1}, () => {
-            console.log(this.state.index);
+        this.setState({index:Math.max(this.state.index - 1,0)}, () => {
+            console.log(this.state.index)
         });
     }
 
@@ -86,7 +86,6 @@ class Instruction extends React.Component {
                 {0 < this.state.index &&
                     <button className="floating-button-previous" onClick={() => this.previousIndex()}>Previous</button>
                 }
-                
                 {this.state.index < 45 &&
                     <button className="floating-button-next" onClick={() => this.nextIndex()}>Next</button>
                 }

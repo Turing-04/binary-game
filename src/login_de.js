@@ -47,6 +47,7 @@ class LoginFormDe extends React.Component {
               <Row>Dein Name:</Row>
 
               <input
+                style={{height:"1.8vw", fontSize:"2vw"}}
                 type="text"
                 value={this.state.name}
                 onChange={this.handleNameChange}
@@ -58,6 +59,7 @@ class LoginFormDe extends React.Component {
             <label style={{ fontSize: 30 }}>
               <Row>Dein Alter:</Row>
               <input
+                style={{height:"1.8vw", fontSize:"2vw"}}
                 type="number"
                 value={this.state.age}
                 onChange={this.handleAgeChange}
