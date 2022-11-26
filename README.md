@@ -21,4 +21,9 @@
     - Assessment
     - Submission of Assessment
     - Pseudonymization through random uuid
-    
+
+
+Bugs:
+    - "Previous" button on first slide does nothing
+    - "Next button on last slide does nothing
+   
