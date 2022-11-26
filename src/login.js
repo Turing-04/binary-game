@@ -66,7 +66,7 @@ class LoginForm extends React.Component {
           </Row>
           <div style={{ height: 30 }}></div>
           <Row>
-            {this.state.name != '' && this.state.age > 0 && <Link className='button' to='./activitySelection' onClick={() => this.doSubmit()}> Submit </Link>}
+            {this.state.name != '' && this.state.age > 0 && <Link className='button' to='/activityselection' onClick={() => this.doSubmit()}> Submit </Link>}
           </Row>
         </form>
       </div>
