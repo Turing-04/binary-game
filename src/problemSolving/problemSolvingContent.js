@@ -102,6 +102,8 @@ export function ProblemSolving7(_index) {
                 Was it more difficult than just sending the number 6? <br/> <br/>
                 What was the main challenge?
             </h1>
+            <FeedbackForm slide={7}></FeedbackForm>
+
         </div>
     );
 }
@@ -128,6 +130,7 @@ export function ProblemSolving9(_index) {
                 What if you tried to enter one character per row? <br/>
                 Try using one row per letter now!
             </h1>
+
         </div>
     );
 }
@@ -200,6 +203,8 @@ export function ProblemSolving12(_index) {
                 Do you think Bob will be able to understand your encodings? <br/> <br/>
                 Why? Or why not?
             </h1>
+            <FeedbackForm slide={12}></FeedbackForm>
+
         </div>
     );
 }
@@ -211,6 +216,8 @@ export function ProblemSolving13(_index) {
                 Now, do you think you could still <br/>
                 send your messages with even less boxes per row?
             </h1>
+            <FeedbackForm slide={13}></FeedbackForm>
+
         </div>
     );
 }
@@ -284,6 +291,8 @@ export function ProblemSolving16(_index) {
                 What do you think is the least amount of boxes <br/>
                 to properly represent your numbers?
             </h1>
+            <FeedbackForm slide={5}></FeedbackForm>
+
         </div>
     );
 }
