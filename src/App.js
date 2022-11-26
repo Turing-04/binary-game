@@ -20,7 +20,6 @@ export function App() {
                     <Route path="/" element={<LanguageSelection/>} />
                     <Route path="/login" element={<LoginForm/>} />
                     <Route path="/login_de" element={<LoginFormDe/>} />
-<<<<<<< HEAD
                     <Route path="/problem-solving" element={<ProblemSolvingFn/>} />
                     <Route path="/problem-solving-de" element={<ProblemSolvingDeFn/>} />
                     <Route path="/instruction" element={<InstructionFn/>} />
@@ -29,14 +28,6 @@ export function App() {
                     <Route path="/assessment-de" element={<AssessmentDe/>} />
                     <Route path="/activityselection" element={<ActivitySelection/>} />
                     <Route path="/activityselection-de" element={<ActivitySelectionDe/>} />
-
-=======
-                    <Route path="/problem-solving" element={<ProblemSolving/>} />
-                    <Route path="/instruction" element={<Instruction/>} />
-                    <Route path="/instruction_de" element={<InstructionDe/>} />
-                    <Route path="/activityselection" element={<ActivitySelection/>} />
-                    <Route path="/activityselection_de" element={<ActivitySelectionDe/>} />x
->>>>>>> f4b0d878261b0ed90b702a085c0aa886a5369ec4
                 </Routes>
             </Router>
         );
