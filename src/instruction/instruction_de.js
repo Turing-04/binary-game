@@ -97,11 +97,11 @@ class InstructionDe extends React.Component {
             <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh'}}>
                 <div>{this.getContent()}</div>
                 {0 < this.state.index &&
-                    <button className="floating-button-previous" onClick={() => this.previousIndex()}>Previous</button>
+                    <button className="floating-button-previous" onClick={() => this.previousIndex()}>Zurück</button>
                 }
                 {this.state.index < 45
-                    ? <button className="floating-button-next" onClick={() => this.nextIndex()}>Next</button>
-                    : <button className="floating-button-next" onClick={() => this.nextIndex()}>Next step</button>
+                    ? <button className="floating-button-next" onClick={() => this.nextIndex()}>Weiter</button>
+                    : <button className="floating-button-next" onClick={() => this.nextIndex()}>Nächster Schritt</button>
                 }
             </div>
         );

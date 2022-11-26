@@ -50,9 +50,11 @@ p {
     width: 35%;
   }
 
+  /*would be nice to adapt bulb sizes to screen size like for images above*/
+  /* But for some reason if we write "width: 3%; , all bulbs go to the left and I can't figure out how to fix this*/
 .bulbs {
-    height: 4vw;
     width: 4vw;
+    height: 4vw;
 }
 
 .labels {
