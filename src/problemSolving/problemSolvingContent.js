@@ -1,5 +1,6 @@
 import React from "react";
 import Board from "../interactive/board";
+import FeedbackForm from "./feedbackForm";
 import Row from "react-bootstrap/Row";
 
 export function ProblemSolving0(_index) {
@@ -75,6 +76,7 @@ export function ProblemSolving5(_index) {
                 What were the challenges you faced? <br/> <br/>
                 Do you think you could send longer messages with this grid?
             </h1>
+            <FeedbackForm slide={5}></FeedbackForm>
         </div>
     );
 }

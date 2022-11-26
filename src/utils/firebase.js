@@ -54,5 +54,14 @@ async function logUser(username, age, uuid) {
     });
 }
 
+async function logFeedback(uuid, slide, message) {
+    const resultsCol = collection(db, "feedbacks");
+    await setDoc(doc(resultsCol), {
+        uuid: uuid,
+        slide: slide,
+        message: message
+    });
+}
 
-export {getResults, addResults, logScreenChange, logUser};
+
+export {getResults, addResults, logScreenChange, logUser, logFeedback};
