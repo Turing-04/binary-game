@@ -1,7 +1,7 @@
 import React from "react";
-import PropTypes from 'prop-types';
 import LightOff from '../resources/light_off.png';
 import LightOn from '../resources/light_on.png';
+import PropTypes from 'prop-types';
 
 class Square extends React.Component {
     render() {
@@ -9,31 +9,43 @@ class Square extends React.Component {
             <img src={this.props.on ? LightOn : LightOff}
                  alt={this.props.on ? "LightOn" : "LightOff"}
                  className={"images"}
-                 onClick={(event) => {
-                        let color = this.props.colored ? "white" : "#FFC430";
-                        this.props.onClick(); // update color state directly in Board
-                        //event.target.style.backgroundColor = color;
-                        //event.target.style.background = LightOn;
-
-                 }}></img>
+                 onClick={this.props.onClick}></img>
         );
     }
 }
 
 class Board extends React.Component {
 
+    /*
+    * Props:
+    *  height: number of rows
+    *  width: number of columns
+    *  initial: initial state of the board
+    *  answer: answer to the puzzle
+    *  interactive: whether the board is interactive or not
+    *  labels: show labels or not
+     */
     constructor(props) {
         super(props);
         let size = this.props.height * this.props.width;
         this.state = {
-            grid: Array(size).fill(false), //keep track of which square is colored or not
-        };
+            grid: this.props.initial
+                ? this.props.initial
+                : Array(size).fill(false)
+        }
     }
 
     handleClick(i) {
-        const grid = this.state.grid.slice();
-        grid[i] = !this.state.grid[i];
-        this.setState({grid: grid});
+        if (this.props.interactive) {
+            const grid = this.state.grid.slice();
+            grid[i] = !this.state.grid[i];
+            this.setState({grid: grid});
+            let answerString = this.props.answer.map((x) => x ? "1" : "0").join("");
+            let gridString = grid.map((x) => x ? "1" : "0").join("");
+            if (answerString === gridString) {
+                alert("You win!");
+            }
+        }
     }
 
     renderSquare(i) {
@@ -48,8 +60,6 @@ class Board extends React.Component {
     render() {
         let height = this.props.height;
         let width = this.props.width;
-        console.log(height);
-        console.log(width);
         let squares = [];
         for (let i = 0; i < width * height; i++) {
             squares.push(this.renderSquare(i));
@@ -57,20 +67,26 @@ class Board extends React.Component {
         let rows = [];
         for (let i = 0; i < height; i++) {
             rows.push(
-                <div className="board-row">
+                <div>
                     {squares.slice(i * width, (i + 1) * width)}
+                    {this.props.labels ? i : null}
                 </div>
             );
         }
 
         return (
-            <div>{rows}</div>
+            <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
+                {rows}
+            </div>
         );
     }
 }
 Board.propTypes = {
-    width: PropTypes.number,
-    height: PropTypes.number,
+    height: PropTypes.number.isRequired,
+    width: PropTypes.number.isRequired,
+    interactive: PropTypes.bool.isRequired,
+    initial: PropTypes.array,
+    answer: PropTypes.array,
 }
 
 export default Board;

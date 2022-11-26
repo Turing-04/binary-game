@@ -5,6 +5,7 @@ import Fingers from "../resources/finger_count.png"
 import Five from "../resources/five.png"
 import FiveHandwritten from "../resources/five_handwritten.png"
 import Smiley from "../resources/smiley_face.png"
+import Board from "../interactive/board";
 
 export function Instruction0() {
     return (
@@ -90,6 +91,7 @@ export function Instruction6() {
             <h1>Can I display a number with something like ...<br/><br/>
             ... a row of lightbulbs ?!
             </h1>
+            <Board width={9} height={1} interactive={false} key={6}></Board>
         </div>
     );
 }
@@ -102,7 +104,6 @@ export function Instruction7() {
              This is what binary essentially is about. <br/><br/>
              But first, let's get back to our row of lightbulbs. <br/>
              </h1>
-             {/* TODO: Add row of lightbulbs */}
         </div>
     );
 }
@@ -113,7 +114,7 @@ export function Instruction8() {
             <h1>Here, I have a row of 9 lightbulbs, how could I <br/>
              represent each digit with them ? <br/><br/>
              </h1>
-             {/* TODO: add lightbulbs */}
+            <Board width={9} height={1} interactive={false} key={8}></Board>
         </div>  
     );
 }
@@ -138,8 +139,11 @@ export function Instruction10() {
             <h1 style={{fontStyle:'italic'}}>One way would be to turn on the appropriate number of lightbulbs,<br/>
                 For instance, you could turn on three lightbulbs to show the number 3: 
             </h1>
-        </div>  
-        /* TODO: lightbulb row with 3 random lights on */
+            <Board width={9} height={1} interactive={false} key={10}
+                        initial={[false, false, true, false, true, true, false, false, false]}>
+            </Board>
+        </div>
+
 
     );
 
@@ -149,8 +153,10 @@ export function Instruction11() {
 return(
     <div>   
         <h1> You could do this in an unordered manner ...</h1>
+        <Board width={9} height={1} interactive={false} key={11}
+               initial={[false, false, true, false, true, true, false, false, false]}>
+        </Board>
     </div>
-    // TODO : lightbulbs
 )
 
 }
@@ -161,6 +167,9 @@ export function Instruction12() {
         <div>   
             <h1> Or in an ordered manner ! <br/>
             It doesn't matter. </h1>
+            <Board width={9} height={1} interactive={false} key={12}
+                   initial={[false, false, false, false, false, false, true, true, true]}>
+            </Board>
         </div>
     )
 }
@@ -172,9 +181,11 @@ export function Instruction13() {
             Can I represent each number by lightning up only <br/>
             one lightbulb at the time ? 
             </h1>
+            <Board width={1} height={1} interactive={false} key={13}
+                   initial={[true]}>
+            </Board>
         </div>
     )
-    // TODO : one turned on lightbulb
 
 }
 
@@ -185,8 +196,9 @@ export function Instruction14() {
             Just light one lightbulb at a given position. <br/>
             We could add a label to each lightbulb. 
             </h1>
+            <Board width={9} height={1} interactive={false} key={14} labels={true}>
+            </Board>
         </div>
-        //TODO : Row of lightbulbs with numbers
     )
 
 }
@@ -199,8 +211,10 @@ export function Instruction15(){
             If we want to show five, all we need is  <br/>
             to light up the fifth lightbulb.
             </h1>
+            <Board key={15} width={9} height={1} interactive={false} labels={true}
+                   initial={[false, false, false, false, true, false, false, false, false]}>
+            </Board>
         </div>
-        //TODO : lightbulb with one on
     )
 }
 
@@ -210,6 +224,8 @@ export function Instruction16(){
             <h1> What if we want to show 0 ? <br/>
             We can just leave all the lights off !
             </h1>
+            <Board key={16} width={9} height={1} interactive={false} labels={true}>
+            </Board>
         </div>
     )
         /*TODO light bulbs off : 
@@ -223,9 +239,12 @@ export function Instruction17(){
             <h1> This is called  <br/> </h1>
             <h1 style={{fontWeight: '900', fontSize:'3.8vw'}}> One-hot encoding <br/></h1> 
             <h2> Only one lightbulb is hot for a given encoding ! </h2>
+            <Board key={17} width={9} height={1} interactive={false} labels={true}
+                   initial={[false, false, false, false, true, false, false, false, false]}>
+            </Board>
         </div>
          //Problème de gras ici ! Sois on change la police de charactère pour le one hot encoding sois moyen d'avoir du gras avec sans Cherif ? 
-        //TODO : lightbulbs
+
     )
 
 }
@@ -235,8 +254,9 @@ export function Instruction18(){
             <h1>  With this new technique, we can now <br/> 
             represent a bunch of digits.</h1>
             <h1 style={{fontWeight: 'italic'}}> But can we do better ?  <br/></h1>
+            <Board key={18} width={9} height={1} interactive={false} labels={true}>
+            </Board>
         </div>
-        //TODO : lightbulbs
     )
 
 
@@ -250,6 +270,8 @@ export function Instruction19(){
             <h1 >  Introducing ...  </h1> 
             <h1 style={{margin:'0px', fontSize: '12vw', fontWeight:'800', fontFamily:'DejaVu', fontStyle:'Italic'}} > Binary
             </h1>
+            <Board key={18} width={9} height={1} interactive={false} labels={true}>
+            </Board>
         </div>
     )
 
@@ -261,7 +283,7 @@ export function Instruction20(){
     return(
         <div>   
             <h1> Remember what we did for one-hot encoding :  <br/><br/> 
-            We labelled the lightbulbs accoring to their <br/>
+            We labelled the lightbulbs according to their <br/>
             position. However, only one lightbulb is lit at a <br/>
             time, while the others do nothing.
             </h1>
@@ -568,7 +590,7 @@ export function Instruction43(){
             <h1>Easy ! Just number the letters ... <br/>
             A can be 1, B can be 2, c can be 3 ...
             </h1>
-            <h1 style={{fontSize: '6vw', fontWeight:'500', fontFamily:'DejaVu', fontStyle:'italic'}} > 
+            <h1 style={{fontSize: '4vw', fontWeight:'500', fontFamily:'DejaVu', fontStyle:'italic'}} >
             A = 1 <br/>
             B = 2 <br/>
             C = 3 <br/>

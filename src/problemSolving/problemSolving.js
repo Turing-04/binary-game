@@ -36,6 +36,14 @@ class ProblemSolving extends React.Component {
                 return Problems.ProblemSolving3();
             case 4:
                 return Problems.ProblemSolving4();
+            case 5:
+                return Problems.ProblemSolving5();
+            case 6:
+                return Problems.ProblemSolving6();
+            case 7:
+                return Problems.ProblemSolving7();
+            case 8:
+                return Problems.ProblemSolving7();
             default:
                 return Problems.ProblemSolving5();
         }
