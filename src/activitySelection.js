@@ -7,10 +7,6 @@ import constants from "./constants";
 class ActivitySelection extends React.Component {
     render() {
 
-         /* ##################################
-                TODO : language_selector 
-         ##################################*/
-
         return (
             
             <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}>
@@ -18,7 +14,8 @@ class ActivitySelection extends React.Component {
 
                 <Row>
                     <h1>Hello!</h1>
-                    <p style={{width: 600}}>Today we are going to explore something called binary.
+                    <p style={{width: 600}}>
+                        Today we are going to explore something called binary.
                         <br/>
                         Have you ever heard of it?
                         <br/>
