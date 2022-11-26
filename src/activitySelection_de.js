@@ -15,13 +15,13 @@ class ActivitySelectionDe extends React.Component {
                 <Row>
                     <h1>Hallo {constants.name}!</h1>
                     <p style={{width: 600}}>
-                        Today we are going to explore something called binary.
+                        Heute erforschen wir das Binärsystem. 
                         <br/>
-                        Have you ever heard of it?
+                        Hast du schon einmal davon gehört?
                         <br/>
-                        If not, that's not a problem, you will hopefully be a binary master by the end of this lesson!
+                        Falls nicht, kein Problem. Am Ende dieser Lektion wirst du ein wahrer Binärmeister sein!
                         <br/>
-                        Please click the group you belong to.
+                        Bitte klick auf die Gruppe, der du zugeteilt wurdest.
                         <br/>
                         <br/>
                     </p>
@@ -32,7 +32,7 @@ class ActivitySelectionDe extends React.Component {
                 <Row>
                     <Link className="button" to="/problem-solving-de"
                           onClick={() => {constants.group = "psi"; constants.language = "de";}}
-                    >Group 1</Link>
+                    >Gruppe 1</Link>
                 </Row>
                 <Row>
                     <div style={{width: 100}}></div>
@@ -40,7 +40,7 @@ class ActivitySelectionDe extends React.Component {
                 <Row>
                     <Link className="button" to="/instruction-de"
                           onClick={() => {constants.group = "ips"; constants.language = "de";}}
-                    >Group 2</Link>
+                    >Gruppe 2</Link>
                 </Row>
 
             </div>
