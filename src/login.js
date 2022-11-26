@@ -51,7 +51,7 @@ class LoginForm extends React.Component {
               <Row>Your Name:</Row>
 
               <input
-                style={{height:"1.8vw", fontSize:"2vw"}}
+                style={{height:"3.5vw", fontSize:"2vw"}}
                 type="text"
                 value={this.state.name}
                 onChange={this.handleNameChange}
@@ -63,7 +63,7 @@ class LoginForm extends React.Component {
             <label style={{ fontSize: "3vw" }}>
               <Row>Your Age:</Row>
               <input
-                style={{height:"1.8vw", fontSize:"2vw"}}
+                style={{height:"3.5vw", fontSize:"2vw"}}
                 type="number"
                 value={this.state.age}
                 onChange={this.handleAgeChange}

@@ -6,6 +6,7 @@ import LoginFormDe from "./login_de";
 import ActivitySelection from "./activitySelection";
 import ActivitySelectionDe from "./activitySelection_de";
 import Instruction from "./instruction/instruction";
+import InstructionDe from "./instruction/instruction_de";
 import ProblemSolving from "./problemSolving/problemSolving";
 
 class App extends React.Component {
@@ -18,8 +19,9 @@ class App extends React.Component {
                     <Route path="/login_de" element={<LoginFormDe/>} />
                     <Route path="/problem-solving" element={<ProblemSolving/>} />
                     <Route path="/instruction" element={<Instruction/>} />
+                    <Route path="/instruction_de" element={<InstructionDe/>} />
                     <Route path="/activityselection" element={<ActivitySelection/>} />
-                    <Route path="/activityselection_de" element={<ActivitySelectionDe/>} />
+                    <Route path="/activityselection_de" element={<ActivitySelectionDe/>} />x
                 </Routes>
             </Router>
         );
