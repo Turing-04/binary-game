@@ -108,44 +108,37 @@ export function Instruction6(_index) {
 export function Instruction7(_index) {
     return (
         <div>
-            <h1>Yes we can! <br/><br/>
-             This is what binary essentially is about. <br/><br/>
-             But first, let's get back to our row of lightbulbs. <br/>
-             </h1>
+            <h1>Ja, das können wir!  <br/><br/>
+            Das ist es, was Binärsprache im Wesentlichen ist.  <br/><br/>
+            Aber kommen wir zunächst zu der Reihe von  <br/>
+            Glühbirnen zurück. </h1>
         </div>
     );
 }
 
+
 export function Instruction8(_index) {
     return(
         <div>
-            <h1>Here, I have a row of 9 lightbulbs, how could I <br/>
-             represent each digit with them? <br/><br/>
+            <h1>Hier habe ich eine Reihe von 9 Glühbirnen,<br/>
+            wie könnte ich jede Ziffer mit ihnen darstellen? <br/>
              </h1>
-            <Board binary={false} width={9} height={1} interactive={false} key={_index} labels={false}></Board>
+             <Board binary={false} width={9} height={1} interactive={false} key={_index} labels={false}></Board>
         </div>  
     );
+
 }
+
+
 
 export function Instruction9(_index) {
     return(
         <div>
-            <h1>Here, I have a row of 9 lightbulbs, how could I <br/>
-             represent each digit with them? <br/><br/>
-             </h1>
-        </div>  
-    );
-
-}
-
-
-
-export function Instruction10(_index) {
-    return(
-        <div>
-            <h1>There are several ways to do so! </h1>
-            <h1 style={{fontStyle:'italic'}}>One way would be to turn on the appropriate number of lightbulbs,<br/>
-                For instance, you could turn on three lightbulbs to show the number 3: 
+            <h1>Es gibt mehrere Möglichkeiten, dies zu tun! </h1>
+            <h1 style={{fontStyle:'italic'}}>
+            Eine Möglichkeit wäre, die entsprechende <br/>
+            Anzahl von Glühbirnen einzuschalten, um die <br/>
+            Zahl 3 anzuzeigen. 
             </h1>
             <Board binary={false} width={9} height={1} interactive={false} key={_index} labels={false}
                         initial={[false, false, true, false, true, true, false, false, false]}>
@@ -157,10 +150,10 @@ export function Instruction10(_index) {
 
 
 }
-export function Instruction11(_index) {
+export function Instruction10(_index) {
 return(
     <div>   
-        <h1> You could do this in an unordered manner ...</h1>
+        <h1> Du kannst das auf ungeordnete Weise tun...</h1>
         <Board binary={false} width={9} height={1} interactive={false} key={_index} labels={false}
                initial={[false, false, true, false, true, true, false, false, false]}>
         </Board>
@@ -170,11 +163,11 @@ return(
 }
 
 
-export function Instruction12(_index) {
+export function Instruction11(_index) {
     return(
         <div>   
-            <h1> Or in an ordered manner! <br/>
-            It doesn't matter. </h1>
+            <h1> Oder in geordneter Weise! <br/>
+            Es spielt keiner rolle. </h1>
             <Board binary={false} width={9} height={1} interactive={false} key={_index} labels={false}
                    initial={[false, false, false, false, false, false, true, true, true]}>
             </Board>
@@ -182,12 +175,13 @@ export function Instruction12(_index) {
     )
 }
 
-export function Instruction13(_index) {
+export function Instruction12(_index) {
     return(
         <div>   
-            <h1> What if we wanted to save energy? <br/><br/>
-            Can I represent each number by lightning up only <br/>
-            one lightbulb at the time? 
+            <h1> Was wäre, wenn wir Energie sparen wollten?  <br/><br/>
+            Kann ich jede Zahl darstellen, indem ich  <br/>
+            jeweils nur eine Glühbirne zum Leuchten <br/>
+            bringe ?
             </h1>
             <Board binary={false} width={1} height={1} interactive={false} key={_index} labels={false}
                    initial={[true]}>
@@ -197,12 +191,13 @@ export function Instruction13(_index) {
 
 }
 
-export function Instruction14(_index) {
+export function Instruction13(_index) {
     return(
         <div>   
-            <h1> Yes! <br/><br/>
-            Just light one lightbulb at a given position. <br/>
-            We could add a label to each lightbulb. 
+            <h1> Ja! <br/><br/>
+            Zünde einfach eine Glühbirne an der  <br/>
+            entsprechenden Stelle an. <br/>
+            Wir können jede Glühbirne nummerieren...
             </h1>
             <Board binary={false} width={9} height={1} interactive={false} key={_index} labels={true}>
             </Board>
@@ -212,12 +207,13 @@ export function Instruction14(_index) {
 }
 
 
-export function Instruction15(_index) {
+export function Instruction14(_index) {
     return(
         <div>   
-            <h1> And light the correct bulb! <br/>
-            If we want to show five, all we need is  <br/>
-            to light up the fifth lightbulb.
+            <h1> Und zünden dann die entsprechende  <br/>
+            Glühbirne an! <br/> <br/>
+            Wenn wir fünf zeigen wollen, zünden wir die   <br/>
+            fünfte Glühbirne an.
             </h1>
             <Board binary={false} key={_index} width={9} height={1} interactive={false} labels={true}
                    initial={[false, false, false, false, true, false, false, false, false]}>
@@ -226,75 +222,87 @@ export function Instruction15(_index) {
     )
 }
 
-export function Instruction16(_index) {
+export function Instruction15(_index) {
     return(
         <div>   
-            <h1> What if we want to show 0? <br/>
-            We can just leave all the lights off!
+            <h1> Und wenn wir 0 zeigen wollen, zünden wir gar  <br/>
+            keine Glühbirne an!
             </h1>
             <Board binary={false} key={_index} width={9} height={1} interactive={false} labels={true}>
             </Board>
         </div>
     )
-        /*TODO light bulbs off : 
-        =>Could be very nice to make it interactive (that is display the row of lightbulbs turned off only after pressing next) */
 }
 
 
-export function Instruction17(_index) {
+export function Instruction16(_index) {
     return(
         <div>   
-            <h1> This is called  <br/> </h1>
-            <h1 style={{fontWeight: '900', fontSize:'3.8vw'}}> One-hot encoding <br/></h1> 
-            <h2> Only one lightbulb is hot for a given number! </h2>
+            <h1> Das nennt sich  <br/> </h1>
+            <h1 style={{fontWeight: '900', fontSize:'3.8vw'}}> one-hot Kodierung <br/></h1> 
+            <h2> Es ist immer nur eine Glühbirne heiss! </h2>
             <Board binary={false} key={_index} width={9} height={1} interactive={false} labels={true}
                    initial={[false, false, false, false, true, false, false, false, false]}>
             </Board>
         </div>
-         //Problème de gras ici ! Sois on change la police de charactère pour le one hot encoding sois moyen d'avoir du gras avec sans Cherif ? 
     )
 
 }
-export function Instruction18(_index) {
+export function Instruction17(_index) {
     return(
         <div>
-            <h1>  With this new technique, we can now <br/> 
-            represent a bunch of digits.</h1>
-            <h1 style={{fontWeight: 'italic'}}> But can we do better?  <br/></h1>
+            <h1> Okay, so weit, so gut, mit nur neun Glühbirnen <br/> 
+            können wir bereits sämtliche Ziffern <br/>
+            darstellen.<br/></h1>
+            <h1 style={{fontWeight: 'italic'}}> Aber können wir das besser?   <br/></h1>
+            <Board binary={false} key={_index} width={9} height={1} interactive={false} labels={true}
+                   initial={[false, false, false, false, false, false, false, false, false]}>
+            </Board>
         </div>
     )
 
-
 }
 
+export function Instruction18(_index) {
+    return(
+        <div>
+            <h1>  Wie könnten wir weniger Glühbirnen verwenden ? <br/><br/>
+            Was wäre die kompakteste Art, jede Ziffer nur <br/>
+            mit Glühbirnen darzustellen?</h1>
+            <Board binary={false} key={_index} width={4} height={1} interactive={false} labels={true}
+                   initial={[false, false, false, false]}>
+            </Board>
+        </div>
+    )
+
+}
 
 
 export function Instruction19(_index) {
     return(
         <div>
-            <h1 >  Introducing ...  </h1> 
-            <h1 style={{margin:'0px', fontSize: '12vw', fontWeight:'800', fontFamily:'DejaVu', fontStyle:'Italic'}} > Binary
+            <h1 >  Die Antwort auf diese Frage lautet:  </h1> 
+            <h1 style={{margin:'0px', fontSize: '10vw', fontWeight:'800', fontFamily:'DejaVu', fontStyle:'Italic'}} > Das Binärsystem
             </h1>
         </div>
     )
-
-    //TODO: Make this a bit prettier?  :)
 }
 
 
 export function Instruction20(_index) {
     return(
         <div>   
-            <h1> Remember what we did for one-hot encoding :  <br/><br/> 
-            We labelled the lightbulbs according to their <br/>
-            position. However, only one lightbulb is lit at a <br/>
-            time, while the others do nothing.
+            <h1> Erinner dich daran, was wir bei der one-hot   <br/>
+            Kodierung gemacht haben: <br/><br/>
+            Wir haben die Glühbirnen entsprechend ihrer  <br/>
+            Position beschriftet. Allerdings leuchtet jeweils <br/>
+            nur eine Glühbirne, während die anderen nichts tun.
             </h1>
             <Board binary={false} key={_index} width={9} height={1} interactive={false} labels={true}
                    initial={[false, false, false, false, true, false, false, false, false]}>
             </Board>
         </div>
-        //TODO : arrow
+        //TODO : arrow @Antoine je te la laisse cella la ;)
     )
 }
 
@@ -302,7 +310,8 @@ export function Instruction20(_index) {
 export function Instruction21(_index) {
     return(
         <div>   
-            <h1> Can we light multiple bulbs at the same time?
+            <h1> Können wir mehrere Glühbirnen gleichzeitig <br/>
+            einschalten ?
             </h1>
             <Board binary={false} key={_index} width={9} height={1} interactive={false} labels={true}
                    initial={[false, true, false, false, true, false, true, false, false]}>
@@ -315,8 +324,8 @@ export function Instruction21(_index) {
 export function Instruction22(_index) {
     return(
         <div>   
-            <h1> What if we were to label the lightbulbs <br/>
-            differently?
+            <h1> Was wäre, wenn wir die Glühbirnen anders  <br/>
+            beschriften würden?
             </h1>
             <Board key={_index} width={9} height={1} interactive={false} labels={true} binary={true}
                    initial={[false, true, false, false, true, false, true, false, false]}>
@@ -331,10 +340,10 @@ export function Instruction22(_index) {
 export function Instruction23(_index) {
     return(
         <div>   
-            <h1>Let's see what we have here. <br/><br/>
-            Only four lightbulbs. The lightbulbs are <br/>
-            labelled with 1, 2, 4 and 8. <br/><br/>
-            How can we represent the digits 0 to 9 now?
+            <h1>Schauen wir mal, was wir hier haben.  <br/><br/>
+            Nur vier Glühbirnen. Die Glühbirnen sind mit  <br/>
+            1, 2, 4 und 8 beschriftet. <br/><br/>
+            Wie können wir nun die Ziffern 0 bis 9 darstellen? 
             </h1>
             <Board binary={true} key={_index} width={4} height={1} interactive={false} labels={true}>
             </Board>
@@ -346,8 +355,8 @@ export function Instruction23(_index) {
 export function Instruction24(_index) {
     return(
         <div>   
-            <h1>let's try to turn on lightbulbs labelled with  <br/>
-            1 and 4.
+            <h1>Versuchen wir, die Glühbirnen mit den Ziffern <br/>
+            1 und 4 zum Leuchten zu bringen.
             </h1>
             <Board key={_index} width={4} height={1} interactive={false} labels={true} binary={true}
                    initial={[false, true, false, true]}>
@@ -360,7 +369,8 @@ export function Instruction24(_index) {
 export function Instruction25(_index) {
     return(
         <div>   
-            <h1>What do we get if we add those up together?
+            <h1>Was erhalten wir, wenn wir diese <br/>
+            zusammenzählen ?
             </h1>
             <h1 style={{fontSize: '8vw', fontWeight:'800', fontFamily:'DejaVu'}} > 4 + 1 ...
             </h1>
@@ -376,7 +386,8 @@ export function Instruction25(_index) {
 export function Instruction26(_index) {
     return(
         <div>   
-            <h1>What do we get if we add those up together?
+            <h1>Was erhalten wir, wenn wir diese <br/>
+            zusammenzählen ?
             </h1>
             <h1 style={{fontSize: '8vw', fontWeight:'800', fontFamily:'DejaVu'}} > 4 + 1 = 5 
             </h1>
@@ -392,7 +403,8 @@ export function Instruction26(_index) {
 export function Instruction27(_index) {
     return(
         <div>   
-            <h1>What if we wanted to represent
+            <h1>Was wäre, wenn wir Folgendes darstellen <br/>
+            wollten :
             </h1>
             <h1 style={{fontSize: '8vw', fontWeight:'800', fontFamily:'DejaVu'}} > 9? 
             </h1>
@@ -404,9 +416,9 @@ export function Instruction27(_index) {
 export function Instruction28(_index) {
     return(
         <div>   
-            <h1>Light up lightbulbs '8' and '1'!
+            <h1> Die Glühbirnen '8' und '1' zum Leuchten bringen!
             </h1>
-            <h1 style={{fontSize: '8vw', fontWeight:'800', fontFamily:'DejaVu'}} > 8 + 1 = 9 
+            <h1 style={{fontSize: '8vw', fontWeight:'800', fontFamily:'DejaVu'}} > 9 = 8 + 1
             </h1>
             <Board key={_index} width={4} height={1} interactive={false} labels={true} binary={true}
                    initial={[true, false, false, true]}>
@@ -419,7 +431,8 @@ export function Instruction28(_index) {
 export function Instruction29(_index) {
     return(
         <div>   
-            <h1>What if we wanted to represent
+            <h1>Was wäre, wenn wir Folgendes darstellen <br/>
+            wollten :
             </h1>
             <h1 style={{fontSize: '8vw', fontWeight:'800', fontFamily:'DejaVu'}} > 4?
             </h1>
@@ -434,7 +447,7 @@ export function Instruction29(_index) {
 export function Instruction30(_index) {
     return(
         <div>   
-            <h1>Turn on lightbulb '4' only!
+            <h1> Nur Glühbirne 4 einschalten!
             </h1>
             <h1 style={{fontSize: '8vw', fontWeight:'800', fontFamily:'DejaVu'}} > 4 = 4 
             </h1>
@@ -450,7 +463,8 @@ export function Instruction30(_index) {
 export function Instruction31(_index) {
     return(
         <div>   
-            <h1>What if we wanted to represent
+            <h1>Was wäre, wenn wir Folgendes darstellen <br/>
+            wollten :
             </h1>
             <h1 style={{fontSize: '8vw', fontWeight:'800', fontFamily:'DejaVu'}} > 0?
             </h1>
@@ -463,8 +477,7 @@ export function Instruction31(_index) {
 export function Instruction32(_index) {
     return(
         <div>   
-            <h1>Just as for the one-hot encoding representation : <br/>
-            We don't light any bulb!
+            <h1> Keine Glühbirne leuchten lassen!
             </h1>
             <Board key={_index} width={4} height={1} interactive={false} labels={true} binary={true}>
             </Board>
@@ -475,8 +488,8 @@ export function Instruction32(_index) {
 export function Instruction33(_index) {
     return(
         <div>   
-        <h1>See, now we can represent all the digits from 0 <br/>
-        to 9 using only four lightbulbs!
+        <h1> Schau, jetzt können wir alle Ziffern von 0 bis 9  <br/>
+        mit nur vier Glühbirnen darstellen !
         </h1>
             <Board key={_index} width={4} height={1} interactive={false} labels={true} binary={true}>
             </Board>
@@ -490,9 +503,9 @@ export function Instruction33(_index) {
 export function Instruction34(_index) {
     return (
         <div>   
-            <h1>And we can even go higher! <br/>
-            What if we light up all the lightbulbs at once ... <br/>
-            What do we get?
+            <h1> Wir können sogar noch höher gehen: Wenn ich  <br/>
+            alle Glühbirnen auf einmal zum Leuchten <br/>
+            bringe, was erhalte ich dann?
             </h1>
             <Board key={_index} width={4} height={1} interactive={false} labels={true} binary={true}
                    initial={[true, true, true, true]}>
@@ -520,7 +533,7 @@ export function Instruction35(_index) {
 export function Instruction36(_index) {
     return(
         <div>   
-            <h1>With only four lightbulbs, we can encode numbers up to 15!
+            <h1> Mit 4 Glühbirnen können wir bis zu 15 erreichen!
             </h1>
             <h1 style={{fontSize: '8vw', fontWeight:'800', fontFamily:'DejaVu'}} > 8 + 4 + 2 + 1 = 15
             </h1>
@@ -535,8 +548,8 @@ export function Instruction36(_index) {
 export function Instruction37(_index) {
     return(
         <div>   
-            <h1>With one-hot encoding, <br/>
-            We would have needed 15 lightbulbs to achieve the same!
+            <h1> Mit "one-hot" von vorher hätten wir 15  <br/>
+            Glühbirnen gebraucht!
             </h1>
             <Board key={_index} width={15} height={1} interactive={false} labels={true} binary={false}
                    initial={[true, false, false, false, false, false, false, false, false, false, false, false, false, false, false]}>
@@ -549,7 +562,7 @@ export function Instruction37(_index) {
 export function Instruction38(_index) {
     return (
         <div>
-            <h1>But why do we even care about this?</h1>
+            <h1>Aber warum interessiert uns das?</h1>
             <img 
             class= "square-image-layout"
             src={Smiley}
@@ -563,8 +576,8 @@ export function Instruction38(_index) {
 export function Instruction39(_index) {
     return (
         <div>
-            <h1>Isn't it simpler to just write down 5 after all? <br/>
-            It's what we all learnt in school after all...
+            <h1>Es ist viel simpler, einfach 5 aufzuschreiben.  <br/>
+            Das haben wir alle in der Schule gelernt.
             </h1>
             <img 
             class= "square-image-layout"
@@ -579,9 +592,9 @@ export function Instruction39(_index) {
 export function Instruction40(_index) {
     return (
         <div>
-            <h1>But imagine you're trying to send your friend a <br/>
-            message without drawing, speaking, writing, <br/>
-            or seeing them!
+            <h1>Aber stell dir vor, du versuchst, deinem Freund <br/>
+            eine Nachricht zu schicken, ohne zu zeichnen,  <br/>
+            zu sprechen, zu schreiben oder ihn zu sehen!
             </h1>
             <img 
             class= "image-layout"
@@ -598,8 +611,8 @@ export function Instruction40(_index) {
 export function Instruction41(_index) {
     return (
         <div>
-            <h1>You could send your friends an entire <br/>
-            message using only lightbulbs!</h1>
+            <h1>Du könntest deinen Freunden eine ganze <br/>
+            Nachricht nur mit Glühbirnen schicken !</h1>
             <img 
             class= "image-layout"
             src={Instruction41_}
@@ -614,8 +627,8 @@ export function Instruction41(_index) {
 export function Instruction42(_index) {
     return (
         <div>
-            <h1>And what if you wanted to send letters instead <br/>
-            of numbers?</h1>
+            <h1>Und was wäre, wenn du Buchstaben statt <br/>
+            Zahlen senden wolltest?</h1>
             <img 
             class="square-image-layout"           
             src={Smiley}
@@ -628,8 +641,8 @@ export function Instruction42(_index) {
 export function Instruction43(_index) {
     return(
         <div>   
-            <h1>Easy! Just number the letters ... <br/>
-            A can be 1, B can be 2, c can be 3 ...
+            <h1>Ganz einfach! Nummeriere einfach die Buchstaben ... <br/>
+            A kann 1 sein, C kann 2 sein, D kann 3 sein ...
             </h1>
             <h1 style={{fontSize: '4vw', fontWeight:'500', fontFamily:'DejaVu', fontStyle:'italic', lineHeight:'0.8'}} >
             A = 1 <br/>
@@ -643,13 +656,14 @@ export function Instruction43(_index) {
         </div>
         
         )
-    //FIXME: trop grand pour mon écran - ok now ?
 }
+
+
 export function Instruction44(_index) {
     return (
         <div>
-            <h1>With enough lightbulbs, you can send  <br/>
-            entire messages!
+            <h1>Mit genügend Glühbirnen können wir ganze <br/>
+            Nachrichten versenden!
             </h1>
             <img 
             class= "image-layout"
@@ -664,10 +678,11 @@ export function Instruction44(_index) {
 export function Instruction45(_index) {
     return (
         <div>
-            <h1>You don't even need lightbulbs, you can use other  <br/>
-            things like boxes which are black and white! <br/>
-            You could also use zeros and ones, this is actually  <br/>
-            how computers interact together!
+            <h1>Man braucht nicht einmal Glühbirnen, man   <br/>
+            kann auch andere Dinge verwenden, wie z.B.  <br/>
+            Kästchen, die schwarz oder weiß angemalt sind ! <br/>
+            Das ist im Wesentlichen die Art und Weise, wie <br/>
+            Maschinen funktionieren und miteinander kommunizieren !
             </h1>
             <img 
             class= "image-layout"
@@ -677,6 +692,5 @@ export function Instruction45(_index) {
         </div>
     );
 
-    // TODO : put image from Figma or HTML properly
 
 }
