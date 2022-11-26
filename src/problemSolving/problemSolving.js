@@ -26,24 +26,16 @@ class ProblemSolving extends React.Component {
 
     getContent() {
         switch (this.state.index) {
-            case 0:
-                return Problems.ProblemSolving0();
-            case 1:
-                return Problems.ProblemSolving1();
-            case 2:
-                return Problems.ProblemSolving2();
-            case 3:
-                return Problems.ProblemSolving3();
-            case 4:
-                return Problems.ProblemSolving4();
-            case 5:
-                return Problems.ProblemSolving5();
-            case 6:
-                return Problems.ProblemSolving6();
-            case 7:
-                return Problems.ProblemSolving7();
-            case 8:
-                return Problems.ProblemSolving7();
+            case 0: return Problems.ProblemSolving0(0);
+            case 1: return Problems.ProblemSolving1(1);
+            case 2: return Problems.ProblemSolving2(2);
+            case 3: return Problems.ProblemSolving3(3);
+            case 4: return Problems.ProblemSolving4(4);
+            case 5: return Problems.ProblemSolving5(5);
+            case 6: return Problems.ProblemSolving6(6);
+            case 7: return Problems.ProblemSolving7(7);
+
+
             default:
                 return Problems.ProblemSolving5();
         }

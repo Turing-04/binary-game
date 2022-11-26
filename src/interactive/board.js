@@ -42,11 +42,14 @@ class Board extends React.Component {
             const grid = this.state.grid.slice();
             grid[i] = !this.state.grid[i];
             this.setState({grid: grid});
-            let answerString = this.props.answer.map((x) => x ? "1" : "0").join("");
-            let gridString = grid.map((x) => x ? "1" : "0").join("");
-            if (answerString === gridString) {
-                alert("You win!");
+            if (this.props.answer) {
+                let answerString = this.props.answer.map((x) => x ? "1" : "0").join("");
+                let gridString = grid.map((x) => x ? "1" : "0").join("");
+                if (answerString === gridString) {
+                    alert("You win!");
+                }
             }
+
         }
     }
 
