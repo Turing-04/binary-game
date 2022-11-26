@@ -1,6 +1,7 @@
 import React from "react";
 import * as Problems from "./problemSolvingContent";
-
+import {logScreenChange} from "../utils/firebase"
+import constants from "../constants";
 
 class ProblemSolving extends React.Component {
 
@@ -12,15 +13,17 @@ class ProblemSolving extends React.Component {
     }
 
     nextIndex() {
-        this.setState({index: this.state.index + 1}, () => {
+        logScreenChange(constants.uuid, 'Problem Solving', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index+1)
+        this.setState({index: this.state.index + 1, time_started: new Date().getTime()}, () => {
             console.log(this.state.index);
         });
 
     }
 
     previousIndex() {
-        this.setState({index: this.state.index - 1}, () => {
-            console.log(this.state.index);
+        logScreenChange(constants.uuid, 'Problem Solving', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index-1)
+        this.setState({index:Math.max(this.state.index - 1,0)}, () => {
+            console.log(this.state.index)
         });
     }
 

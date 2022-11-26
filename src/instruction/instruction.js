@@ -1,6 +1,7 @@
 import React from "react";
 import * as Instructions from "./instructionContent";
 import {logScreenChange} from "../utils/firebase"
+import constants from "../constants";
 
 class Instruction extends React.Component {
 
@@ -13,7 +14,7 @@ class Instruction extends React.Component {
     }
 
     nextIndex() {
-        logScreenChange('wengle','instruction', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index+1)
+        logScreenChange(constants.uuid, 'Instruction', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index+1)
         this.setState({index: this.state.index + 1, time_started: new Date().getTime()}, () => {
             console.log(this.state.index);
         });
@@ -21,6 +22,7 @@ class Instruction extends React.Component {
     }
 
     previousIndex() {
+        logScreenChange(constants.uuid, 'Instruction', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index-1)
         this.setState({index:Math.max(this.state.index - 1,0)}, () => {
             console.log(this.state.index)
         });
