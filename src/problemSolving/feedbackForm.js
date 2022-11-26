@@ -10,7 +10,7 @@ class FeedbackForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-          value: 'Write down your thoughts here!',
+          value: '',
           slide: props.slide
         };
     
@@ -40,7 +40,7 @@ class FeedbackForm extends React.Component {
             alignItems: "center",
           }}>
             <Row>
-            <textarea cols="40" rows="10" value={this.state.value} onChange={this.handleChange} />
+            <textarea cols="40" rows="10" value={this.state.value} onChange={this.handleChange} placeholder={"Write down your thoughts here!"} />
             </Row>
             <Row>
             
@@ -48,7 +48,10 @@ class FeedbackForm extends React.Component {
 
             </Row>
             <Row>
-            {this.state.value != '' && this.state.value != 'Write down your thoughts here!' && <button className='button' onClick={() => this.doSubmit(this.state.value)}> Submit </button>}
+                <div style={{width: 50}}></div>
+            </Row>
+            <Row>
+            {this.state.value != '' && <button className='button' onClick={() => this.doSubmit(this.state.value)}> Submit </button>}
 
             </Row>
 
