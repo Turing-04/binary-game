@@ -18,7 +18,7 @@ class LanguageSelection extends React.Component {
                     <div style={{width: 100}}></div>
                 </Row>
                 <Row>
-                    <Link className="button" to="/login"  onClick={() => constants.language='EN'}>Englisch</Link>
+                    <Link className="button" to="/login"  onClick={() => constants.language='EN'}>English</Link>
                 </Row>
 
             </div>
