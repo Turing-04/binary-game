@@ -2,7 +2,10 @@ import React, {useCallback} from 'react';
 import * as Instructions from "./instructionContent";
 import {logScreenChange} from "../utils/firebase"
 import constants from "../constants";
+<<<<<<< HEAD
 import {useNavigate} from "react-router-dom";
+=======
+>>>>>>> f4b0d878261b0ed90b702a085c0aa886a5369ec4
 
 class Instruction extends React.Component {
 
@@ -16,6 +19,7 @@ class Instruction extends React.Component {
 
 
     nextIndex() {
+<<<<<<< HEAD
         if (this.state.index === 45) {
             if (constants.group === "ips") {
                 this.props.navigation("/problem-solving");
@@ -25,6 +29,9 @@ class Instruction extends React.Component {
             }
         }
         logScreenChange('wengle','instruction', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index+1)
+=======
+        logScreenChange(constants.uuid, 'Instruction', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index+1)
+>>>>>>> f4b0d878261b0ed90b702a085c0aa886a5369ec4
         this.setState({index: this.state.index + 1, time_started: new Date().getTime()}, () => {
             console.log(this.state.index);
         });
@@ -32,9 +39,13 @@ class Instruction extends React.Component {
     }
 
     previousIndex() {
+<<<<<<< HEAD
         if (this.state.index === 0) {
             return;
         }
+=======
+        logScreenChange(constants.uuid, 'Instruction', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index-1)
+>>>>>>> f4b0d878261b0ed90b702a085c0aa886a5369ec4
         this.setState({index:Math.max(this.state.index - 1,0)}, () => {
             console.log(this.state.index)
         });

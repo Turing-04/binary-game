@@ -1,7 +1,12 @@
 import React from "react";
 import * as Problems from "./problemSolvingContent";
+<<<<<<< HEAD
 import constants from "../constants";
 
+=======
+import {logScreenChange} from "../utils/firebase"
+import constants from "../constants";
+>>>>>>> f4b0d878261b0ed90b702a085c0aa886a5369ec4
 
 class ProblemSolving extends React.Component {
 
@@ -13,6 +18,7 @@ class ProblemSolving extends React.Component {
     }
 
     nextIndex() {
+<<<<<<< HEAD
         if (this.state.index === 17) {
             if (constants.group === "psi") {
                 this.props.navigation("/instruction");
@@ -22,17 +28,27 @@ class ProblemSolving extends React.Component {
             }
         }
         this.setState({index: this.state.index + 1}, () => {
+=======
+        logScreenChange(constants.uuid, 'Problem Solving', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index+1)
+        this.setState({index: this.state.index + 1, time_started: new Date().getTime()}, () => {
+>>>>>>> f4b0d878261b0ed90b702a085c0aa886a5369ec4
             console.log(this.state.index);
         });
 
     }
 
     previousIndex() {
+<<<<<<< HEAD
         if (this.state.index === 0) {
             return;
         }
         this.setState({index: this.state.index - 1}, () => {
             console.log(this.state.index);
+=======
+        logScreenChange(constants.uuid, 'Problem Solving', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index-1)
+        this.setState({index:Math.max(this.state.index - 1,0)}, () => {
+            console.log(this.state.index)
+>>>>>>> f4b0d878261b0ed90b702a085c0aa886a5369ec4
         });
     }
 
