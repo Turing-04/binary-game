@@ -83,8 +83,13 @@ class Instruction extends React.Component {
         return (
             <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh'}}>
                 <div>{this.getContent()}</div>
-                <button className="floating-button-previous" onClick={() => this.previousIndex()}>Previous</button>
-                <button className="floating-button-next" onClick={() => this.nextIndex()}>Next</button>
+                {0 < this.state.index &&
+                    <button className="floating-button-previous" onClick={() => this.previousIndex()}>Previous</button>
+                }
+                
+                {this.state.index < 45 &&
+                    <button className="floating-button-next" onClick={() => this.nextIndex()}>Next</button>
+                }
             </div>
         );
     }

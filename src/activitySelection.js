@@ -13,7 +13,7 @@ class ActivitySelection extends React.Component {
 
 
                 <Row>
-                    <h1>Hello!</h1>
+                    <h1>Hello {constants.name}!</h1>
                     <p style={{width: 600}}>
                         Today we are going to explore something called binary.
                         <br/>
