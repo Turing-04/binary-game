@@ -11,7 +11,8 @@ class FeedbackForm extends React.Component {
         super(props);
         this.state = {
           value: '',
-          slide: props.slide
+          slide: props.slide,
+          part: props.part,
         };
     
         this.handleChange = this.handleChange.bind(this);
@@ -28,7 +29,7 @@ class FeedbackForm extends React.Component {
 
       doSubmit(message){
         console.log(constants.uuid)
-        logFeedback(constants.uuid, this.state.slide, message)
+        logFeedback(constants.uuid, this.state.slide, message, this.state.part)
       }
 
     // FIXME: submit buttons renders next to it instead of just below
@@ -51,7 +52,7 @@ class FeedbackForm extends React.Component {
                 <div style={{width: 50}}></div>
             </Row>
             <Row>
-            {this.state.value != '' && <button className='button' onClick={() => this.doSubmit(this.state.value)}> Submit </button>}
+            {this.state.value !== '' && <button className='button' onClick={() => this.doSubmit(this.state.value)}> Submit </button>}
 
             </Row>
 

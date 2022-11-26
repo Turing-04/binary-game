@@ -8,9 +8,9 @@ export function ProblemSolving0(_index) {
         <div>
             <h1>Let's explore !</h1>
             <p> In this Activity, you are going to send a <br/>
-            secret message to your friend ! Try <br/>
-            finding a way to transmit your message <br/>
-            using only black and white boxes. 
+                secret message to your friend ! Try <br/>
+                finding a way to transmit your message <br/>
+                using only black and white boxes.
             </p>
         </div>
     );
@@ -141,8 +141,8 @@ export function ProblemSolving10(_index) {
                 Try representing each number using only one row of boxes!
             </h1>
             <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
-                    <Row> <h1>4 =></h1> </Row>
-                    <Row> <Board binary={false} width={9} height={1} interactive={true} key={100} labels={false}></Board> </Row>
+                <Row> <h1>4 =></h1> </Row>
+                <Row> <Board binary={false} width={9} height={1} interactive={true} key={100} labels={false}></Board> </Row>
             </div>
             <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
                 <Row> <h1>1 =></h1> </Row>
