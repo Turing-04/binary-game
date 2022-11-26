@@ -2,6 +2,8 @@ import React from "react";
 import "./common.css";
 import { Link, Navigate, useNavigate} from "react-router-dom";
 import Row from "react-bootstrap/Row";
+import {logUser} from "./utils/firebase"
+import { uuidv4 } from "@firebase/util";
 
 import constants from "./constants";
 import ActivitySelection from "./activitySelection";
@@ -29,6 +31,8 @@ class LoginForm extends React.Component {
   doSubmit() {
     constants.name = this.state.name
     constants.age = this.state.age
+    constants.uuid = uuidv4()
+    logUser(this.state.name, this.state.age, constants.uuid)
   }
 
   render() {
