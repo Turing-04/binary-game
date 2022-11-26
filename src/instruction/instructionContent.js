@@ -119,25 +119,16 @@ export function Instruction8(_index) {
             <h1>Here, I have a row of 9 lightbulbs, how could I <br/>
              represent each digit with them? <br/><br/>
              </h1>
-            <Board binary={false} width={9} height={1} interactive={false} key={_index} labels={false}></Board>
+             <Board binary={false} width={9} height={1} interactive={false} key={_index} labels={false}></Board>
+
         </div>  
     );
+
 }
+
+
 
 export function Instruction9(_index) {
-    return(
-        <div>
-            <h1>Here, I have a row of 9 lightbulbs, how could I <br/>
-             represent each digit with them? <br/><br/>
-             </h1>
-        </div>  
-    );
-
-}
-
-
-
-export function Instruction10(_index) {
     return(
         <div>
             <h1>There are several ways to do so! </h1>
@@ -154,7 +145,7 @@ export function Instruction10(_index) {
 
 
 }
-export function Instruction11(_index) {
+export function Instruction10(_index) {
 return(
     <div>   
         <h1> You could do this in an unordered manner ...</h1>
@@ -167,7 +158,7 @@ return(
 }
 
 
-export function Instruction12(_index) {
+export function Instruction11(_index) {
     return(
         <div>   
             <h1> Or in an ordered manner! <br/>
@@ -179,7 +170,7 @@ export function Instruction12(_index) {
     )
 }
 
-export function Instruction13(_index) {
+export function Instruction12(_index) {
     return(
         <div>   
             <h1> What if we wanted to save energy? <br/><br/>
@@ -194,7 +185,7 @@ export function Instruction13(_index) {
 
 }
 
-export function Instruction14(_index) {
+export function Instruction13(_index) {
     return(
         <div>   
             <h1> Yes! <br/><br/>
@@ -209,7 +200,7 @@ export function Instruction14(_index) {
 }
 
 
-export function Instruction15(_index) {
+export function Instruction14(_index) {
     return(
         <div>   
             <h1> And light the correct bulb! <br/>
@@ -223,7 +214,7 @@ export function Instruction15(_index) {
     )
 }
 
-export function Instruction16(_index) {
+export function Instruction15(_index) {
     return(
         <div>   
             <h1> What if we want to show 0? <br/>
@@ -233,12 +224,10 @@ export function Instruction16(_index) {
             </Board>
         </div>
     )
-        /*TODO light bulbs off : 
-        =>Could be very nice to make it interactive (that is display the row of lightbulbs turned off only after pressing next) */
 }
 
 
-export function Instruction17(_index) {
+export function Instruction16(_index) {
     return(
         <div>   
             <h1> This is called  <br/> </h1>
@@ -248,23 +237,38 @@ export function Instruction17(_index) {
                    initial={[false, false, false, false, true, false, false, false, false]}>
             </Board>
         </div>
-         //Problème de gras ici ! Sois on change la police de charactère pour le one hot encoding sois moyen d'avoir du gras avec sans Cherif ? 
     )
 
 }
-export function Instruction18(_index) {
+
+export function Instruction17(_index) {
     return(
         <div>
             <h1>  With this new technique, we can now <br/> 
             represent a bunch of digits.</h1>
             <h1 style={{fontWeight: 'italic'}}> But can we do better?  <br/></h1>
+            <Board binary={false} key={_index} width={9} height={1} interactive={false} labels={true}
+                   initial={[false, false, false, false, false, false, false, false, false]}>
+            </Board>
         </div>
     )
 
 
 }
 
+export function Instruction18(_index) {
+    return(
+        <div>
+            <h1>  How could we use less light bulbs ? <br/><br/>
+            What would be the most compact way of  <br/>
+            representing every digit using only lightbulbs ?</h1>
+            <Board binary={false} key={_index} width={4} height={1} interactive={false} labels={true}
+                   initial={[false, false, false, false]}>
+            </Board>
+        </div>
+    )
 
+}
 
 export function Instruction19(_index) {
     return(
@@ -274,8 +278,6 @@ export function Instruction19(_index) {
             </h1>
         </div>
     )
-
-    //TODO: Make this a bit prettier?  :)
 }
 
 
@@ -403,7 +405,7 @@ export function Instruction28(_index) {
         <div>   
             <h1>Light up lightbulbs '8' and '1'!
             </h1>
-            <h1 style={{fontSize: '8vw', fontWeight:'800', fontFamily:'DejaVu'}} > 8 + 1 = 9 
+            <h1 style={{fontSize: '8vw', fontWeight:'800', fontFamily:'DejaVu'}} > 9 = 8 + 1
             </h1>
             <Board key={_index} width={4} height={1} interactive={false} labels={true} binary={true}
                    initial={[true, false, false, true]}>
@@ -674,6 +676,5 @@ export function Instruction45(_index) {
         </div>
     );
 
-    // TODO : put image from Figma or HTML properly
 
 }
