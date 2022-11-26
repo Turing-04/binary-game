@@ -10,8 +10,8 @@ class FeedbackForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-          value: 'Write down your thoughts here!',
-          slide: props.slide
+          value: '',
+          slide: props.slide,
         };
     
         this.handleChange = this.handleChange.bind(this);
@@ -31,6 +31,11 @@ class FeedbackForm extends React.Component {
         logFeedback(constants.uuid, this.state.slide, message)
       }
 
+      onClicke() {
+        console.log(this.state.value)
+   
+    }
+
     // FIXME: submit buttons renders next to it instead of just below
     render(){
         return (
@@ -40,15 +45,19 @@ class FeedbackForm extends React.Component {
             alignItems: "center",
           }}>
             <Row>
-            <textarea cols="40" rows="10" value={this.state.value} onChange={this.handleChange} />
+            <textarea style = {{resize:'none', fontSize:'1.4vw'}} cols="60" rows="4" placeholder={'Write down your thoughts here!'} onChange={this.handleChange} id="form"/>
             </Row>
             <Row>
-            
             <div style={{ height: "3vw", alignItems: 'center'}}></div>
 
             </Row>
             <Row>
-            {this.state.value != '' && this.state.value != 'Write down your thoughts here!' && <button className='button' onClick={() => this.doSubmit(this.state.value)}> Submit </button>}
+            {this.state.value != '' && <button className='button' 
+                onClick={() => {
+                  this.doSubmit(this.state.value);
+                  document.getElementById("form").disabled="true";
+                }}
+                  > Submit </button>}
 
             </Row>
 

@@ -613,8 +613,8 @@ export function Instruction41(_index) {
 export function Instruction42(_index) {
     return (
         <div>
-            <h1>And what if you wanted to send letters instead <br/>
-            of numbers?</h1>
+            <h1>And what if you wanted to send letters<br/>
+            instead of numbers?</h1>
             <img 
             class="square-image-layout"           
             src={Smiley}

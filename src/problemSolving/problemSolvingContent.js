@@ -63,7 +63,7 @@ export function ProblemSolving4(_index) {
             </h1>
             <Board binary={false} width={6} height={5} interactive={true} key={_index} labels={false}>
             </Board>
-            <h1>6</h1>
+            <h1 style={{fontStyle:'italic', fontSize:'1.8vw'}}>Click on bulbs to light them up</h1>
         </div>
     );
 }
@@ -90,7 +90,8 @@ export function ProblemSolving6(_index) {
             </h1>
             <Board binary={false} width={6} height={5} interactive={true} key={_index} labels={false}>
             </Board>
-            <h1>2022</h1>
+            <h1 style={{fontStyle:'italic', fontSize:'1.8vw'}}>Play around with the lightbulbs to figure out <br/>
+            a way to send "2022" to Alice</h1>
         </div>
     );
 }
@@ -117,8 +118,8 @@ export function ProblemSolving8(_index) {
             </h1>
             <Board binary={false} width={6} height={5} interactive={true} key={_index} labels={false}>
             </Board>
-            <h1>BOB</h1>
-        </div>
+            <h1 style={{fontStyle:'italic', fontSize:'1.8vw'}}>Play around with the lightbulbs to figure out <br/>
+            a way to send the message "BOB" to Alice</h1>        </div>
     );
 }
 
