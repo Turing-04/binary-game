@@ -54,12 +54,13 @@ async function logUser(username, age, uuid) {
     });
 }
 
-async function logFeedback(uuid, slide, message) {
+async function logFeedback(uuid, slide, message, part) {
     const resultsCol = collection(db, "feedbacks");
     await setDoc(doc(resultsCol), {
         uuid: uuid,
         slide: slide,
-        message: message
+        message: message,
+        part: part
     });
 }
 

@@ -12,6 +12,7 @@ class FeedbackForm extends React.Component {
         this.state = {
           value: '',
           slide: props.slide,
+          part: props.part,
         };
     
         this.handleChange = this.handleChange.bind(this);
@@ -28,7 +29,7 @@ class FeedbackForm extends React.Component {
 
       doSubmit(message){
         console.log(constants.uuid)
-        logFeedback(constants.uuid, this.state.slide, message)
+        logFeedback(constants.uuid, this.state.slide, message, this.state.part)
       }
 
       onClicke() {

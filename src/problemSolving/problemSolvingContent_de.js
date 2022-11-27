@@ -6,11 +6,10 @@ import Row from "react-bootstrap/Row";
 export function ProblemSolving0(_index) {
     return (
         <div>
-            <h1>Let's explore !</h1>
-            <p> In this Activity, you are going to send a <br/>
-            secret message to your friend ! Try <br/>
-            finding a way to transmit your message <br/>
-            using only black and white boxes. 
+            <h1>Zeit zu entdecken!</h1>
+            <p> In dieser Aktivität wirst du eine geheime Nachricht <br/>
+                an deinen Freund schicken! Versuche einen Weg zu finden, <br/>
+                deine Nachricht nur mit farbigen Kästchen zu übermitteln.
             </p>
         </div>
     );
@@ -20,9 +19,9 @@ export function ProblemSolving1(_index) {
     return (
         <div>
             <h1>
-                Alice wants to send a message to Bob! <br/>
-                But all she has are a few colored boxes. <br/>
-                Can you help her?
+                Alice will eine Nachricht an Bob schicken! <br/>
+                Aber alles, was sie hat, sind ein paar bunte Kästchen. <br/>
+                Kannst du ihr helfen?
             </h1>
         </div>
     );
@@ -32,8 +31,8 @@ export function ProblemSolving2(_index) {
     return (
         <div>
             <h1>
-                She can turn any of the boxes on or off. <br/>
-                How does this help her?
+                Sie kann jedes der Kästchen ein- oder ausschalten. <br/>
+                Wie kann ihr das helfen?
             </h1>
         </div>
     );
@@ -42,12 +41,12 @@ export function ProblemSolving2(_index) {
 export function ProblemSolving3(_index) {
     return (
         <div>
-            <h1>Can YOU figure out <br/>
-                how to send her messages?</h1>
+            <h1>Kannst DU herausfinden, <br/>
+                wie sie ihre Nachrichten schicken kann?
+            </h1>
             <p>
-                There is no wrong solution! <br/>
-                Try to come up with your own way,
-                and try to reason about it!
+                Es gibt keine falsche Lösung! Versuche, einen <br/>
+                eigenen Weg zu finden, und erkläre deine Lösung!
             </p>
 
         </div>
@@ -58,12 +57,12 @@ export function ProblemSolving4(_index) {
     return (
         <div>
             <h1>
-                Alice wants to send the number 6 using this grid. <br/>
-                Can you help her?
+                Alice möchte mit Hilfe dieses Gitters die Zahl 6 senden. <br/>
+                Kannst du ihr helfen?
             </h1>
             <Board binary={false} width={6} height={5} interactive={true} key={_index} labels={false}>
             </Board>
-            <h1 style={{fontStyle:'italic', fontSize:'1.8vw'}}>Click on bulbs to light them up</h1>
+            <h1>6</h1>
         </div>
     );
 }
@@ -72,9 +71,9 @@ export function ProblemSolving5(_index) {
     return (
         <div>
             <h1>
-                How did you send the message? <br/> <br/>
-                What were the challenges you faced? <br/> <br/>
-                Do you think you could send longer messages with this grid?
+                Wie hast du die Nachricht übermittelt? <br/> <br/>
+                Welche Herausforderungen hattest du? <br/> <br/>
+                Glaubst du, dass du mit diesem Raster längere Nachrichten versenden könntest?
             </h1>
             <FeedbackForm slide={5} part={"ps"}></FeedbackForm>
         </div>
@@ -85,13 +84,12 @@ export function ProblemSolving6(_index) {
     return (
         <div>
             <h1>
-                Now Alice wants to send the number 2022. <br/> <br/>
-                How would you do this?
+                Nun möchte Alice die Nummer 2022 senden. <br/> <br/>
+                Wie würdest du das lösen?
             </h1>
             <Board binary={false} width={6} height={5} interactive={true} key={_index} labels={false}>
             </Board>
-            <h1 style={{fontStyle:'italic', fontSize:'1.8vw'}}>Play around with the lightbulbs to figure out <br/>
-            a way to send "2022" to Alice</h1>
+            <h1>2022</h1>
         </div>
     );
 }
@@ -100,8 +98,8 @@ export function ProblemSolving7(_index) {
     return (
         <div>
             <h1>
-                Was it more difficult than just sending the number 6? <br/> <br/>
-                What was the main challenge?
+                War es schwieriger, als nur die Nummer 6 zu senden? <br/> <br/>
+                Was war die grösste Herausforderung?
             </h1>
             <FeedbackForm slide={7} part={"ps"}></FeedbackForm>
         </div>
@@ -112,13 +110,13 @@ export function ProblemSolving8(_index) {
     return (
         <div>
             <h1>
-                Now Alice wants to send the word BOB. <br/> <br/>
-                How would you do this?
+                Jetzt möchte Alice das Wort BOB senden. <br/> <br/>
+                Wie würdest du das machen?
             </h1>
             <Board binary={false} width={6} height={5} interactive={true} key={_index} labels={false}>
             </Board>
-            <h1 style={{fontStyle:'italic', fontSize:'1.8vw'}}>Play around with the lightbulbs to figure out <br/>
-            a way to send the message "BOB" to Alice</h1>        </div>
+            <h1>BOB</h1>
+        </div>
     );
 }
 
@@ -126,9 +124,10 @@ export function ProblemSolving9(_index) {
     return (
         <div>
             <h1>
-                Is the Grid too small for your messages? <br/>
-                What if you tried to enter one character per row? <br/>
-                Try using one row per letter now!
+                Ist das Raster zu klein für deine Nachrichten? <br/>
+                Was wäre, wenn du versuchen würdest, <br/>
+                einen Symbol pro Zeile darzustellen? <br/>
+                Versuche es mit einer Zeile pro Buchstabe!
             </h1>
 
         </div>
@@ -139,11 +138,11 @@ export function ProblemSolving10(_index) {
     return (
         <div>
             <h1>
-                Try representing each number using only one row of boxes!
+                Versuche, jede Zahl mit nur einer Reihe von Kästchen darzustellen!
             </h1>
             <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
-                    <Row> <h1>4 =></h1> </Row>
-                    <Row> <Board binary={false} width={9} height={1} interactive={true} key={100} labels={false}></Board> </Row>
+                <Row> <h1>4 =></h1> </Row>
+                <Row> <Board binary={false} width={9} height={1} interactive={true} key={100} labels={false}></Board> </Row>
             </div>
             <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
                 <Row> <h1>1 =></h1> </Row>
@@ -169,7 +168,7 @@ export function ProblemSolving11(_index) {
     return (
         <div>
             <h1>
-                Try representing each letter using only one row of boxes!
+                Versuche, jeden Buchstaben mit nur einer Reihe von Kästchen darzustellen!
             </h1>
             <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
                 <Row> <h1>A =></h1> </Row>
@@ -199,9 +198,9 @@ export function ProblemSolving12(_index) {
     return (
         <div>
             <h1>
-                Did you come up with a way? <br/> <br/>
-                Do you think Bob will be able to understand your encodings? <br/> <br/>
-                Why? Or why not?
+                Hast du einen Weg gefunden? <br/> <br/>
+                Glaubst du, dass Bob deine Kodierungen verstehen wird? <br/> <br/>
+                Warum? Oder warum nicht?
             </h1>
             <FeedbackForm slide={12} part={"ps"}></FeedbackForm>
 
@@ -213,8 +212,8 @@ export function ProblemSolving13(_index) {
     return (
         <div>
             <h1>
-                Now, do you think you could still <br/>
-                send your messages with even less boxes per row?
+                Glaubst du, dass du deine Nachrichten auch mit <br/>
+                noch weniger Kästchen pro Zeile versenden könntest?
             </h1>
             <FeedbackForm slide={13} part={"ps"}></FeedbackForm>
 
@@ -226,8 +225,9 @@ export function ProblemSolving14(_index) {
     return (
         <div>
             <h1>
-                Let’s play the ultimate version, we now have only very few <br/>
-                boxes per line and we have to find a way to represent the same data
+                Spielen wir die ultimative Version, wir haben nun sehr <br/>
+                wenige Kästchen pro Zeile und müssen einen Weg finden, <br/>
+                die gleichen Symbole darzustellen
             </h1>
             <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
                 <Row> <h1>9 =></h1> </Row>
@@ -257,7 +257,7 @@ export function ProblemSolving15(_index) {
     return (
         <div>
             <h1>
-                Ultimate version: letters edition!
+                Ultimative Version: Briefausgabe!
             </h1>
             <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
                 <Row> <h1>A =></h1> </Row>
@@ -287,9 +287,9 @@ export function ProblemSolving16(_index) {
     return (
         <div>
             <h1>
-                Did you manage to make it work? <br/>
-                What do you think is the least amount of boxes <br/>
-                to properly represent your numbers?
+                Haben du eine Lösung gefunden? <br/>
+                Was denkst du, wie viele Kästchen mindestens nötig <br/>
+                sind, um deine Zahlen richtig darzustellen?
             </h1>
             <FeedbackForm slide={16} part={"ps"}></FeedbackForm>
 
@@ -301,9 +301,9 @@ export function ProblemSolving17(_index) {
     return (
         <div>
             <h1>
-                Great job! <br/>
-                You don’t know what this was about? <br/>
-                No worries, we are going to explain it now!
+                Gut gemacht! <br/>
+                Du hast keine Ahnung, was diese Aufgabe sollte? <br/>
+                Keine Sorge, wir werden es jetzt erklären!
             </h1>
         </div>
     );
