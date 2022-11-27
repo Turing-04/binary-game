@@ -21,7 +21,7 @@ export function ProblemSolving1(_index) {
         <div>
             <h1>
                 Alice wants to send a message to Bob! <br/>
-                But all she has are a few lightbulbs. <br/>
+                But all she has is a few lightbulbs. <br/>
                 Can you help her?
             </h1>
         </div>, true, []]
@@ -79,8 +79,13 @@ export function ProblemSolving5(_index) {
                 What were the challenges you faced? <br/> <br/>
                 Do you think you could send longer messages with this grid?
             </h1>
+<<<<<<< HEAD
             <FeedbackForm slide={5} part={"ps"} language={"EN"} next={() => next5=true}></FeedbackForm>
         </div>, next5, []]
+=======
+            <FeedbackForm key={_index}  slide={5} part={"ps"} language={"EN"} next={() => next5=true}></FeedbackForm>
+        </div>, next5]
+>>>>>>> 366eb12df48a257e22be0400978ae98a7728f397
     );
 }
 
@@ -111,8 +116,13 @@ export function ProblemSolving7(_index) {
                 Was it more difficult than just sending the number 6? <br/> <br/>
                 What was the main challenge?
             </h1>
+<<<<<<< HEAD
             <FeedbackForm slide={7} part={"ps"} language={"EN"} next={() => next7=true}></FeedbackForm>
         </div>, next7, []]
+=======
+            <FeedbackForm key={_index}  slide={7} part={"ps"} language={"EN"} next={() => next7=true}></FeedbackForm>
+        </div>, next7]
+>>>>>>> 366eb12df48a257e22be0400978ae98a7728f397
     );
 }
 
@@ -140,8 +150,12 @@ export function ProblemSolving9(_index) {
                 What if you tried to enter one character per row? <br/>
                 Try using one row per letter now!
             </h1>
+<<<<<<< HEAD
 
         </div>, true, []]
+=======
+        </div>, true]
+>>>>>>> 366eb12df48a257e22be0400978ae98a7728f397
     );
 }
 
@@ -226,7 +240,7 @@ export function ProblemSolving12(_index) {
                 Do you think Bob will be able to understand your encodings? <br/> <br/>
                 Why? Or why not?
             </h1>
-            <FeedbackForm slide={12} part={"ps"} language={"EN"} next={() => next12=true}></FeedbackForm>
+            <FeedbackForm key={_index} slide={12} part={"ps"} language={"EN"} next={() => next12=true}></FeedbackForm>
 
         </div>, next12, []]
     );
@@ -240,8 +254,13 @@ export function ProblemSolving13(_index) {
                 Now, do you think you could still <br/>
                 send your messages with even less lightbulbs per row?
             </h1>
+<<<<<<< HEAD
 
         </div>, true, []]
+=======
+            <FeedbackForm key={_index} slide={12} part={"ps"} language={"EN"} next={() => next13=true}></FeedbackForm>
+        </div>, next13]
+>>>>>>> 366eb12df48a257e22be0400978ae98a7728f397
     );
 }
 
@@ -327,7 +346,7 @@ export function ProblemSolving16(_index) {
                 What do you think is the least amount of lightbulbs <br/>
                 to properly represent your numbers?
             </h1>
-            <FeedbackForm slide={16} part={"ps"} language={"EN"} next={() => next16=true}></FeedbackForm>
+            <FeedbackForm key={_index} slide={16} part={"ps"} language={"EN"} next={() => next16=true}></FeedbackForm>
 
         </div>, next16, []]
     );

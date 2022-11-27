@@ -51,6 +51,7 @@ class AssessmentDe extends React.Component {
             case 5: return Assessments.Assessment5(5);
             case 6: return Assessments.Assessment6(6);
             case 7: return Assessments.Assessment7(7);
+            case 8: return Assessments.Assessment8(8);
             default: return null;
             // Need to handle IPS or PSI to redirect correctly !
             // Need to take care of the puzzle implementation ?
@@ -64,7 +65,7 @@ class AssessmentDe extends React.Component {
                 {0 < this.state.index &&
                     <button className="floating-button-previous" onClick={() => this.previousIndex()}>Zurück</button>
                 }
-                {this.state.index < 7
+                {this.state.index < 8
                     ? <button className="floating-button-next" onClick={() => this.nextIndex()}>Weiter</button>
                     : null
                 }

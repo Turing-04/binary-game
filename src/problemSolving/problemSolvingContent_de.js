@@ -78,8 +78,13 @@ export function ProblemSolving5(_index) {
                 Welche Herausforderungen hattest du? <br/> <br/>
                 Glaubst du, dass du mit diesem Raster längere Nachrichten versenden könntest?
             </h1>
+<<<<<<< HEAD
             <FeedbackForm slide={5} part={"ps"} language={"DE"} next={() => next5=true}></FeedbackForm>
         </div>, next5, '']
+=======
+            <FeedbackForm key={_index}  slide={5} part={"ps"} language={"DE"} next={() => next5=true}></FeedbackForm>
+        </div>, next5]
+>>>>>>> 366eb12df48a257e22be0400978ae98a7728f397
     );
 }
 
@@ -108,8 +113,13 @@ export function ProblemSolving7(_index) {
                 War das schwieriger, als nur die Nummer 6 zu senden? <br/> <br/>
                 Was war die grösste Herausforderung?
             </h1>
+<<<<<<< HEAD
             <FeedbackForm slide={7} part={"ps"} language={"DE"} next={() => next7=true}></FeedbackForm>
         </div>, next7, '']
+=======
+            <FeedbackForm key={_index}  slide={7} part={"ps"} language={"DE"} next={() => next7=true}></FeedbackForm>
+        </div>, next7]
+>>>>>>> 366eb12df48a257e22be0400978ae98a7728f397
     );
 }
 
@@ -211,7 +221,7 @@ export function ProblemSolving12(_index) {
                 Glaubst du, dass Bob deine Kodierungen verstehen wird? <br/> <br/>
                 Warum? Oder warum nicht?
             </h1>
-            <FeedbackForm slide={12} part={"ps"} language={"DE"} next={() => next12=true}></FeedbackForm>
+            <FeedbackForm key={_index}  slide={12} part={"ps"} language={"DE"} next={() => next12=true}></FeedbackForm>
 
         </div>, next12, '']
     );
@@ -225,8 +235,13 @@ export function ProblemSolving13(_index) {
                 Glaubst du, dass du deine Nachrichten auch mit <br/>
                 noch weniger Glühbirnen pro Zeile versenden könntest?
             </h1>
+            <FeedbackForm key={_index}  slide={13} part={"ps"} language={"DE"} next={() => next13=true}></FeedbackForm>
 
+<<<<<<< HEAD
         </div>, true, '']
+=======
+        </div>, next13]
+>>>>>>> 366eb12df48a257e22be0400978ae98a7728f397
     );
 }
 
@@ -303,7 +318,7 @@ export function ProblemSolving16(_index) {
                 Was denkst du, wie viele Glühbirnen mindestens nötig <br/>
                 sind, um deine Zahlen richtig darzustellen?
             </h1>
-            <FeedbackForm slide={16} part={"ps"} language={"DE"} next={() => next16=true}></FeedbackForm>
+            <FeedbackForm key={_index}  slide={16} part={"ps"} language={"DE"} next={() => next16=true}></FeedbackForm>
 
         </div>, next16, '']
     );

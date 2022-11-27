@@ -37,7 +37,7 @@ class FeedbackForm extends React.Component {
         logFeedback(constants.uuid, this.state.slide, message, this.state.part)
       }
 
-
+  
 
     // FIXME: submit buttons renders next to it instead of just below
     render(){
@@ -49,13 +49,18 @@ class FeedbackForm extends React.Component {
             alignItems: "center",
             flexDirection: "column"
           }}>
+<<<<<<< HEAD
             {!this.state.sent && this.state.lng == 'DE' && <textarea style = {{resize:'none', fontSize:'1.4vw'}} cols="60" rows="4" placeholder={'Schreibe deine Gedanken hier auf!'} onChange={this.handleChange} id="form"/>}
             {!this.state.sent && this.state.lng == 'EN' && <textarea style = {{resize:'none', fontSize:'1.4vw'}} cols="60" rows="4" placeholder={'Write down your thoughts here!'} onChange={this.handleChange} id="form"/>}
+=======
+            {this.state.lng == 'EN' && <textarea style = {{resize:'none', fontSize:'1.4vw'}} cols="60" rows="4" placeholder={'Write down your thoughts here!'} onChange={this.handleChange} id="form"/>}
+            {this.state.lng == 'DE' && <textarea style = {{resize:'none', fontSize:'1.4vw'}} cols="60" rows="4" placeholder={'Schreibe deine Gedanken hier auf!'} onChange={this.handleChange} id="form"/>}
+>>>>>>> 366eb12df48a257e22be0400978ae98a7728f397
             
-            {this.state.sent && this.state.lng == 'EN' && <p style = {{resize:'none', fontSize:'1.4vw'}}> You may continue! </p>}
+    
+            {this.state.sent && this.state.lng == 'EN' && <p style = {{resize:'none', fontSize:'1.4vw'}}> Answer saved, you may continue ! </p>}
             {this.state.sent && this.state.lng == 'DE' && <p style = {{resize:'none', fontSize:'1.4vw'}}> Du kannst jetzt weitermachen! </p>}
-            
-
+    
             <div style={{ height: "3vw", alignItems: 'center'}}></div>
 
             {this.state.lng == 'EN' && this.state.value != '' && <button className='button' 
