@@ -5,137 +5,141 @@ import Row from "react-bootstrap/Row";
 
 
 export function Assessment0(_index) {
-    return (
+    return [(
         <div>
             <h1>
-                Congratulations on making it this far!
+                Herzlichen Glückwunsch, du hast es weit geschafft!
             </h1>
             <p>
-                Just a few more questions to check your understanding and a fun little puzzle to solve! <br/>
-                Again, no wrong answers, just try your best!
+                Nur noch ein paar Fragen, um dein Verständnis zu überprüfen, und ein lustiges kleines Rätsel zum Lösen! <br/>
+                Auch hier gibt es keine falschen Antworten, versuchen einfach dein Bestes!
             </p>
         </div>
-    );
+    ),[]];
 }
 
 export function Assessment1(_index) {
-    return (
+    return [(
         <div>
             <h1>
-                Assume you found a system to represent numbers <br/>
-                using only a row of lightbulbs, now you want <br/>
-                to represent letters, how are you going to achieve this?
+            Angenommen, du hast ein System zur Darstellung von <br/>
+            Zahlen mithilfe von Glühbirnen gefunden <br/>
+            und nun möchtest du Buchstaben darstellen. <br/>
+            Wie kannst du das erreichen?
             </h1>
-            <FeedbackForm key={_index} slide={_index} part={"assessment"}></FeedbackForm>
+            <FeedbackForm key={_index} slide={_index} part={"assessment"} language={"EN"} next={() => console.log('')}></FeedbackForm>
+
         </div>
-    );
+    ), []];
 }
 
 export function Assessment2(_index) {
-    return (
+    return [(
         <div>
             <h1>
-                What is the main deficit of using as many light bulbs <br/>
-                as the value we want to represent?
+                Was ist das Hauptproblem bei der Verwendung von gleich <br/>
+                vielen Glühbirnen wie den Wert, <br/>
+                den wir darstellen wollen?
             </h1>
-            <FeedbackForm key={_index}  slide={_index} part={"assessment"}></FeedbackForm>
+            <FeedbackForm key={_index}  slide={_index} part={"assessment"} language={"EN"} next={() => console.log('')}></FeedbackForm>
         </div>
-    );
+    ), []];
 }
 
 export function Assessment3(_index) {
-    return (
+    return [(
         <div>
             <h1>
-                What is the smallest number of bits to represent <br/>
-                numbers up to 7 in binary? Why?
+                Was ist die kleinste Anzahl von Glühbirnen zur Darstellung von <br/>
+                Zahlen bis 7 im Binärformat darzustellen? Warum?
             </h1>
-            <FeedbackForm key={_index}  slide={_index} part={"assessment"}></FeedbackForm>
+            <FeedbackForm key={_index}  slide={_index} part={"assessment"} language={"EN"} next={() => console.log('')}></FeedbackForm>
         </div>
-    );
+    ), []];
 }
 
 export function Assessment4(_index) {
-    return (
+    return [(
         <div>
             <h1>
-                A lightbulb can only be on or off. <br/>
-                What would change if it could be on, off, or half-lit? <br/>
-                Would this change something about your coding?
+            Eine Glühbirne kann nur an oder aus sein. <br/>
+            Was würde sich ändern, wenn die Glühbirne an, aus oder halb an sein könnte? <br/>
+            Würde dies etwas an deiner Codierung ändern? <br/>
             </h1>
-            <FeedbackForm key={_index}  slide={_index} part={"assessment"}></FeedbackForm>
+            <FeedbackForm key={_index}  slide={_index} part={"assessment"} language={"EN"} next={() => console.log('')}></FeedbackForm>
         </div>
-    );
+    ), []];
 }
 
-
+var boardString5 = '';
 export function Assessment5(_index) {
-    return (
+    return [(
         <div>
             <h1>
-                Represent the number 21 in binary.
+                Stelle die Zahl 21 in binärer Form dar.
             </h1>
-            <Board binary={true} width={5} height={1} interactive={true} key={_index} labels={true}>
+            <Board binary={true} width={5} height={1} interactive={true} key={_index} labels={true} log={(x) => boardString5 = x}>
             </Board>
         </div>
-    );
+    ), [boardString5]];
 }
 
 export function Assessment6(_index) {
-    return (
+    return [(
         <div>
             <h1>
-                Which number does the binary string “1011” represent?
+                Für welche Zahl steht die binäre Zeichenfolge "1011"?
             </h1>
-            <FeedbackForm key={_index}  slide={_index} part={"assessment"}></FeedbackForm>
+            <FeedbackForm key={_index}  slide={_index} part={"assessment"} language={"EN"} next={() => console.log('')}></FeedbackForm>
         </div>
-    );
+    ), []];
 }
 
 
 
 
 //TODO : Add puzzle activity right here !
+var boardString7 = '';
 export function Assessment7(_index) {
-    return (
+    return [(
         <div>
             <h1>
-                Finally, let's play a quick game using your new binary skills ! <br/>
-                Try to represent the different values on the grid using binary. <br/>
-                You might end up with a nice little drawing :)
+                Zum Schluss noch ein kleines Spiel, bei dem du deine neuen Binärkenntnisse anwenden kannst! <br/>
+                Versuche, die verschiedenen Werte auf dem Raster mit Binärzahlen darzustellen. <br/>
+                Vielleicht bekommst du am Ende eine schöne kleine Zeichnung :) 
             </h1>
-            <Board key={_index} width={8} height={8} interactive={true} labels={true} binary={true} puzzle={true}
-                   answer={[
-                       false, false, true, true, true, true, false, false,
-                       false, true, false, false, false, false, true, false,
-                       true, false, true, false, false, true, false, true,
-                       true, false, false, false, false, false, false, true,
-                       true, false, true, false, false, true, false, true,
-                       true, false, false, true, true, false, false, true,
-                       false, true, false, false, false, false, true, false,
-                       false, false, true, true, true, true, false, false,
-                   ]}>
+            <Board key={_index} width={8} height={8} interactive={true} labels={true} binary={true} puzzle={true} log={(x) => boardString7 = x}
+                         answer={[
+                             false, false, true, true, true, true, false, false,
+                             false, true, false, false, false, false, true, false,
+                             true, false, true, false, false, true, false, true,
+                             true, false, false, false, false, false, false, true,
+                             true, false, true, false, false, true, false, true,
+                             true, false, false, true, true, false, false, true,
+                             false, true, false, false, false, false, true, false,
+                             false, false, true, true, true, true, false, false,
+                         ]}>
             </Board>
         </div>
-    );
+    ), [boardString7]];
 }
 
 export function Assessment8(_index) {
-    return (
+    return [(
         <div>
             <h1>
-                Congratulations!
+                Glückwunsch!
             </h1>
             <p>
-                You have completed the activity! <br/>
-                We hope you enjoyed it and learned something new! <br/>
-                If you did not understand everything, don't worry, <br/>
-                you'll have plenty of time to learn more about it in the future! <br/>
-                If you have any feedback, please let us know!
+                Du hast die Aktivität abgeschlossen! 
+                Wir hoffen, es hat dir Spass gemacht und du hast etwas Neues gelernt! 
+                Mach dir keine Sorgen, wenn du nicht alles verstanden hast.
+                Du hast genug Zeit, um in Zukunft mehr darüber zu lernen! 
+                Wenn du ein Feedback hast, lass es uns bitte wissen!
             </p>
-            <FeedbackForm key={_index}  slide={_index} part={"assessment"}></FeedbackForm>
+            <FeedbackForm key={_index}  slide={_index} part={"assessment"} language={"EN"} next={() => console.log('')}></FeedbackForm>
         </div>
-    );
+    ), []];
 }
 
 

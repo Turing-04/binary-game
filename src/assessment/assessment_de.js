@@ -66,7 +66,11 @@ class AssessmentDe extends React.Component {
                     <button className="floating-button-previous" onClick={() => this.previousIndex()}>Zurück</button>
                 }
                 {this.state.index < 8
-                    ? <button className="floating-button-next" onClick={() => this.nextIndex()}>Weiter</button>
+                    ? <button className="floating-button-next" onClick={() => {
+                        this.nextIndex();
+                        var boardStrings = this.getContent()[1]
+                        boardStrings.forEach(this.serializeBoard)}}>
+                    Weiter</button>
                     : null
                 }
             </div>

@@ -1,5 +1,5 @@
 import React, {useCallback} from 'react';
-import {logScreenChange} from "../utils/firebase"
+import {logScreenChange, logBoard} from "../utils/firebase"
 import constants from "../constants";
 import {useNavigate} from "react-router-dom";
 import * as Assessments from "./assessmentContent";
@@ -49,6 +49,11 @@ class Assessment extends React.Component {
         }
     }
 
+    serializeBoard = (boardString) =>{
+        let components = boardString.split('|');
+        logBoard(constants.uuid, 'assessment', this.state.index , components[0], components[1], components[2], components[3]);
+    }
+
     render() {
         return (
             <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh'}}>
@@ -57,7 +62,11 @@ class Assessment extends React.Component {
                     <button className="floating-button-previous" onClick={() => this.previousIndex()}>Previous</button>
                 }
                 {this.state.index < 8
-                    ? <button className="floating-button-next" onClick={() => this.nextIndex()}>Next</button>
+                    ? <button className="floating-button-next" onClick={() => {
+                        this.nextIndex();
+                        var boardStrings = this.getContent()[1]
+                        boardStrings.forEach(this.serializeBoard)}}>
+                    Next</button>
                     : null
                 }
             </div>
