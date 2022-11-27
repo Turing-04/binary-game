@@ -31,7 +31,6 @@ class FeedbackForm extends React.Component {
       }
 
       doSubmit(message){
-        this.props.next();
         console.log(constants.uuid)
         this.setState({value: '', sent: true});
         logFeedback(constants.uuid, this.state.slide, message, this.state.part)

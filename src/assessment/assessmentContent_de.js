@@ -2,7 +2,6 @@ import React from "react";
 import Board from "../interactive/board";
 import FeedbackForm from "../problemSolving/feedbackForm";
 
-//TODO: translate
 
 export function Assessment0(_index) {
     return (
@@ -73,14 +72,13 @@ export function Assessment5(_index) {
     return (
         <div>
             <h1>
-                Represent the number 17 in binary.
+                Represent the number 21 in binary.
             </h1>
             <Board binary={true} width={5} height={1} interactive={true} key={_index} labels={true}>
             </Board>
         </div>
     );
 }
-
 
 export function Assessment6(_index) {
     return (
@@ -94,7 +92,34 @@ export function Assessment6(_index) {
 }
 
 
+
+
+//TODO : Add puzzle activity right here !
 export function Assessment7(_index) {
+    return (
+        <div>
+            <h1>
+                Finally, let's play a quick game using your new binary skills ! <br/>
+                Try to represent the different values on the grid using binary. <br/>
+                You might end up with a nice little drawing :)
+            </h1>
+            <Board key={_index} width={8} height={8} interactive={true} labels={true} binary={true} puzzle={true}
+                   answer={[
+                       false, false, true, true, true, true, false, false,
+                       false, true, false, false, false, false, true, false,
+                       true, false, true, false, false, true, false, true,
+                       true, false, false, false, false, false, false, true,
+                       true, false, true, false, false, true, false, true,
+                       true, false, false, true, true, false, false, true,
+                       false, true, false, false, false, false, true, false,
+                       false, false, true, true, true, true, false, false,
+                   ]}>
+            </Board>
+        </div>
+    );
+}
+
+export function Assessment8(_index) {
     return (
         <div>
             <h1>
@@ -111,4 +136,7 @@ export function Assessment7(_index) {
         </div>
     );
 }
+
+
+
 

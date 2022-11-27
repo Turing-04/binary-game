@@ -1,13 +1,17 @@
 import React from "react";
 import LightOff from '../resources/light_off.png';
+import LightOffPuzzle from '../resources/light_off_2.png';
 import LightOn from '../resources/light_on.png';
+import LightOnPuzzle from '../resources/light_on_2.png';
 import PropTypes from 'prop-types';
 import Row from 'react-bootstrap/Row';
 
 class Square extends React.Component {
     render() {
         return (
-            <img src={this.props.on ? LightOn : LightOff}
+            <img src={this.props.on
+                        ? (this.props.puzzle ? LightOnPuzzle : LightOn)
+                        : (this.props.puzzle ? LightOffPuzzle : LightOff)}
                  alt={this.props.on ? "LightOn" : "LightOff"}
                  className={"bulbs"}
                  onClick={this.props.onClick}></img>
@@ -26,6 +30,8 @@ class Board extends React.Component {
     *  interactive: whether the board is interactive or not
     *  labels: whether to show labels or not
     *  binary: whether to show labels in binary or not
+    *  next: function to call when the board is clicked
+    *  puzzle: whether it is part of the puzzle or not
      */
     constructor(props) {
         super(props);
@@ -56,11 +62,14 @@ class Board extends React.Component {
     renderSquare(i) {
         return <Square
             key={i}
+            puzzle={this.props.puzzle}
             on={this.state.grid[i]}
             colored={this.state.grid[i]}
             onClick={() => {
                 this.handleClick(i);
-                this.props.next();
+                if (this.props.next) {
+                    this.props.next();
+                }
                 }}
         />;
     }

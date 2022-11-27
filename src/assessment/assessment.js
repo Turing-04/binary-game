@@ -16,14 +16,6 @@ class Assessment extends React.Component {
 
 
     nextIndex() {
-        if (this.state.index === 45) {
-            if (constants.group === "ips") {
-                this.props.navigation("/problem-solving");
-            }
-            else {
-                this.props.navigation("/assessment");
-            }
-        }
         logScreenChange(constants.uuid, 'Instruction', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index+1)
         this.setState({index: this.state.index + 1, time_started: new Date().getTime()}, () => {
             console.log(this.state.index);
@@ -51,6 +43,7 @@ class Assessment extends React.Component {
             case 5: return Assessments.Assessment5(5);
             case 6: return Assessments.Assessment6(6);
             case 7: return Assessments.Assessment7(7);
+            case 8: return Assessments.Assessment8(8);
             default: return null;
             // Need to handle IPS or PSI to redirect correctly !
         }
