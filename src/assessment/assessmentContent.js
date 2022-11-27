@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 
 
 export function Assessment0(_index) {
-    return [(
+    return ([
         <div>
             <h1>
                 Congratulations on making it this far!
@@ -15,11 +15,11 @@ export function Assessment0(_index) {
                 Again, no wrong answers, just try your best!
             </p>
         </div>
-    ),[]];
+    ,[]]);
 }
 
 export function Assessment1(_index) {
-    return [(
+    return ([
         <div>
             <h1>
                 Assume you found a system to represent numbers <br/>
@@ -29,11 +29,12 @@ export function Assessment1(_index) {
             <FeedbackForm key={_index} slide={_index} part={"assessment"} language={"EN"} next={() => console.log('')}></FeedbackForm>
 
         </div>
-    ), []];
+ , []]
+    );
 }
 
 export function Assessment2(_index) {
-    return [(
+    return ([
         <div>
             <h1>
                 What is the main deficit of using as many light bulbs <br/>
@@ -41,11 +42,12 @@ export function Assessment2(_index) {
             </h1>
             <FeedbackForm key={_index}  slide={_index} part={"assessment"} language={"EN"} next={() => console.log('')}></FeedbackForm>
         </div>
-    ), []];
+ , []]
+    );
 }
 
 export function Assessment3(_index) {
-    return [(
+    return ([
         <div>
             <h1>
                 What is the smallest number of lightbulbs to represent <br/>
@@ -53,11 +55,12 @@ export function Assessment3(_index) {
             </h1>
             <FeedbackForm key={_index}  slide={_index} part={"assessment"} language={"EN"} next={() => console.log('')}></FeedbackForm>
         </div>
-    ), []];
+ , []]
+    );
 }
 
 export function Assessment4(_index) {
-    return [(
+    return ([
         <div>
             <h1>
                 A lightbulb can only be on or off. <br/>
@@ -66,12 +69,13 @@ export function Assessment4(_index) {
             </h1>
             <FeedbackForm key={_index}  slide={_index} part={"assessment"} language={"EN"} next={() => console.log('')}></FeedbackForm>
         </div>
-    ), []];
+ , []]
+    );
 }
 
 var boardString5 = '';
 export function Assessment5(_index) {
-    return [(
+    return ([
         <div>
             <h1>
                 Represent the number 21 in binary.
@@ -79,18 +83,19 @@ export function Assessment5(_index) {
             <Board binary={true} width={5} height={1} interactive={true} key={_index} labels={true} log={(x) => boardString5 = x}>
             </Board>
         </div>
-    ), [boardString5]];
+    , [boardString5]]);
 }
 
 export function Assessment6(_index) {
-    return [(
+    return ([
         <div>
             <h1>
                 Which number does the binary string “1011” represent?
             </h1>
             <FeedbackForm key={_index}  slide={_index} part={"assessment"} language={"EN"} next={() => console.log('')}></FeedbackForm>
         </div>
-    ), []];
+ , []]
+    );
 }
 
 
@@ -99,7 +104,7 @@ export function Assessment6(_index) {
 //TODO : Add puzzle activity right here !
 var boardString7 = '';
 export function Assessment7(_index) {
-    return [(
+    return ([
         <div>
             <h1>
                 Finally, let's play a quick game using your new binary skills ! <br/>
@@ -119,11 +124,11 @@ export function Assessment7(_index) {
                          ]}>
             </Board>
         </div>
-    ), [boardString7]];
+    , [boardString7]]);
 }
 
 export function Assessment8(_index) {
-    return [(
+    return ([
         <div>
             <h1>
                 Congratulations!
@@ -137,7 +142,8 @@ export function Assessment8(_index) {
             </p>
             <FeedbackForm key={_index}  slide={_index} part={"assessment"} language={"EN"} next={() => console.log('')}></FeedbackForm>
         </div>
-    ), []];
+ , []]
+    );
 }
 
 
