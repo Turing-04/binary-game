@@ -25,7 +25,7 @@ class AssessmentDe extends React.Component {
                 this.props.navigation("/assessment");
             }
         }
-        logScreenChange(constants.uuid, 'Assessment', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index+1)
+        logScreenChange(constants.uuid, 'Assessment', + new Date(),(new Date().getTime() - this.state.time_started) / 1000,this.state.index, this.state.index+1)
         this.setState({index: this.state.index + 1, time_started: new Date().getTime()}, () => {
             console.log(this.state.index);
         });
@@ -36,7 +36,7 @@ class AssessmentDe extends React.Component {
         if (this.state.index === 0) {
             return;
         }
-        logScreenChange(constants.uuid, 'Assessment', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index-1)
+        logScreenChange(constants.uuid, 'Assessment', + new Date(),(new Date().getTime() - this.state.time_started) / 1000,this.state.index, this.state.index-1)
         this.setState({index:Math.max(this.state.index - 1,0)}, () => {
             console.log(this.state.index)
         });
@@ -76,7 +76,8 @@ class AssessmentDe extends React.Component {
                 :  null
                 }
                 {this.state.index < 7 &&
-                     <button className="floating-button-next" onClick={() => {                        
+                     <button className="floating-button-next" onClick={() => { 
+                        var boardStrings = this.getContent()[1]                       
                         boardStrings.forEach(this.serializeBoard)
                         this.nextIndex()
                     }}>Weiter</button>
@@ -84,7 +85,13 @@ class AssessmentDe extends React.Component {
                    {this.state.index == 7 &&
                    <button className="floating-button-next" onClick={() => {
                     let done = window.confirm(" Sicher, dass du alle Fragen beantwortet hast? \n Es gibt kein zurück mehr!");
-                    if(done) this.nextIndex();
+                    if(done) 
+                    {
+                    var boardStrings = this.getContent()[1]  
+                    boardStrings.forEach(this.serializeBoard)
+                    this.nextIndex();
+
+                    }
                    }}>Fertig</button>
                 }
             </div>

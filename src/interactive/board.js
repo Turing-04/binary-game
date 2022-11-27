@@ -41,6 +41,7 @@ class Board extends React.Component {
                 ? this.props.initial
                 : Array(size).fill(false)
         }
+
     }
 
     handleClick(i) {
@@ -59,7 +60,6 @@ class Board extends React.Component {
             
             let boardString = gridString +'|' + this.props.width + '|' + this.props.height + '|' + this.props.id
             this.props.log(boardString)
-
             
         }
     }
@@ -84,6 +84,14 @@ class Board extends React.Component {
         let height = this.props.height;
         let width = this.props.width;
         let squares = [];
+
+
+
+        const grid = this.state.grid.slice();
+        let gridString = grid.map((x) => x ? "1" : "0").join("");
+        let boardString = gridString +'|' + this.props.width + '|' + this.props.height + '|' + this.props.id
+        this.props.log(boardString)
+
 
         for (let i = 0; i < width * height; i++) {
             squares.push(this.renderSquare(i));
@@ -151,7 +159,8 @@ Board.propTypes = {
 
 
 Board.defaultProps = {
-    id: 0
+    id: 0,
+    log: console.log
   }
 
 export default Board;

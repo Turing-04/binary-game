@@ -16,7 +16,7 @@ class Assessment extends React.Component {
 
 
     nextIndex() {
-        logScreenChange(constants.uuid, 'Assessment', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index+1)
+        logScreenChange(constants.uuid, 'Assessment', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index, this.state.index+1)
         this.setState({index: this.state.index + 1, time_started: new Date().getTime()}, () => {
             console.log(this.state.index);
         });
@@ -27,7 +27,7 @@ class Assessment extends React.Component {
         if (this.state.index === 0) {
             return;
         }
-        logScreenChange(constants.uuid, 'Assessment', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index-1)
+        logScreenChange(constants.uuid, 'Assessment', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index, this.state.index-1)
         this.setState({index:Math.max(this.state.index - 1,0)}, () => {
             console.log(this.state.index)
         });
@@ -51,6 +51,7 @@ class Assessment extends React.Component {
 
     serializeBoard = (boardString) =>{
         let components = boardString.split('|');
+        console.log(components)
         logBoard(constants.uuid, 'assessment', this.state.index , components[0], components[1], components[2], components[3]);
     }
 
@@ -65,15 +66,20 @@ class Assessment extends React.Component {
                 :  null
                 }
                 {this.state.index < 7 &&
-                     <button className="floating-button-next" onClick={() => {                        
-                        boardStrings.forEach(this.serializeBoard)
-                        this.nextIndex()
+                     <button className="floating-button-next" onClick={() => {
+                        var boardStrings = this.getContent()[1]                        
+                        this.serializeBoard(boardStrings);
+                        this.nextIndex();
                     }}>Next</button>
                    }
                    {this.state.index == 7 &&
                    <button className="floating-button-next" onClick={() => {
                     let done = window.confirm(" Are you sure you're done with the assessment? \n There is no going back!");
-                    if(done) this.nextIndex();
+                    if(done) {
+                        var boardStrings = this.getContent()[1]                        
+                        this.serializeBoard(boardStrings);
+                        this.nextIndex();
+                    }
                    }}>Done</button>
                 }
             </div>

@@ -15,7 +15,7 @@ export function Assessment0(_index) {
                 Again, no wrong answers, just try your best!
             </p>
         </div>
-    ,[]]);
+    ,'']);
 }
 
 export function Assessment1(_index) {
@@ -29,7 +29,7 @@ export function Assessment1(_index) {
             <FeedbackForm key={_index} slide={_index} part={"assessment"} language={"EN"} next={() => console.log('')}></FeedbackForm>
 
         </div>
- , []]
+ , '']
     );
 }
 
@@ -42,7 +42,7 @@ export function Assessment2(_index) {
             </h1>
             <FeedbackForm key={_index}  slide={_index} part={"assessment"} language={"EN"} next={() => console.log('')}></FeedbackForm>
         </div>
- , []]
+ , '']
     );
 }
 
@@ -55,7 +55,7 @@ export function Assessment3(_index) {
             </h1>
             <FeedbackForm key={_index}  slide={_index} part={"assessment"} language={"EN"} next={() => console.log('')}></FeedbackForm>
         </div>
- , []]
+ , '']
     );
 }
 
@@ -69,7 +69,7 @@ export function Assessment4(_index) {
             </h1>
             <FeedbackForm key={_index}  slide={_index} part={"assessment"} language={"EN"} next={() => console.log('')}></FeedbackForm>
         </div>
- , []]
+ , '']
     );
 }
 
@@ -80,10 +80,10 @@ export function Assessment5(_index) {
             <h1>
                 Represent the number 21 in binary.
             </h1>
-            <Board binary={true} width={5} height={1} interactive={true} key={_index} labels={true} log={(x) => boardString5 = x}>
+            <Board binary={true} width={5} height={1} interactive={true} key={_index} labels={true} next={() => console.log('')} log={(x) => boardString5 = x}>
             </Board>
         </div>
-    , [boardString5]]);
+    , boardString5]);
 }
 
 export function Assessment6(_index) {
@@ -94,7 +94,7 @@ export function Assessment6(_index) {
             </h1>
             <FeedbackForm key={_index}  slide={_index} part={"assessment"} language={"EN"} next={() => console.log('')}></FeedbackForm>
         </div>
- , []]
+ , '']
     );
 }
 
@@ -111,7 +111,7 @@ export function Assessment7(_index) {
                 Try to represent the different values on the grid using binary. <br/>
                 You might end up with a nice little drawing :)
             </h1>
-            <Board key={_index} width={8} height={8} interactive={true} labels={true} binary={true} puzzle={true} log={(x) => boardString7 = x}
+            <Board key={_index} width={8} height={8} interactive={true} labels={true} binary={true} puzzle={true} next={() => console.log('')} log={(x) => boardString7 = x}
                          answer={[
                              false, false, true, true, true, true, false, false,
                              false, true, false, false, false, false, true, false,
@@ -124,7 +124,7 @@ export function Assessment7(_index) {
                          ]}>
             </Board>
         </div>
-    , [boardString7]]);
+    , boardString7]);
 }
 
 export function Assessment8(_index) {
@@ -142,7 +142,7 @@ export function Assessment8(_index) {
             </p>
             <FeedbackForm key={_index}  slide={_index} part={"assessment"} language={"EN_done"} next={() => console.log('')}></FeedbackForm>
         </div>
- , []]
+ , '']
     );
 }
 
