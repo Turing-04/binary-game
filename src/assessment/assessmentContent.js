@@ -72,7 +72,7 @@ export function Assessment5(_index) {
     return (
         <div>
             <h1>
-                Represent the number 17 in binary.
+                Represent the number 21 in binary.
             </h1>
             <Board binary={true} width={5} height={1} interactive={true} key={_index} labels={true}>
             </Board>
@@ -81,19 +81,23 @@ export function Assessment5(_index) {
 }
 
 
-export function Assessment6(_index) {
+
+
+//TODO : Add puzzle activity right here !
+export function Assessment7(_index) {
     return (
         <div>
             <h1>
-                Which number does the binary string “1011” represent?
+                Finaly, let's play a quick game using your new binary skills ! <br/>
+                Try to represent the different values on the grid using binary. <br/>
+                You might end up with a nice little drawing :)
             </h1>
-            <FeedbackForm slide={_index} part={"assessment"}></FeedbackForm>
+            
         </div>
     );
 }
 
-
-export function Assessment7(_index) {
+export function Assessment8(_index) {
     return (
         <div>
             <h1>
@@ -110,4 +114,7 @@ export function Assessment7(_index) {
         </div>
     );
 }
+
+
+
 

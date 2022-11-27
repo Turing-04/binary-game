@@ -53,6 +53,7 @@ class AssessmentDe extends React.Component {
             case 7: return Assessments.Assessment7(7);
             default: return null;
             // Need to handle IPS or PSI to redirect correctly !
+            // Need to take care of the puzzle implementation ?
         }
     }
 
