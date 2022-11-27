@@ -41,6 +41,8 @@ p {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    height:auto;
+    max-width: 95%;
   }
 
   .square-image-layout {

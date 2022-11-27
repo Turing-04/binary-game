@@ -62,16 +62,21 @@ class AssessmentDe extends React.Component {
         return (
             <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh'}}>
                 <div>{this.getContent()}</div>
-                {0 < this.state.index &&
-                    <button className="floating-button-previous" onClick={() => this.previousIndex()}>Zurück</button>
+                {0 < this.state.index && this.state.index < 8 
+                ? <button className="floating-button-previous" onClick={() => this.previousIndex()}>Previous</button>
+                :  null
                 }
-                {this.state.index < 8
-                    ? <button className="floating-button-next" onClick={() => {
-                        this.nextIndex();
+                {this.state.index < 7 &&
+                     <button className="floating-button-next" onClick={() => {                        
                         var boardStrings = this.getContent()[1]
-                        boardStrings.forEach(this.serializeBoard)}}>
-                    Weiter</button>
-                    : null
+                        boardStrings.forEach(this.serializeBoard)
+                    }}>Next</button>
+                   }
+                   {this.state.index == 7 &&
+                   <button className="floating-button-next" onClick={() => {
+                    let done = window.confirm(" Sicher, dass du alle Fragen beantwortet hast? \n Es gibt kein zurück mehr!");
+                    if(done) this.nextIndex();
+                   }}>Done</button>
                 }
             </div>
         );

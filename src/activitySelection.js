@@ -14,7 +14,7 @@ class ActivitySelection extends React.Component {
 
                 <Row>
                     <h1>Hello {constants.name}!</h1>
-                    <p style={{width: 600}}>
+                    <p style={{width: "22vw", fontSize: "1.2vw"}}>
                         Today we are going to explore something called binary.
                         <br/>
                         Have you ever heard of it?
@@ -27,7 +27,7 @@ class ActivitySelection extends React.Component {
                     </p>
                 </Row>
                 <Row>
-                    <div style={{width: 100}}></div>
+                    <div style={{width: "2vw"}}></div>
                 </Row>
                 <Row>
                     <Link className="button" to="/problem-solving"
@@ -35,7 +35,7 @@ class ActivitySelection extends React.Component {
                     >Group 1</Link>
                 </Row>
                 <Row>
-                    <div style={{width: 100}}></div>
+                    <div style={{width: "2vw"}}></div>
                 </Row>
                 <Row>
                     <Link className="button" to="/instruction"
