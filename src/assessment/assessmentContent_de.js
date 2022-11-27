@@ -111,8 +111,8 @@ export function Assessment7(_index) {
         <div>
             <h1>
                 Zum Schluss noch ein kleines Spiel, bei dem du deine neuen Binärkenntnisse anwenden kannst! <br/>
-                Versuche, die verschiedenen Werte auf dem Raster mit Binärzahlen darzustellen. <br/>
-                Vielleicht bekommst du am Ende eine schöne kleine Zeichnung :) 
+                Versuche, die verschiedenen Werte auf dem Raster mit Binärzahlen . <br/>
+                darzustellen. Vielleicht bekommst du am Ende eine schöne kleine Zeichnung :) 
             </h1>
             <Board key={_index} width={8} height={8} interactive={true} labels={true} binary={true} puzzle={true} log={(x) => boardString7 = x}
                          answer={[

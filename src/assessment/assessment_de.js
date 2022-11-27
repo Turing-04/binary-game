@@ -72,7 +72,7 @@ class AssessmentDe extends React.Component {
             <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh'}}>
                 <div>{exo}</div>
                 {0 < this.state.index && this.state.index < 8 
-                ? <button className="floating-button-previous" onClick={() => this.previousIndex()}>Previous</button>
+                ? <button className="floating-button-previous" onClick={() => this.previousIndex()}>Zurück</button>
                 :  null
                 }
                 {this.state.index < 7 &&
@@ -85,7 +85,7 @@ class AssessmentDe extends React.Component {
                    <button className="floating-button-next" onClick={() => {
                     let done = window.confirm(" Sicher, dass du alle Fragen beantwortet hast? \n Es gibt kein zurück mehr!");
                     if(done) this.nextIndex();
-                   }}>Done</button>
+                   }}>Fertig</button>
                 }
             </div>
         );
