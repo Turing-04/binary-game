@@ -42,14 +42,19 @@ class Board extends React.Component {
             const grid = this.state.grid.slice();
             grid[i] = !this.state.grid[i];
             this.setState({grid: grid});
+            let gridString = grid.map((x) => x ? "1" : "0").join("");
+
             if (this.props.answer) {
                 let answerString = this.props.answer.map((x) => x ? "1" : "0").join("");
-                let gridString = grid.map((x) => x ? "1" : "0").join("");
                 if (answerString === gridString) {
                     alert("You win!");
                 }
             }
+            
+            let boardString = gridString +'|' + this.props.width + '|' + this.props.height + '|' + this.props.id
+            this.props.log(boardString)
 
+            
         }
     }
 
@@ -108,8 +113,14 @@ Board.propTypes = {
     initial: PropTypes.array,
     answer: PropTypes.array,
     next: PropTypes.func,
+    log: PropTypes.func,
     labels: PropTypes.bool.isRequired,
     binary: PropTypes.bool.isRequired,
 }
+
+
+Board.defaultProps = {
+    id: 0
+  }
 
 export default Board;

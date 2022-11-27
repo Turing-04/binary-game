@@ -52,7 +52,9 @@ async function logUser(username, age, uuid, language) {
         username: username,
         age: age,
         uuid: uuid,
-        language: language
+        language: language,
+        time: new Date().getTime()
+
     });
 }
 
@@ -62,9 +64,24 @@ async function logFeedback(uuid, slide, message, part) {
         uuid: uuid,
         slide: slide,
         message: message,
-        part: part
+        part: part,
+        time: new Date().getTime()
+
     });
 }
 
+async function logBoard(uuid, part, slide, gridString, width, height, id) {
+    const resultsCol = collection(db, "boards");
+    await setDoc(doc(resultsCol), {
+        uuid: uuid,
+        part: part,
+        slide: slide,
+        gridString: gridString,
+        width: width,
+        height: height,
+        id:id,
+        time: new Date().getTime()
+    });
+}
 
-export {getResults, addResults, logScreenChange, logUser, logFeedback};
+export {getResults, addResults, logScreenChange, logUser, logFeedback, logBoard};

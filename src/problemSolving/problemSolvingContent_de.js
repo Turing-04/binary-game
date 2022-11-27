@@ -11,7 +11,7 @@ export function ProblemSolving0(_index) {
                 an deinen Freund schicken! Versuche einen Weg zu finden, <br/>
                 deine Nachricht nur mit Glühbirnen zu übermitteln.
             </p>
-        </div>, true]
+        </div>, true, '']
     );
 }
 
@@ -23,7 +23,7 @@ export function ProblemSolving1(_index) {
                 Aber alles, was sie hat, sind ein paar Glühbirnen. <br/>
                 Kannst du ihr helfen?
             </h1>
-        </div>, true]
+        </div>, true, '']
     );
 }
 
@@ -34,7 +34,7 @@ export function ProblemSolving2(_index) {
                 Sie kann jede der Glühbirnen ein- oder ausschalten. <br/>
                 Wie kann ihr das helfen?
             </h1>
-        </div>, true]
+        </div>, true, '']
     );
 }
 
@@ -48,11 +48,13 @@ export function ProblemSolving3(_index) {
                 Es gibt keine falsche Lösung! Versuche, einen <br/>
                 eigenen Weg zu finden, und erkläre deine Lösung!
             </p>
-        </div>, true]
+        </div>, true, '']
     );
 }
 
 var next4 = false;
+var  boardString4 = "";
+
 export function ProblemSolving4(_index) {
     return ([
         <div>
@@ -60,10 +62,10 @@ export function ProblemSolving4(_index) {
                 Alice möchte mit Hilfe dieses Gitters die Zahl 6 senden. <br/>
                 Kannst du ihr helfen?
             </h1>
-            <Board binary={false} width={6} height={5} interactive={true} key={_index} labels={false} next={() => next4=true}>
+            <Board binary={false} width={6} height={5} interactive={true} key={_index} labels={false} next={() => next4=true} log={(x) => boardString4 = x}>
             </Board>!
             <h1 style={{fontStyle:'italic', fontSize:'1.8vw'}}>Klicke auf die Glühbirnen um sie ein- und auszuschalten!</h1>
-        </div>, next4]
+        </div>, next4, boardString4]
     );
 }
 
@@ -77,7 +79,7 @@ export function ProblemSolving5(_index) {
                 Glaubst du, dass du mit diesem Raster längere Nachrichten versenden könntest?
             </h1>
             <FeedbackForm slide={5} part={"ps"} language={"DE"} next={() => next5=true}></FeedbackForm>
-        </div>, next5]
+        </div>, next5, '']
     );
 }
 
@@ -94,7 +96,7 @@ export function ProblemSolving6(_index) {
             </Board>
             <h1 style={{fontStyle:'italic', fontSize:'1.8vw'}}>Spiel mit den Glühbirnen um<br/>
             Bob "2022" zu senden</h1>
-        </div>, next6]
+        </div>, next6, '']
     );
 }
 
@@ -107,7 +109,7 @@ export function ProblemSolving7(_index) {
                 Was war die grösste Herausforderung?
             </h1>
             <FeedbackForm slide={7} part={"ps"} language={"DE"} next={() => next7=true}></FeedbackForm>
-        </div>, next7]
+        </div>, next7, '']
     );
 }
 
@@ -121,7 +123,7 @@ export function ProblemSolving8(_index) {
             </h1>
             <Board binary={false} width={6} height={5} interactive={true} key={_index} labels={false} next={() => next8=true}>
             </Board>
-            <h1 style={{fontStyle:'italic', fontSize:'1.8vw'}}>Finde einen Weg, das wort "BOB" an Alice zu senden</h1>        </div>, next8]
+            <h1 style={{fontStyle:'italic', fontSize:'1.8vw'}}>Finde einen Weg, das wort "BOB" an Alice zu senden</h1>        </div>, next8, '']
     );
 }
 
@@ -134,7 +136,7 @@ export function ProblemSolving9(_index) {
                 einen Symbol pro Zeile darzustellen? <br/>
                 Versuche es mit einer Zeile pro Buchstabe!
             </h1>
-        </div>, true]
+        </div>, true, '']
     );
 }
 
@@ -165,7 +167,7 @@ export function ProblemSolving10(_index) {
                 <Row> <h1>3 =></h1> </Row>
                 <Row> <Board binary={false} width={9} height={1} interactive={true} key={104} labels={false} next={() => next10=true}></Board> </Row>
             </div>
-        </div>, next10]
+        </div>, next10, '']
     );
 }
 
@@ -196,7 +198,7 @@ export function ProblemSolving11(_index) {
                 <Row> <h1>E =></h1> </Row>
                 <Row> <Board binary={false} width={9} height={1} interactive={true} key={204} labels={false} next={() => next11=true}></Board> </Row>
             </div>
-        </div>, next11]
+        </div>, next11, '']
     );
 }
 
@@ -211,7 +213,7 @@ export function ProblemSolving12(_index) {
             </h1>
             <FeedbackForm slide={12} part={"ps"} language={"DE"} next={() => next12=true}></FeedbackForm>
 
-        </div>, next12]
+        </div>, next12, '']
     );
 }
 
@@ -224,7 +226,7 @@ export function ProblemSolving13(_index) {
                 noch weniger Glühbirnen pro Zeile versenden könntest?
             </h1>
 
-        </div>, true]
+        </div>, true, '']
     );
 }
 
@@ -257,7 +259,7 @@ export function ProblemSolving14(_index) {
                 <Row> <h1>13 =></h1> </Row>
                 <Row> <Board binary={false} width={4} height={1} interactive={true} key={304} labels={false} next={() => next14=true}></Board> </Row>
             </div>
-        </div>, next14]
+        </div>, next14, '']
     );
 }
 
@@ -288,7 +290,7 @@ export function ProblemSolving15(_index) {
                 <Row> <h1>E =></h1> </Row>
                 <Row> <Board binary={false} width={4} height={1} interactive={true} key={404} labels={false} next={() => next15=true}></Board> </Row>
             </div>
-        </div>, next15]
+        </div>, next15, '']
     );
 }
 
@@ -303,7 +305,7 @@ export function ProblemSolving16(_index) {
             </h1>
             <FeedbackForm slide={16} part={"ps"} language={"DE"} next={() => next16=true}></FeedbackForm>
 
-        </div>, next16]
+        </div>, next16, '']
     );
 }
 
@@ -315,6 +317,6 @@ export function ProblemSolving17(_index) {
                 Du hast keine Ahnung, was diese Aufgabe sollte? <br/>
                 Keine Sorge, wir werden es jetzt erklären!
             </h1>
-        </div>, true]
+        </div>, true, '']
     );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import * as Problems from "./problemSolvingContent_de";
-import {logScreenChange} from "../utils/firebase"
+import {logScreenChange, logBoard} from "../utils/firebase"
 import constants from "../constants";
 
 class ProblemSolvingDe extends React.Component {
@@ -66,6 +66,11 @@ class ProblemSolvingDe extends React.Component {
         }
     }
 
+    serializeBoard(boardString){
+        let components = boardString.split('|');
+        logBoard(constants.uuid, 'ps', this.state.index, components[0], components[1], components[2]);
+    }
+
     render() {
         var [exo, next] = this.getContent()
 
@@ -81,8 +86,13 @@ class ProblemSolvingDe extends React.Component {
                 {this.state.index < 17 && 
                      <button className="floating-button-next" onClick={() => {
                         var next=this.getContent()[1];
+                        var boardString = this.getContent()[2]
+
                         if (next) {
                             this.nextIndex();
+                            if(boardString != '') {
+                                this.serializeBoard(boardString)
+                            }
                         } else if([5,7,12,16].includes(this.state.index)) {
                             alert("Bitte sende etwas bevor du weiter machst!")
                         } else {

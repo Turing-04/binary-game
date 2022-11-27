@@ -1,6 +1,6 @@
 import React from "react";
 import * as Problems from "./problemSolvingContent";
-import {logScreenChange} from "../utils/firebase"
+import {logScreenChange, logBoard} from "../utils/firebase"
 import constants from "../constants";
 
 class ProblemSolving extends React.Component {
@@ -64,6 +64,12 @@ class ProblemSolving extends React.Component {
         }
     }
 
+    // FIXME: this syntax made it work, idk why
+    serializeBoard = (boardString) =>{
+        let components = boardString.split('|');
+        logBoard(constants.uuid, 'ps', this.state.index , components[0], components[1], components[2], components[3]);
+    }
+
     render() {
         var [exo, next] = this.getContent()
 
@@ -79,8 +85,10 @@ class ProblemSolving extends React.Component {
                 {this.state.index < 17 && 
                      <button className="floating-button-next" onClick={() => {
                         var next=this.getContent()[1];
+                        var boardStrings = this.getContent()[2]
                         if (next) {
                             this.nextIndex();
+                            boardStrings.forEach(this.serializeBoard)
                         } else if([5,7,12,16].includes(this.state.index)) {
                             alert("Please submit something before moving on to the next exercice!")
                         } else {
