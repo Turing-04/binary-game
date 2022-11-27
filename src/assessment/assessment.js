@@ -66,6 +66,7 @@ class Assessment extends React.Component {
                      <button className="floating-button-next" onClick={() => {                        
                         var boardStrings = this.getContent()[1]
                         boardStrings.forEach(this.serializeBoard)
+                        this.nextIndex()
                     }}>Next</button>
                    }
                    {this.state.index == 7 &&
