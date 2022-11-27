@@ -32,7 +32,7 @@ class LoginForm extends React.Component {
     constants.name = this.state.name
     constants.age = this.state.age
     constants.uuid = uuidv4()
-    logUser(this.state.name, this.state.age, constants.uuid)
+    logUser(this.state.name, this.state.age, constants.uuid, 'EN')
   }
 
   render() {

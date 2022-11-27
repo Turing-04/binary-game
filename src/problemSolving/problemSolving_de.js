@@ -15,13 +15,13 @@ class ProblemSolvingDe extends React.Component {
     nextIndex() {
         if (this.state.index === 17) {
             if (constants.group === "psi") {
-                this.props.navigation("/instruction-de");
+                this.props.navigation("/instruction");
             }
             else {
-                this.props.navigation("/assessment-de");
+                this.props.navigation("/assessment");
             }
         }
-        logScreenChange(constants.uuid, 'Problem Solving', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index+1)
+        logScreenChange(constants.uuid, 'Problem Solving', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index, this.state.index+1)
         this.setState({index: this.state.index + 1, time_started: new Date().getTime()}, () => {
             console.log(this.state.index);
         });
@@ -32,11 +32,12 @@ class ProblemSolvingDe extends React.Component {
         if (this.state.index === 0) {
             return;
         }
-        logScreenChange(constants.uuid, 'Problem Solving', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index-1)
+        logScreenChange(constants.uuid, 'Problem Solving', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index, this.state.index-1)
         this.setState({index:Math.max(this.state.index - 1,0)}, () => {
             console.log(this.state.index)
         });
     }
+
 
     getContent() {
         switch (this.state.index) {

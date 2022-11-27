@@ -31,26 +31,28 @@ async function addResults(answer) {
 }
 
 
-async function logScreenChange(user, group, timestamp, timespent, nextactivity) {
+async function logScreenChange(user, group, timestamp, timespent, currentactivity, nextactivity) {
     const resultsCol = collection(db, "logs");
     // i have no idea why, but reomving this line will cause the logging to fail
     console.log(user)
     await setDoc(doc(resultsCol), {
         user: user,
         cause: 'screenChange',
-        group: group,
+        part: group,
         timestamp: timestamp,
         timespent: timespent,
+        currentactivity: currentactivity,
         nextactivity: nextactivity
     });
 }
 
-async function logUser(username, age, uuid) {
+async function logUser(username, age, uuid, language) {
     const resultsCol = collection(db, "users");
     await setDoc(doc(resultsCol), {
         username: username,
         age: age,
-        uuid: uuid
+        uuid: uuid,
+        language: language
     });
 }
 

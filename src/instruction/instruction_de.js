@@ -17,13 +17,13 @@ class InstructionDe extends React.Component {
     nextIndex() {
         if (this.state.index === 45) {
             if (constants.group === "ips") {
-                this.props.navigation("/problem-solving-de");
+                this.props.navigation("/problem-solving");
             }
             else {
-                this.props.navigation("/assessment-de");
+                this.props.navigation("/assessment");
             }
         }
-        logScreenChange('wengle','instruction', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index+1)
+        logScreenChange(constants.uuid, 'Instruction', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index, this.state.index+1)
         this.setState({index: this.state.index + 1, time_started: new Date().getTime()}, () => {
             console.log(this.state.index);
         });
@@ -34,6 +34,7 @@ class InstructionDe extends React.Component {
         if (this.state.index === 0) {
             return;
         }
+        logScreenChange(constants.uuid, 'Instruction', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index, this.state.index-1)
         this.setState({index:Math.max(this.state.index - 1,0)}, () => {
             console.log(this.state.index)
         });
