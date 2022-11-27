@@ -1,5 +1,6 @@
 import React, {useCallback} from 'react';
-import {logScreenChange} from "../utils/firebase"
+import {logScreenChange, logBoard} from "../utils/firebase"
+
 import constants from "../constants";
 import {useNavigate} from "react-router-dom";
 import * as Assessments from "./assessmentContent_de";
@@ -41,6 +42,12 @@ class AssessmentDe extends React.Component {
         });
     }
 
+    
+    serializeBoard = (boardString) =>{
+        let components = boardString.split('|');
+        logBoard(constants.uuid, 'assessment', this.state.index , components[0], components[1], components[2], components[3]);
+    }
+
     getContent() {
         switch (this.state.index) {
             case 0: return Assessments.Assessment0(0);
@@ -59,20 +66,20 @@ class AssessmentDe extends React.Component {
     }
 
     render() {
+        var [exo, boardStrings] = this.getContent();
         return (
+            
             <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh'}}>
-                <div>{this.getContent()}</div>
+                <div>{exo}</div>
                 {0 < this.state.index && this.state.index < 8 
                 ? <button className="floating-button-previous" onClick={() => this.previousIndex()}>Previous</button>
                 :  null
                 }
                 {this.state.index < 7 &&
                      <button className="floating-button-next" onClick={() => {                        
-                        var boardStrings = this.getContent()[1]
                         boardStrings.forEach(this.serializeBoard)
                         this.nextIndex()
-
-                    }}>Next</button>
+                    }}>Weiter</button>
                    }
                    {this.state.index == 7 &&
                    <button className="floating-button-next" onClick={() => {
