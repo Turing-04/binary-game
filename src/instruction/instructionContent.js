@@ -43,6 +43,7 @@ export function Instruction2(_index) {
             a number, like this:</h1>
             <img
             style={{alignSelf: 'center'}}
+            class= "image-layout"
             src={Fingers}
             alt="fingers_count"
             />
