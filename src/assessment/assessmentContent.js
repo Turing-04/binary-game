@@ -140,7 +140,7 @@ export function Assessment8(_index) {
                 you'll have plenty of time to learn more about it in the future! <br/>
                 If you have any feedback, please let us know!
             </p>
-            <FeedbackForm key={_index}  slide={_index} part={"assessment"} language={"EN"} next={() => console.log('')}></FeedbackForm>
+            <FeedbackForm key={_index}  slide={_index} part={"assessment"} language={"EN_done"} next={() => console.log('')}></FeedbackForm>
         </div>
  , []]
     );
