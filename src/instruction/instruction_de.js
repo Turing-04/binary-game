@@ -17,10 +17,10 @@ class InstructionDe extends React.Component {
     nextIndex() {
         if (this.state.index === 45) {
             if (constants.group === "ips") {
-                this.props.navigation("/problem-solving");
+                this.props.navigation("/problem-solving-de");
             }
             else {
-                this.props.navigation("/assessment");
+                this.props.navigation("/assessment-de");
             }
         }
         logScreenChange(constants.uuid, 'Instruction', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index, this.state.index+1)
@@ -102,7 +102,7 @@ class InstructionDe extends React.Component {
                 }
                 {this.state.index < 45
                     ? <button className="floating-button-next" onClick={() => this.nextIndex()}>Weiter</button>
-                    : <button className="floating-button-next" onClick={() => this.nextIndex()}>Nächster Schritt</button>
+                    : <button className="floating-button-next" onClick={() => this.nextIndex()}>Nächste Etappe</button>
                 }
             </div>
         );

@@ -15,10 +15,10 @@ class ProblemSolvingDe extends React.Component {
     nextIndex() {
         if (this.state.index === 17) {
             if (constants.group === "psi") {
-                this.props.navigation("/instruction");
+                this.props.navigation("/instruction-de");
             }
             else {
-                this.props.navigation("/assessment");
+                this.props.navigation("/assessment-de");
             }
         }
         logScreenChange(constants.uuid, 'Problem Solving', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index, this.state.index+1)
@@ -76,7 +76,7 @@ class ProblemSolvingDe extends React.Component {
     
 
                 {0 < this.state.index &&
-                    <button className="floating-button-previous" onClick={() => this.previousIndex()}>Previous</button>
+                    <button className="floating-button-previous" onClick={() => this.previousIndex()}>Zurück</button>
                 }
                 {this.state.index < 17 && 
                      <button className="floating-button-next" onClick={() => {
@@ -88,7 +88,7 @@ class ProblemSolvingDe extends React.Component {
                         } else {
                             alert("Versuche die Aufgabe zu lösen bevor du weitergehst!")
                         }
-                        }}>Next</button>
+                        }}>Weiter</button>
                  }
                  {this.state.index == 17 && next &&
                   <button className="floating-button-next" onClick={() => this.nextIndex()}>Nächste Etappe</button>
