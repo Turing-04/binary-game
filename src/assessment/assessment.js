@@ -16,7 +16,7 @@ class Assessment extends React.Component {
 
 
     nextIndex() {
-        logScreenChange(constants.uuid, 'Assessment', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index+1)
+        //logScreenChange(constants.uuid, 'Instruction', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index+1)
         this.setState({index: this.state.index + 1, time_started: new Date().getTime()}, () => {
             console.log(this.state.index);
         });
@@ -27,7 +27,7 @@ class Assessment extends React.Component {
         if (this.state.index === 0) {
             return;
         }
-        logScreenChange(constants.uuid, 'Assessment', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index-1)
+        //logScreenChange(constants.uuid, 'Instruction', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index-1)
         this.setState({index:Math.max(this.state.index - 1,0)}, () => {
             console.log(this.state.index)
         });
@@ -53,12 +53,18 @@ class Assessment extends React.Component {
         return (
             <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh'}}>
                 <div>{this.getContent()}</div>
-                {0 < this.state.index &&
-                    <button className="floating-button-previous" onClick={() => this.previousIndex()}>Previous</button>
+                {0 < this.state.index && this.state.index < 8 
+                ? <button className="floating-button-previous" onClick={() => this.previousIndex()}>Previous</button>
+                :  null
                 }
-                {this.state.index < 8
-                    ? <button className="floating-button-next" onClick={() => this.nextIndex()}>Next</button>
-                    : null
+                {this.state.index < 7 &&
+                     <button className="floating-button-next" onClick={() => this.nextIndex()}>Next</button>
+                   }
+                   {this.state.index == 7 &&
+                   <button className="floating-button-next" onClick={() => {
+                    let done = window.confirm(" Are you sure you're done with the assessment ? \n There is no going back !");
+                    if(done) this.nextIndex();
+                   }}>Done</button>
                 }
             </div>
         );
