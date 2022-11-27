@@ -78,7 +78,7 @@ export function ProblemSolving5(_index) {
                 What were the challenges you faced? <br/> <br/>
                 Do you think you could send longer messages with this grid?
             </h1>
-            <FeedbackForm slide={5} part={"ps"} language={"EN"} next={() => next5=true}></FeedbackForm>
+            <FeedbackForm key={_index}  slide={5} part={"ps"} language={"EN"} next={() => next5=true}></FeedbackForm>
         </div>, next5]
     );
 }
@@ -108,7 +108,7 @@ export function ProblemSolving7(_index) {
                 Was it more difficult than just sending the number 6? <br/> <br/>
                 What was the main challenge?
             </h1>
-            <FeedbackForm slide={7} part={"ps"} language={"EN"} next={() => next7=true}></FeedbackForm>
+            <FeedbackForm key={_index}  slide={7} part={"ps"} language={"EN"} next={() => next7=true}></FeedbackForm>
         </div>, next7]
     );
 }
@@ -212,7 +212,7 @@ export function ProblemSolving12(_index) {
                 Do you think Bob will be able to understand your encodings? <br/> <br/>
                 Why? Or why not?
             </h1>
-            <FeedbackForm slide={12} part={"ps"} language={"EN"} next={() => next12=true}></FeedbackForm>
+            <FeedbackForm key={_index} slide={12} part={"ps"} language={"EN"} next={() => next12=true}></FeedbackForm>
 
         </div>, next12]
     );
@@ -303,7 +303,7 @@ export function ProblemSolving16(_index) {
                 What do you think is the least amount of lightbulbs <br/>
                 to properly represent your numbers?
             </h1>
-            <FeedbackForm slide={16} part={"ps"} language={"EN"} next={() => next16=true}></FeedbackForm>
+            <FeedbackForm key={_index} slide={16} part={"ps"} language={"EN"} next={() => next16=true}></FeedbackForm>
 
         </div>, next16]
     );

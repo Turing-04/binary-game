@@ -1,6 +1,7 @@
 import React from "react";
 import Board from "../interactive/board";
 import FeedbackForm from "../problemSolving/feedbackForm";
+import Row from "react-bootstrap/Row";
 
 
 export function Assessment0(_index) {
@@ -25,7 +26,7 @@ export function Assessment1(_index) {
                 using only a row of lightbulbs, now you want <br/>
                 to represent letters, how are you going to achieve this?
             </h1>
-            <FeedbackForm slide={_index} part={"assessment"}></FeedbackForm>
+            <FeedbackForm key={_index} slide={_index} part={"assessment"}></FeedbackForm>
         </div>
     );
 }
@@ -37,7 +38,7 @@ export function Assessment2(_index) {
                 What is the main deficit of using as many light bulbs <br/>
                 as the value we want to represent?
             </h1>
-            <FeedbackForm slide={_index} part={"assessment"}></FeedbackForm>
+            <FeedbackForm key={_index}  slide={_index} part={"assessment"}></FeedbackForm>
         </div>
     );
 }
@@ -49,7 +50,7 @@ export function Assessment3(_index) {
                 What is the smallest number of bits to represent <br/>
                 numbers up to 7 in binary? Why?
             </h1>
-            <FeedbackForm slide={_index} part={"assessment"}></FeedbackForm>
+            <FeedbackForm key={_index}  slide={_index} part={"assessment"}></FeedbackForm>
         </div>
     );
 }
@@ -62,7 +63,7 @@ export function Assessment4(_index) {
                 What would change if it could be on, off, or half-lit? <br/>
                 Would this change something about your coding?
             </h1>
-            <FeedbackForm slide={_index} part={"assessment"}></FeedbackForm>
+            <FeedbackForm key={_index}  slide={_index} part={"assessment"}></FeedbackForm>
         </div>
     );
 }
@@ -86,7 +87,7 @@ export function Assessment6(_index) {
             <h1>
                 Which number does the binary string “1011” represent?
             </h1>
-            <FeedbackForm slide={_index} part={"assessment"}></FeedbackForm>
+            <FeedbackForm key={_index}  slide={_index} part={"assessment"}></FeedbackForm>
         </div>
     );
 }
@@ -132,7 +133,7 @@ export function Assessment8(_index) {
                 you'll have plenty of time to learn more about it in the future! <br/>
                 If you have any feedback, please let us know!
             </p>
-            <FeedbackForm slide={_index} part={"assessment"}></FeedbackForm>
+            <FeedbackForm key={_index}  slide={_index} part={"assessment"}></FeedbackForm>
         </div>
     );
 }
