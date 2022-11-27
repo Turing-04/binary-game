@@ -88,12 +88,8 @@ class ProblemSolving extends React.Component {
                         var boardStrings = this.getContent()[2]
                         if (next) {
                             this.nextIndex();
-<<<<<<< HEAD
                             boardStrings.forEach(this.serializeBoard)
                         } else if([5,7,12,16].includes(this.state.index)) {
-=======
-                        } else if([5,7,12, 13 ,16].includes(this.state.index)) {
->>>>>>> 366eb12df48a257e22be0400978ae98a7728f397
                             alert("Please submit something before moving on to the next exercice!")
                         } else {
                             alert("Try doing the challenge before moving on!")
