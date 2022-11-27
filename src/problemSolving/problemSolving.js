@@ -59,22 +59,37 @@ class ProblemSolving extends React.Component {
             case 16: return Problems.ProblemSolving16(16);
             case 17: return Problems.ProblemSolving17(17);
 
-
             default:
-                return Problems.ProblemSolving5();
+                return null;
         }
     }
 
     render() {
+        var [exo, next] = this.getContent()
+
         return (
+
             <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh'}}>
-                <div>{this.getContent()}</div>
+                <div id="pb">{exo}</div>
+    
+
                 {0 < this.state.index &&
                     <button className="floating-button-previous" onClick={() => this.previousIndex()}>Previous</button>
                 }
-                {this.state.index < 17
-                    ? <button className="floating-button-next" onClick={() => this.nextIndex()}>Next</button>
-                    : <button className="floating-button-next" onClick={() => this.nextIndex()}>Next step</button>
+                {this.state.index < 17 && 
+                     <button className="floating-button-next" onClick={() => {
+                        var next=this.getContent()[1];
+                        if (next) {
+                            this.nextIndex();
+                        } else if([5,7,12,13,16].includes(this.state.index)) {
+                            alert("Please submit something before moving on to the next exercice !")
+                        } else {
+                            alert("Try doing the challenge before moving on !")
+                        }
+                        }}>Next</button>
+                 }
+                 {this.state.index == 17 && next &&
+                  <button className="floating-button-next" onClick={() => this.nextIndex()}>Next step</button>
                 }
             </div>
         );

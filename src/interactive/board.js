@@ -15,7 +15,7 @@ class Square extends React.Component {
     }
 }
 
-class Board extends React.Component {
+class Board extends React.Component { 
 
     /*
     * Props:
@@ -58,7 +58,10 @@ class Board extends React.Component {
             key={i}
             on={this.state.grid[i]}
             colored={this.state.grid[i]}
-            onClick={() => this.handleClick(i)}
+            onClick={() => {
+                this.handleClick(i);
+                this.props.next();
+                }}
         />;
     }
 
@@ -104,6 +107,7 @@ Board.propTypes = {
     interactive: PropTypes.bool.isRequired,
     initial: PropTypes.array,
     answer: PropTypes.array,
+    next: PropTypes.func,
     labels: PropTypes.bool.isRequired,
     binary: PropTypes.bool.isRequired,
 }

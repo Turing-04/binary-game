@@ -51,7 +51,7 @@ class Assessment extends React.Component {
             case 5: return Assessments.Assessment5(5);
             case 6: return Assessments.Assessment6(6);
             case 7: return Assessments.Assessment7(7);
-            default: return Assessments.Assessment8(8);
+            default: return null;
             // Need to handle IPS or PSI to redirect correctly !
         }
     }

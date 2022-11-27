@@ -84,7 +84,7 @@ export function Assessment5(_index) {
 
 
 //TODO : Add puzzle activity right here !
-export function Assessment7(_index) {
+export function Assessment6(_index) {
     return (
         <div>
             <h1>
@@ -97,7 +97,7 @@ export function Assessment7(_index) {
     );
 }
 
-export function Assessment8(_index) {
+export function Assessment7(_index) {
     return (
         <div>
             <h1>

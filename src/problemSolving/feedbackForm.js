@@ -13,6 +13,7 @@ class FeedbackForm extends React.Component {
           value: '',
           slide: props.slide,
           part: props.part,
+          next: props.next,
         };
     
         this.handleChange = this.handleChange.bind(this);
@@ -28,17 +29,16 @@ class FeedbackForm extends React.Component {
       }
 
       doSubmit(message){
+        this.props.next();
         console.log(constants.uuid)
         logFeedback(constants.uuid, this.state.slide, message, this.state.part)
       }
 
-      onClicke() {
-        console.log(this.state.value)
-   
-    }
+
 
     // FIXME: submit buttons renders next to it instead of just below
     render(){
+    
         return (
         <div    style={{
             display: "flex",
