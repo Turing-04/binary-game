@@ -21,7 +21,7 @@ class ProblemSolvingDe extends React.Component {
                 this.props.navigation("/assessment-de");
             }
         }
-        logScreenChange(constants.uuid, 'Problem Solving', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index+1)
+        logScreenChange(constants.uuid, 'Problem Solving', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index, this.state.index+1)
         this.setState({index: this.state.index + 1, time_started: new Date().getTime()}, () => {
             console.log(this.state.index);
         });
@@ -32,11 +32,12 @@ class ProblemSolvingDe extends React.Component {
         if (this.state.index === 0) {
             return;
         }
-        logScreenChange(constants.uuid, 'Problem Solving', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index-1)
+        logScreenChange(constants.uuid, 'Problem Solving', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index, this.state.index-1)
         this.setState({index:Math.max(this.state.index - 1,0)}, () => {
             console.log(this.state.index)
         });
     }
+
 
     getContent() {
         switch (this.state.index) {
@@ -75,7 +76,7 @@ class ProblemSolvingDe extends React.Component {
     
 
                 {0 < this.state.index &&
-                    <button className="floating-button-previous" onClick={() => this.previousIndex()}>Previous</button>
+                    <button className="floating-button-previous" onClick={() => this.previousIndex()}>Zurück</button>
                 }
                 {this.state.index < 17 && 
                      <button className="floating-button-next" onClick={() => {
@@ -87,7 +88,7 @@ class ProblemSolvingDe extends React.Component {
                         } else {
                             alert("Versuche die Aufgabe zu lösen bevor du weitergehst!")
                         }
-                        }}>Next</button>
+                        }}>Weiter</button>
                  }
                  {this.state.index == 17 && next &&
                   <button className="floating-button-next" onClick={() => this.nextIndex()}>Nächste Etappe</button>

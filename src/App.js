@@ -19,7 +19,7 @@ export function App() {
                 <Routes>
                     <Route path="/" element={<LanguageSelection/>} />
                     <Route path="/login" element={<LoginForm/>} />
-                    <Route path="/login_de" element={<LoginFormDe/>} />
+                    <Route path="/login-de" element={<LoginFormDe/>} />
                     <Route path="/problem-solving" element={<ProblemSolvingFn/>} />
                     <Route path="/problem-solving-de" element={<ProblemSolvingDeFn/>} />
                     <Route path="/instruction" element={<InstructionFn/>} />

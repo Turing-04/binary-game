@@ -12,7 +12,7 @@ class LanguageSelection extends React.Component {
             
             <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}>
                 <Row>
-                    <Link className="button" to="/login_de"  onClick={() => constants.language='DE'}>Deutsch</Link>
+                    <Link className="button" to="/login-de"  onClick={() => constants.language='DE'}>Deutsch</Link>
                 </Row>
                 <Row>
                     <div style={{width: 100}}></div>
