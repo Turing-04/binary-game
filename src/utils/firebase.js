@@ -5,13 +5,13 @@ import constants from "../constants";
 
 // TODO: Replace the following with your app's Firebase project configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyDhDcEZssnj25iiwCIAhOvjpjGx1Xouj58",
-    authDomain: "digital-education-b7441.firebaseapp.com",
-    projectId: "digital-education-b7441",
-    storageBucket: "digital-education-b7441.appspot.com",
-    messagingSenderId: "676031521246",
-    appId: "1:676031521246:web:c2527e53d12bb097777d4f"
-};
+    apiKey: "AIzaSyCSVzxcr5ZiDT_aARw7-ukOmgY9n51XlGE",
+    authDomain: "digital-education-9f0cb.firebaseapp.com",
+    projectId: "digital-education-9f0cb",
+    storageBucket: "digital-education-9f0cb.appspot.com",
+    messagingSenderId: "831809795139",
+    appId: "1:831809795139:web:0e803ff142b7d091f290f6"
+  };
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
