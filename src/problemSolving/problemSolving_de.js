@@ -90,14 +90,10 @@ class ProblemSolvingDe extends React.Component {
 
                         if (next) {
                             this.nextIndex();
-<<<<<<< HEAD
                             if(boardString != '') {
                                 this.serializeBoard(boardString)
                             }
                         } else if([5,7,12,16].includes(this.state.index)) {
-=======
-                        } else if([5,7,12,13, 16].includes(this.state.index)) {
->>>>>>> 366eb12df48a257e22be0400978ae98a7728f397
                             alert("Bitte sende etwas bevor du weiter machst!")
                         } else {
                             alert("Versuche die Aufgabe zu lösen bevor du weitergehst!")

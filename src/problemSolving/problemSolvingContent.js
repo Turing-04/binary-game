@@ -79,13 +79,8 @@ export function ProblemSolving5(_index) {
                 What were the challenges you faced? <br/> <br/>
                 Do you think you could send longer messages with this grid?
             </h1>
-<<<<<<< HEAD
             <FeedbackForm slide={5} part={"ps"} language={"EN"} next={() => next5=true}></FeedbackForm>
         </div>, next5, []]
-=======
-            <FeedbackForm key={_index}  slide={5} part={"ps"} language={"EN"} next={() => next5=true}></FeedbackForm>
-        </div>, next5]
->>>>>>> 366eb12df48a257e22be0400978ae98a7728f397
     );
 }
 
@@ -116,13 +111,8 @@ export function ProblemSolving7(_index) {
                 Was it more difficult than just sending the number 6? <br/> <br/>
                 What was the main challenge?
             </h1>
-<<<<<<< HEAD
             <FeedbackForm slide={7} part={"ps"} language={"EN"} next={() => next7=true}></FeedbackForm>
         </div>, next7, []]
-=======
-            <FeedbackForm key={_index}  slide={7} part={"ps"} language={"EN"} next={() => next7=true}></FeedbackForm>
-        </div>, next7]
->>>>>>> 366eb12df48a257e22be0400978ae98a7728f397
     );
 }
 
@@ -150,12 +140,8 @@ export function ProblemSolving9(_index) {
                 What if you tried to enter one character per row? <br/>
                 Try using one row per letter now!
             </h1>
-<<<<<<< HEAD
 
         </div>, true, []]
-=======
-        </div>, true]
->>>>>>> 366eb12df48a257e22be0400978ae98a7728f397
     );
 }
 
@@ -254,13 +240,8 @@ export function ProblemSolving13(_index) {
                 Now, do you think you could still <br/>
                 send your messages with even less lightbulbs per row?
             </h1>
-<<<<<<< HEAD
 
         </div>, true, []]
-=======
-            <FeedbackForm key={_index} slide={12} part={"ps"} language={"EN"} next={() => next13=true}></FeedbackForm>
-        </div>, next13]
->>>>>>> 366eb12df48a257e22be0400978ae98a7728f397
     );
 }
 

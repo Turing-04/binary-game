@@ -78,13 +78,8 @@ export function ProblemSolving5(_index) {
                 Welche Herausforderungen hattest du? <br/> <br/>
                 Glaubst du, dass du mit diesem Raster längere Nachrichten versenden könntest?
             </h1>
-<<<<<<< HEAD
             <FeedbackForm slide={5} part={"ps"} language={"DE"} next={() => next5=true}></FeedbackForm>
         </div>, next5, '']
-=======
-            <FeedbackForm key={_index}  slide={5} part={"ps"} language={"DE"} next={() => next5=true}></FeedbackForm>
-        </div>, next5]
->>>>>>> 366eb12df48a257e22be0400978ae98a7728f397
     );
 }
 
@@ -113,13 +108,8 @@ export function ProblemSolving7(_index) {
                 War das schwieriger, als nur die Nummer 6 zu senden? <br/> <br/>
                 Was war die grösste Herausforderung?
             </h1>
-<<<<<<< HEAD
             <FeedbackForm slide={7} part={"ps"} language={"DE"} next={() => next7=true}></FeedbackForm>
         </div>, next7, '']
-=======
-            <FeedbackForm key={_index}  slide={7} part={"ps"} language={"DE"} next={() => next7=true}></FeedbackForm>
-        </div>, next7]
->>>>>>> 366eb12df48a257e22be0400978ae98a7728f397
     );
 }
 
@@ -237,11 +227,7 @@ export function ProblemSolving13(_index) {
             </h1>
             <FeedbackForm key={_index}  slide={13} part={"ps"} language={"DE"} next={() => next13=true}></FeedbackForm>
 
-<<<<<<< HEAD
         </div>, true, '']
-=======
-        </div>, next13]
->>>>>>> 366eb12df48a257e22be0400978ae98a7728f397
     );
 }
 
