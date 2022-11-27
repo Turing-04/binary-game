@@ -137,7 +137,7 @@ export function ProblemSolving9(_index) {
             <h1>
                 Ist das Raster zu klein für deine Nachrichten? <br/>
                 Was wäre, wenn du versuchen würdest, <br/>
-                einen Symbol pro Zeile darzustellen? <br/>
+                ein Symbol pro Zeile darzustellen? <br/>
                 Versuche es mit einer Zeile pro Buchstabe!
             </h1>
         </div>, true, []]
@@ -294,7 +294,7 @@ export function ProblemSolving15(_index) {
     return ([
         <div>
             <h1>
-                Ultimative Herausforderung: Buchstaben!
+                Die ultimative Herausforderung: Buchstaben!
             </h1>
             <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
                 <Row> <h1>A =></h1> </Row>
@@ -325,7 +325,7 @@ export function ProblemSolving16(_index) {
     return ([
         <div>
             <h1>
-                Haben du eine Lösung gefunden? <br/>
+                Hast du eine Lösung gefunden? <br/>
                 Was denkst du, wie viele Glühbirnen mindestens nötig <br/>
                 sind, um deine Zahlen richtig darzustellen?
             </h1>

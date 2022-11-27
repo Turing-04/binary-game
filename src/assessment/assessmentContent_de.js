@@ -40,7 +40,7 @@ export function Assessment2(_index) {
         <div>
             <h1>
                 Was ist das Hauptproblem bei der Verwendung von gleich <br/>
-                vielen Glühbirnen wie den Wert, <br/>
+                vielen Glühbirnen wie der Wert, <br/>
                 den wir darstellen wollen?
             </h1>
             <FeedbackForm key={_index}  slide={_index} part={"assessment"} language={"DE"} next={() => console.log('')}></FeedbackForm>
@@ -53,8 +53,8 @@ export function Assessment3(_index) {
     return ([
         <div>
             <h1>
-                Was ist die kleinste Anzahl von Glühbirnen zur Darstellung von <br/>
-                Zahlen bis 7 im Binärformat darzustellen? Warum?
+                Was ist die kleinste Anzahl von Glühbirnen zur<br/>
+                Darstellung von Zahlen bis 7 im Binärformat? Warum?
             </h1>
             <FeedbackForm key={_index}  slide={_index} part={"assessment"} language={"DE"} next={() => console.log('')}></FeedbackForm>
         </div>
