@@ -66,15 +66,31 @@ class ProblemSolvingDe extends React.Component {
     }
 
     render() {
+        var [exo, next] = this.getContent()
+
         return (
+
             <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh'}}>
-                <div>{this.getContent()}</div>
+                <div id="pb">{exo}</div>
+    
+
                 {0 < this.state.index &&
-                    <button className="floating-button-previous" onClick={() => this.previousIndex()}>Zurück</button>
+                    <button className="floating-button-previous" onClick={() => this.previousIndex()}>Previous</button>
                 }
-                {this.state.index < 17
-                    ? <button className="floating-button-next" onClick={() => this.nextIndex()}>Weiter</button>
-                    : <button className="floating-button-next" onClick={() => this.nextIndex()}>Nächster Schritt</button>
+                {this.state.index < 17 && 
+                     <button className="floating-button-next" onClick={() => {
+                        var next=this.getContent()[1];
+                        if (next) {
+                            this.nextIndex();
+                        } else if([5,7,12,16].includes(this.state.index)) {
+                            alert("Bitte sende etwas bevor du weiter machst!")
+                        } else {
+                            alert("Versuche die Aufgabe zu lösen bevor du weitergehst!")
+                        }
+                        }}>Next</button>
+                 }
+                 {this.state.index == 17 && next &&
+                  <button className="floating-button-next" onClick={() => this.nextIndex()}>Nächste Etappe</button>
                 }
             </div>
         );

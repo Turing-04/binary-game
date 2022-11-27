@@ -81,10 +81,10 @@ class ProblemSolving extends React.Component {
                         var next=this.getContent()[1];
                         if (next) {
                             this.nextIndex();
-                        } else if([5,7,12,13,16].includes(this.state.index)) {
-                            alert("Please submit something before moving on to the next exercice !")
+                        } else if([5,7,12,16].includes(this.state.index)) {
+                            alert("Please submit something before moving on to the next exercice!")
                         } else {
-                            alert("Try doing the challenge before moving on !")
+                            alert("Try doing the challenge before moving on!")
                         }
                         }}>Next</button>
                  }

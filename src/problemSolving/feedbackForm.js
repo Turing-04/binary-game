@@ -14,6 +14,8 @@ class FeedbackForm extends React.Component {
           slide: props.slide,
           part: props.part,
           next: props.next,
+          lng: props.language,
+          sent: false
         };
     
         this.handleChange = this.handleChange.bind(this);
@@ -31,6 +33,7 @@ class FeedbackForm extends React.Component {
       doSubmit(message){
         this.props.next();
         console.log(constants.uuid)
+        this.setState({value: '', sent: true});
         logFeedback(constants.uuid, this.state.slide, message, this.state.part)
       }
 
@@ -44,24 +47,29 @@ class FeedbackForm extends React.Component {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            flexDirection: "column"
           }}>
-            <Row>
-            <textarea style = {{resize:'none', fontSize:'1.4vw'}} cols="60" rows="4" placeholder={'Write down your thoughts here!'} onChange={this.handleChange} id="form"/>
-            </Row>
-            <Row>
+            {!this.state.sent && this.state.lng == 'EN' && <textarea style = {{resize:'none', fontSize:'1.4vw'}} cols="60" rows="4" placeholder={'Write down your thoughts here!'} onChange={this.handleChange} id="form"/>}
+            {!this.state.sent && this.state.lng == 'DE' && <textarea style = {{resize:'none', fontSize:'1.4vw'}} cols="60" rows="4" placeholder={'Schreibe deine Gedanken hier auf!'} onChange={this.handleChange} id="form"/>}
+            
+            {this.state.sent && this.state.lng == 'EN' && <p style = {{resize:'none', fontSize:'1.4vw'}}> You may continue! </p>}
+            {this.state.sent && this.state.lng == 'DE' && <p style = {{resize:'none', fontSize:'1.4vw'}}> Du kannst jetzt weitermachen! </p>}
+            
+
             <div style={{ height: "3vw", alignItems: 'center'}}></div>
 
-            </Row>
-            <Row>
-            {this.state.value != '' && <button className='button' 
+            {this.state.lng == 'EN' && this.state.value != '' && <button className='button' 
                 onClick={() => {
                   this.doSubmit(this.state.value);
                   document.getElementById("form").disabled="true";
                 }}
                   > Submit </button>}
-
-            </Row>
-
+           {this.state.lng == 'DE' && this.state.value != '' && <button className='button' 
+                onClick={() => {
+                  this.doSubmit(this.state.value);
+                  document.getElementById("form").disabled="true";
+                }}
+                  > Senden </button>}
         </div>
         )
     }

@@ -10,7 +10,7 @@ export function ProblemSolving0(_index) {
             <p> In this Activity, you are going to send a <br/>
             secret message to your friend ! Try <br/>
             finding a way to transmit your message <br/>
-            using only black and white boxes. 
+            using only lightbulbs. 
             </p>
         </div>, true]
     );
@@ -21,7 +21,7 @@ export function ProblemSolving1(_index) {
         <div>
             <h1>
                 Alice wants to send a message to Bob! <br/>
-                But all she has are a few colored boxes. <br/>
+                But all she has are a few lightbulbs. <br/>
                 Can you help her?
             </h1>
         </div>, true]
@@ -32,7 +32,7 @@ export function ProblemSolving2(_index) {
     return ([
         <div>
             <h1>
-                She can turn any of the boxes on or off. <br/>
+                She can turn any of the lightbulbs on or off. <br/>
                 How does this help her?
             </h1>
         </div>, true]
@@ -64,7 +64,7 @@ export function ProblemSolving4(_index) {
             </h1>
             <Board binary={false} width={6} height={5} interactive={true} key={_index} labels={false} next={() => next4=true}>
             </Board>
-            <h1 style={{fontStyle:'italic', fontSize:'1.8vw'}}>Click on bulbs to light them up</h1>
+            <h1 style={{fontStyle:'italic', fontSize:'1.8vw'}}>Click on the lightbulbs to turn them on!</h1>
         </div>, next4]
     );
 }
@@ -78,7 +78,7 @@ export function ProblemSolving5(_index) {
                 What were the challenges you faced? <br/> <br/>
                 Do you think you could send longer messages with this grid?
             </h1>
-            <FeedbackForm slide={5} part={"ps"} next={() => next5=true}></FeedbackForm>
+            <FeedbackForm slide={5} part={"ps"} language={"EN"} next={() => next5=true}></FeedbackForm>
         </div>, next5]
     );
 }
@@ -95,7 +95,7 @@ export function ProblemSolving6(_index) {
             <Board binary={false} width={6} height={5} interactive={true} key={_index} labels={false} next={() => next6=true}>
             </Board>
             <h1 style={{fontStyle:'italic', fontSize:'1.8vw'}}>Play around with the lightbulbs to figure out <br/>
-            a way to send "2022" to Alice</h1>
+            a way to send "2022" to Bob</h1>
         </div>, next6]
     );
 }
@@ -108,7 +108,7 @@ export function ProblemSolving7(_index) {
                 Was it more difficult than just sending the number 6? <br/> <br/>
                 What was the main challenge?
             </h1>
-            <FeedbackForm slide={7} part={"ps"} next={() => next7=true}></FeedbackForm>
+            <FeedbackForm slide={7} part={"ps"} language={"EN"} next={() => next7=true}></FeedbackForm>
         </div>, next7]
     );
 }
@@ -124,7 +124,7 @@ export function ProblemSolving8(_index) {
             <Board binary={false} width={6} height={5} interactive={true} key={_index} labels={false} next={() => next8=true}>
             </Board>
             <h1 style={{fontStyle:'italic', fontSize:'1.8vw'}}>Play around with the lightbulbs to figure out <br/>
-            a way to send the message "BOB" to Alice</h1>        </div>, next8]
+            a way to send the message "BOB" to Bob</h1>        </div>, next8]
     );
 }
 
@@ -146,7 +146,7 @@ export function ProblemSolving10(_index) {
     return ([
         <div>
             <h1>
-                Try representing each number using only one row of boxes!
+                Try representing each number using only one row of lightbulbs!
             </h1>
             <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
                 <Row> <h1>4 =></h1> </Row>
@@ -177,7 +177,7 @@ export function ProblemSolving11(_index) {
     return ([
         <div>
             <h1>
-                Try representing each letter using only one row of boxes!
+                Try representing each letter using only one row of lightbulbs!
             </h1>
             <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
                 <Row> <h1>A =></h1> </Row>
@@ -212,21 +212,20 @@ export function ProblemSolving12(_index) {
                 Do you think Bob will be able to understand your encodings? <br/> <br/>
                 Why? Or why not?
             </h1>
-            <FeedbackForm slide={12} part={"ps"} next={() => next12=true}></FeedbackForm>
+            <FeedbackForm slide={12} part={"ps"} language={"EN"} next={() => next12=true}></FeedbackForm>
 
         </div>, next12]
     );
 }
 
-var next13 =false;
+var next13 = false;
 export function ProblemSolving13(_index) {
     return ([
         <div>
             <h1>
                 Now, do you think you could still <br/>
-                send your messages with even less boxes per row?
+                send your messages with even less lightbulbs per row?
             </h1>
-            <FeedbackForm slide={13} part={"ps"} next={() => next12=true} ></FeedbackForm>
 
         </div>, true]
     );
@@ -238,7 +237,7 @@ export function ProblemSolving14(_index) {
         <div>
             <h1>
                 Let’s play the ultimate version, we now have only very few <br/>
-                boxes per line and we have to find a way to represent the same data
+                lightbulbs per line and we have to find a way to represent the same data
             </h1>
             <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
                 <Row> <h1>9 =></h1> </Row>
@@ -301,10 +300,10 @@ export function ProblemSolving16(_index) {
         <div>
             <h1>
                 Did you manage to make it work? <br/>
-                What do you think is the least amount of boxes <br/>
+                What do you think is the least amount of lightbulbs <br/>
                 to properly represent your numbers?
             </h1>
-            <FeedbackForm slide={16} part={"ps"} next={() => next16=true}></FeedbackForm>
+            <FeedbackForm slide={16} part={"ps"} language={"EN"} next={() => next16=true}></FeedbackForm>
 
         </div>, next16]
     );
