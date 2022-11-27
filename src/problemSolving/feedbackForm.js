@@ -49,15 +49,16 @@ class FeedbackForm extends React.Component {
             alignItems: "center",
             flexDirection: "column"
           }}>
-            {this.state.lng == 'EN' && <textarea style = {{resize:'none', fontSize:'1.4vw'}} cols="60" rows="4" placeholder={'Write down your thoughts here!'} onChange={this.handleChange} id="form"/>}
+            {(this.state.lng == 'EN' || this.state.lng == 'EN_done') && <textarea style = {{resize:'none', fontSize:'1.4vw'}} cols="60" rows="4" placeholder={'Write down your thoughts here!'} onChange={this.handleChange} id="form"/>}
              {this.state.lng == 'DE' && <textarea style = {{resize:'none', fontSize:'1.4vw'}} cols="60" rows="4" placeholder={'Schreibe deine Gedanken hier auf!'} onChange={this.handleChange} id="form"/>}            
     
              {this.state.sent && this.state.lng == 'EN' && <p style = {{resize:'none', fontSize:'1.4vw'}}> Answer saved, you may continue ! </p>}
               {this.state.sent && this.state.lng == 'DE' && <p style = {{resize:'none', fontSize:'1.4vw'}}> Antwort gespeichert. Du kannst jetzt weitermachen! </p>}
-    
+              {this.state.sent && this.state.lng == 'EN_done' && <p style = {{resize:'none', fontSize:'1.4vw'}}> Answer saved, you're done ! </p>}
+
             <div style={{ height: "3vw", alignItems: 'center'}}></div>
 
-            {this.state.lng == 'EN' && this.state.value != '' && <button className='button' 
+            {(this.state.lng == 'EN' || this.state.lng=='EN_done') && this.state.value != '' && <button className='button' 
                 onClick={() => {
                   this.doSubmit(this.state.value);
                   document.getElementById("form").disabled="true";
