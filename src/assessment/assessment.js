@@ -16,7 +16,7 @@ class Assessment extends React.Component {
 
 
     nextIndex() {
-        logScreenChange(constants.uuid, 'Instruction', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index+1)
+        logScreenChange(constants.uuid, 'Assessment', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index+1)
         this.setState({index: this.state.index + 1, time_started: new Date().getTime()}, () => {
             console.log(this.state.index);
         });
@@ -27,7 +27,7 @@ class Assessment extends React.Component {
         if (this.state.index === 0) {
             return;
         }
-        logScreenChange(constants.uuid, 'Instruction', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index-1)
+        logScreenChange(constants.uuid, 'Assessment', + new Date(),(new Date().getTime() - this.state.time_started) / 1000, this.state.index-1)
         this.setState({index:Math.max(this.state.index - 1,0)}, () => {
             console.log(this.state.index)
         });

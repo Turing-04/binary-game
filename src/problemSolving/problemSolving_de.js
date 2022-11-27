@@ -83,7 +83,7 @@ class ProblemSolvingDe extends React.Component {
                         var next=this.getContent()[1];
                         if (next) {
                             this.nextIndex();
-                        } else if([5,7,12,16].includes(this.state.index)) {
+                        } else if([5,7,12,13, 16].includes(this.state.index)) {
                             alert("Bitte sende etwas bevor du weiter machst!")
                         } else {
                             alert("Versuche die Aufgabe zu lösen bevor du weitergehst!")

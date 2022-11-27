@@ -223,8 +223,9 @@ export function ProblemSolving13(_index) {
                 Glaubst du, dass du deine Nachrichten auch mit <br/>
                 noch weniger Glühbirnen pro Zeile versenden könntest?
             </h1>
+            <FeedbackForm key={_index}  slide={13} part={"ps"} language={"DE"} next={() => next13=true}></FeedbackForm>
 
-        </div>, true]
+        </div>, next13]
     );
 }
 

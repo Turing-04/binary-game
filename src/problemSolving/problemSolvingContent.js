@@ -21,7 +21,7 @@ export function ProblemSolving1(_index) {
         <div>
             <h1>
                 Alice wants to send a message to Bob! <br/>
-                But all she has are a few lightbulbs. <br/>
+                But all she has is a few lightbulbs. <br/>
                 Can you help her?
             </h1>
         </div>, true]
@@ -136,7 +136,6 @@ export function ProblemSolving9(_index) {
                 What if you tried to enter one character per row? <br/>
                 Try using one row per letter now!
             </h1>
-
         </div>, true]
     );
 }
@@ -226,8 +225,8 @@ export function ProblemSolving13(_index) {
                 Now, do you think you could still <br/>
                 send your messages with even less lightbulbs per row?
             </h1>
-
-        </div>, true]
+            <FeedbackForm key={_index} slide={12} part={"ps"} language={"EN"} next={() => next13=true}></FeedbackForm>
+        </div>, next13]
     );
 }
 
