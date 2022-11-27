@@ -52,7 +52,7 @@ class Board extends React.Component {
                 let answerString = this.props.answer.map((x) => x ? "1" : "0").join("");
                 let gridString = grid.map((x) => x ? "1" : "0").join("");
                 if (answerString === gridString) {
-                    alert("You win!");
+                    alert("Good job!");
                 }
             }
 
@@ -75,22 +75,44 @@ class Board extends React.Component {
     }
 
     render() {
+        let numbers = [60, 66, 165, 129, 165, 153, 66, 60];
         let height = this.props.height;
         let width = this.props.width;
         let squares = [];
+
         for (let i = 0; i < width * height; i++) {
             squares.push(this.renderSquare(i));
         }
         let rows = [];
         for (let i = 0; i < height; i++) {
-            rows.push(
+            let row = (
                 <div>
                     {squares.slice(i * width, (i + 1) * width)}
                 </div>
             );
+
+            if (this.props.answer) {
+                row = (
+                    <div style={{display: "flex", flexDirection: "row"}}>
+                        <Row>
+                            <div className={"labels"}>{numbers[i]}</div>
+                        </Row>
+                        <Row>
+                            {squares.slice(i * width, (i + 1) * width)}
+                        </Row>
+
+                    </div>
+                );
+            }
+            rows.push(
+                row
+            );
         }
 
         let labels = [];
+        if (this.props.answer) {
+            labels.push(<Row className="labels"></Row>);
+        }
         for (let i = 0; i < width; i++) {
             let j = width - i;
             let k = this.props.binary ? 2 ** (j - 1) : j;

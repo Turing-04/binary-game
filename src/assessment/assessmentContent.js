@@ -1,6 +1,7 @@
 import React from "react";
 import Board from "../interactive/board";
 import FeedbackForm from "../problemSolving/feedbackForm";
+import Row from "react-bootstrap/Row";
 
 
 export function Assessment0(_index) {
@@ -104,16 +105,16 @@ export function Assessment7(_index) {
                 You might end up with a nice little drawing :)
             </h1>
             <Board key={_index} width={8} height={8} interactive={true} labels={true} binary={true} puzzle={true}
-                     answer={[
-                         false, false, true, true, true, true, false, false,
-                         false, true, false, false, false, false, true, false,
-                         true, false, true, false, false, true, false, true,
-                         true, false, false, false, false, false, false, true,
-                         true, false, true, false, false, true, false, true,
-                         true, false, false, true, true, false, false, true,
-                         false, true, false, false, false, false, true, false,
-                         false, false, true, true, true, true, false, false,
-                     ]}>
+                         answer={[
+                             false, false, true, true, true, true, false, false,
+                             false, true, false, false, false, false, true, false,
+                             true, false, true, false, false, true, false, true,
+                             true, false, false, false, false, false, false, true,
+                             true, false, true, false, false, true, false, true,
+                             true, false, false, true, true, false, false, true,
+                             false, true, false, false, false, false, true, false,
+                             false, false, true, true, true, true, false, false,
+                         ]}>
             </Board>
         </div>
     );
