@@ -1,0 +1,113 @@
+time,currentactivity,cause,timespent,part,uuid,nextactivity,message,slide,height,id,width,gridString
+2022-11-28 07:33:30.437,0.0,screenChange,19.261,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,1.0,,,,,,
+2022-11-28 07:33:35.288,1.0,screenChange,4.849,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,2.0,,,,,,
+2022-11-28 07:33:39.654,2.0,screenChange,4.365,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,3.0,,,,,,
+2022-11-28 07:33:43.504,3.0,screenChange,3.848,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,4.0,,,,,,
+2022-11-28 07:33:47.237,4.0,screenChange,3.732,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,5.0,,,,,,
+2022-11-28 07:33:51.637,5.0,screenChange,4.398,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,6.0,,,,,,
+2022-11-28 07:33:58.820,6.0,screenChange,7.182,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,7.0,,,,,,
+2022-11-28 07:34:03.136,7.0,screenChange,4.315,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,8.0,,,,,,
+2022-11-28 07:34:19.421,8.0,screenChange,16.284,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,9.0,,,,,,
+2022-11-28 07:34:26.786,9.0,screenChange,7.364,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,10.0,,,,,,
+2022-11-28 07:34:28.970,10.0,screenChange,2.183,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,11.0,,,,,,
+2022-11-28 07:34:32.553,11.0,screenChange,3.582,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,12.0,,,,,,
+2022-11-28 07:34:33.720,12.0,screenChange,1.166,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,13.0,,,,,,
+2022-11-28 07:34:44.286,13.0,screenChange,10.565,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,14.0,,,,,,
+2022-11-28 07:34:45.903,14.0,screenChange,1.615,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,15.0,,,,,,
+2022-11-28 07:34:49.768,15.0,screenChange,3.864,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,16.0,,,,,,
+2022-11-28 07:34:52.085,16.0,screenChange,2.316,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,17.0,,,,,,
+2022-11-28 07:34:53.602,17.0,screenChange,1.516,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,18.0,,,,,,
+2022-11-28 07:34:54.519,18.0,screenChange,0.916,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,19.0,,,,,,
+2022-11-28 07:34:56.769,19.0,screenChange,2.249,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,20.0,,,,,,
+2022-11-28 07:34:58.469,20.0,screenChange,1.699,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,21.0,,,,,,
+2022-11-28 07:35:01.170,21.0,screenChange,2.701,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,20.0,,,,,,
+2022-11-28 07:35:07.003,20.0,screenChange,8.534,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,21.0,,,,,,
+2022-11-28 07:35:08.903,21.0,screenChange,1.899,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,22.0,,,,,,
+2022-11-28 07:35:12.835,22.0,screenChange,3.932,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,23.0,,,,,,
+2022-11-28 07:35:23.869,23.0,screenChange,11.032,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,24.0,,,,,,
+2022-11-28 07:35:34.919,24.0,screenChange,11.049,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,25.0,,,,,,
+2022-11-28 07:35:36.585,25.0,screenChange,1.665,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,26.0,,,,,,
+2022-11-28 07:35:38.002,26.0,screenChange,1.416,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,27.0,,,,,,
+2022-11-28 07:35:53.670,27.0,screenChange,15.667,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,28.0,,,,,,
+2022-11-28 07:35:56.952,28.0,screenChange,3.282,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,29.0,,,,,,
+2022-11-28 07:35:58.435,29.0,screenChange,1.482,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,30.0,,,,,,
+2022-11-28 07:36:01.417,30.0,screenChange,2.981,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,31.0,,,,,,
+2022-11-28 07:36:02.868,31.0,screenChange,1.449,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,32.0,,,,,,
+2022-11-28 07:36:04.435,32.0,screenChange,1.566,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,33.0,,,,,,
+2022-11-28 07:36:07.468,33.0,screenChange,3.032,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,34.0,,,,,,
+2022-11-28 07:36:10.535,34.0,screenChange,3.066,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,35.0,,,,,,
+2022-11-28 07:36:11.552,35.0,screenChange,1.016,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,36.0,,,,,,
+2022-11-28 07:36:13.368,36.0,screenChange,1.815,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,37.0,,,,,,
+2022-11-28 07:36:14.333,37.0,screenChange,0.964,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,38.0,,,,,,
+2022-11-28 07:36:16.618,38.0,screenChange,2.284,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,39.0,,,,,,
+2022-11-28 07:36:19.384,39.0,screenChange,2.765,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,40.0,,,,,,
+2022-11-28 07:36:22.684,40.0,screenChange,3.299,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,41.0,,,,,,
+2022-11-28 07:36:26.601,41.0,screenChange,3.915,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,42.0,,,,,,
+2022-11-28 07:36:28.251,42.0,screenChange,1.649,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,43.0,,,,,,
+2022-11-28 07:36:33.334,43.0,screenChange,5.083,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,44.0,,,,,,
+2022-11-28 07:36:36.617,44.0,screenChange,3.282,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,45.0,,,,,,
+2022-11-28 07:36:40.936,45.0,screenChange,4.318,Instruction,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,46.0,,,,,,
+2022-11-28 07:36:41.951,0.0,screenChange,,Problem Solving,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,1.0,,,,,,
+2022-11-28 07:36:46.084,1.0,screenChange,4.132,Problem Solving,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,2.0,,,,,,
+2022-11-28 07:36:48.751,2.0,screenChange,2.665,Problem Solving,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,3.0,,,,,,
+2022-11-28 07:36:51.134,3.0,screenChange,2.381,Problem Solving,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,4.0,,,,,,
+2022-11-28 07:37:15.867,4.0,screenChange,24.732,Problem Solving,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,5.0,,,,,,
+2022-11-28 07:37:15.870,,,,ps,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,,4.0,5,0,6,110000100000100000000000000000
+2022-11-28 07:38:57.983,,,,ps,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,"waagrecht ist 2 und senkrecht 3 wenn man es multipliziert, ergibt es 6",5.0,,,,
+2022-11-28 07:39:00.266,5.0,screenChange,104.398,Problem Solving,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,6.0,,,,,,
+2022-11-28 07:41:08.330,6.0,screenChange,128.063,Problem Solving,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,7.0,,,,,,
+2022-11-28 07:41:08.331,,,,ps,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,,6.0,5,0,6,110000000000001100000011000000
+2022-11-28 07:42:41.517,,,,ps,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,"In der ersten reihe gibt es 2, in der zweiten gibt es keine = 0 in der dritten 0 und in der vierten 2.",7.0,,,,
+2022-11-28 07:42:43.148,7.0,screenChange,94.817,Problem Solving,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,8.0,,,,,,
+2022-11-28 07:44:50.831,8.0,screenChange,127.682,Problem Solving,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,9.0,,,,,,
+2022-11-28 07:44:50.834,,,,ps,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,,8.0,5,0,6,110000111111111111111000110000
+2022-11-28 07:44:58.697,9.0,screenChange,7.863,Problem Solving,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,10.0,,,,,,
+2022-11-28 07:45:40.049,10.0,screenChange,41.35,Problem Solving,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,11.0,,,,,,
+2022-11-28 07:45:40.050,,,,ps,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,,10.0,1,0,9,000100000
+2022-11-28 07:45:40.050,,,,ps,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,,10.0,1,1,9,100000000
+2022-11-28 07:45:40.051,,,,ps,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,,10.0,1,3,9,000000000
+2022-11-28 07:45:40.051,,,,ps,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,,10.0,1,2,9,000000010
+2022-11-28 07:45:40.051,,,,ps,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,,10.0,1,4,9,001000000
+2022-11-28 07:46:22.999,11.0,screenChange,42.949,Problem Solving,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,12.0,,,,,,
+2022-11-28 07:46:23.001,,,,ps,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,,11.0,1,0,9,100000000
+2022-11-28 07:46:23.002,,,,ps,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,,11.0,1,0,9,000010000
+2022-11-28 07:46:23.002,,,,ps,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,,11.0,1,0,9,000000000
+2022-11-28 07:46:23.002,,,,ps,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,,11.0,1,0,9,000000001
+2022-11-28 07:46:23.002,,,,ps,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,,11.0,1,0,9,001000000
+2022-11-28 07:48:20.063,,,,ps,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,"Er wird sie vielleicht verstehen weil, er sie einfach zählen und in Buchstaben umwandeln wenn se für ihn  kein sinn ergibt. ",12.0,,,,
+2022-11-28 07:48:20.979,12.0,screenChange,117.978,Problem Solving,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,13.0,,,,,,
+2022-11-28 07:48:31.465,,,,ps,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,Nein,13.0,,,,
+2022-11-28 07:48:33.563,13.0,screenChange,12.583,Problem Solving,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,14.0,,,,,,
+2022-11-28 07:49:23.197,14.0,screenChange,49.633,Problem Solving,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,15.0,,,,,,
+2022-11-28 07:49:23.199,,,,ps,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,,14.0,1,1,4,1000
+2022-11-28 07:49:23.199,,,,ps,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,,14.0,1,0,4,0111
+2022-11-28 07:49:23.200,,,,ps,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,,14.0,1,2,4,0011
+2022-11-28 07:49:23.200,,,,ps,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,,14.0,1,3,4,1001
+2022-11-28 07:49:23.201,,,,ps,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,,14.0,1,4,4,1010
+2022-11-28 07:50:16.378,15.0,screenChange,53.18,Problem Solving,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,16.0,,,,,,
+2022-11-28 07:50:16.381,,,,ps,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,,15.0,1,0,4,1000
+2022-11-28 07:50:16.382,,,,ps,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,,15.0,1,1,4,1100
+2022-11-28 07:50:16.382,,,,ps,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,,15.0,1,3,4,0010
+2022-11-28 07:50:16.382,,,,ps,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,,15.0,1,2,4,0111
+2022-11-28 07:50:16.383,,,,ps,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,,15.0,1,4,4,1001
+2022-11-28 07:51:06.929,,,,ps,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,Für mich war es schwer eine Lösung zu finden aber ich glaube man braucht mindestens 4,16.0,,,,
+2022-11-28 07:51:08.060,16.0,screenChange,51.679,Problem Solving,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,17.0,,,,,,
+2022-11-28 07:51:13.146,17.0,screenChange,5.085,Problem Solving,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,18.0,,,,,,
+2022-11-28 07:51:19.562,0.0,screenChange,6.413,Assessment,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,1.0,,,,,,
+2022-11-28 07:53:00.626,,,,assessment,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,"entweder die zahlen eifach in Buchstaben umwandeln zb. 1=a 2=b usw. 
+Was auch geht die Buchstaben darstellen.",1.0,,,,
+2022-11-28 07:53:01.943,1.0,screenChange,102.38,Assessment,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,2.0,,,,,,
+2022-11-28 07:54:04.810,,,,assessment,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,es kann sein das man es falsch versteht weil nicht jeder weis wie du dennkst.,2.0,,,,
+2022-11-28 07:54:07.592,2.0,screenChange,65.647,Assessment,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,3.0,,,,,,
+2022-11-28 07:55:08.175,,,,assessment,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,"ich glaube 4 weil wenn man die dritte und  vierte anleuchtet. kann man 
+3 + 4 rechnen und das ergibt 7.",3.0,,,,
+2022-11-28 07:55:10.044,3.0,screenChange,62.451,Assessment,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,4.0,,,,,,
+2022-11-28 07:55:30.308,,,,assessment,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,Nein nicht ,4.0,,,,
+2022-11-28 07:55:31.791,4.0,screenChange,21.747,Assessment,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,5.0,,,,,,
+2022-11-28 07:56:21.060,,,,assessment,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,,5.0,1,0,5,10101
+2022-11-28 07:56:21.060,5.0,screenChange,49.269,Assessment,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,6.0,,,,,,
+2022-11-28 07:57:14.192,,,,assessment,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,sie steht für 12,6.0,,,,
+2022-11-28 07:57:16.541,6.0,screenChange,55.48,Assessment,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,7.0,,,,,,
+2022-11-28 08:01:43.537,,,,assessment,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,,7.0,8,0,8,1111000011110000011010000000111101101000111100001111000000000000
+2022-11-28 08:01:43.538,7.0,screenChange,266.995,Assessment,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,8.0,,,,,,
+2022-11-28 08:02:03.098,,,,assessment,365cbf6d-2340-4c5f-9c28-dc1f5b5d6cf3,,kein feedback,8.0,,,,

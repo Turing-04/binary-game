@@ -1,0 +1,109 @@
+time,currentactivity,cause,timespent,part,uuid,nextactivity,message,slide,height,id,width,gridString
+2022-11-28 07:33:39.860,0.0,screenChange,24.582,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,1.0,,,,,,
+2022-11-28 07:35:41.000,1.0,screenChange,121.137,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,2.0,,,,,,
+2022-11-28 07:35:56.866,2.0,screenChange,15.865,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,3.0,,,,,,
+2022-11-28 07:35:58.632,3.0,screenChange,1.765,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,4.0,,,,,,
+2022-11-28 07:36:00.748,4.0,screenChange,2.115,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,5.0,,,,,,
+2022-11-28 07:36:08.184,5.0,screenChange,7.434,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,6.0,,,,,,
+2022-11-28 07:36:13.566,6.0,screenChange,5.381,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,7.0,,,,,,
+2022-11-28 07:36:18.882,7.0,screenChange,5.314,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,8.0,,,,,,
+2022-11-28 07:36:21.884,8.0,screenChange,3.0,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,9.0,,,,,,
+2022-11-28 07:36:35.334,9.0,screenChange,13.449,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,10.0,,,,,,
+2022-11-28 07:36:37.085,10.0,screenChange,1.75,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,11.0,,,,,,
+2022-11-28 07:36:38.884,11.0,screenChange,1.798,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,12.0,,,,,,
+2022-11-28 07:36:42.968,12.0,screenChange,4.083,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,13.0,,,,,,
+2022-11-28 07:36:46.650,13.0,screenChange,3.682,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,14.0,,,,,,
+2022-11-28 07:36:51.584,14.0,screenChange,4.932,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,15.0,,,,,,
+2022-11-28 07:36:53.567,15.0,screenChange,1.982,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,16.0,,,,,,
+2022-11-28 07:36:58.852,16.0,screenChange,5.283,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,17.0,,,,,,
+2022-11-28 07:37:01.268,17.0,screenChange,2.415,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,18.0,,,,,,
+2022-11-28 07:37:08.068,18.0,screenChange,6.799,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,19.0,,,,,,
+2022-11-28 07:37:09.435,19.0,screenChange,1.365,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,20.0,,,,,,
+2022-11-28 07:37:15.335,20.0,screenChange,5.899,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,21.0,,,,,,
+2022-11-28 07:37:19.286,21.0,screenChange,3.949,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,22.0,,,,,,
+2022-11-28 07:37:27.253,22.0,screenChange,7.967,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,23.0,,,,,,
+2022-11-28 07:37:37.671,23.0,screenChange,10.417,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,24.0,,,,,,
+2022-11-28 07:37:42.153,24.0,screenChange,4.481,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,25.0,,,,,,
+2022-11-28 07:37:56.889,25.0,screenChange,14.735,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,26.0,,,,,,
+2022-11-28 07:37:57.604,26.0,screenChange,0.714,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,27.0,,,,,,
+2022-11-28 07:37:59.288,27.0,screenChange,1.683,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,28.0,,,,,,
+2022-11-28 07:38:01.004,28.0,screenChange,1.715,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,29.0,,,,,,
+2022-11-28 07:38:02.804,29.0,screenChange,1.799,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,30.0,,,,,,
+2022-11-28 07:38:03.971,30.0,screenChange,1.165,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,31.0,,,,,,
+2022-11-28 07:38:05.271,31.0,screenChange,1.3,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,32.0,,,,,,
+2022-11-28 07:38:06.288,32.0,screenChange,1.016,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,33.0,,,,,,
+2022-11-28 07:38:07.755,33.0,screenChange,1.465,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,34.0,,,,,,
+2022-11-28 07:38:09.755,34.0,screenChange,1.999,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,35.0,,,,,,
+2022-11-28 07:38:10.789,35.0,screenChange,1.033,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,36.0,,,,,,
+2022-11-28 07:38:12.289,36.0,screenChange,1.499,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,37.0,,,,,,
+2022-11-28 07:38:16.771,37.0,screenChange,4.481,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,38.0,,,,,,
+2022-11-28 07:38:17.890,38.0,screenChange,1.118,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,39.0,,,,,,
+2022-11-28 07:38:19.405,39.0,screenChange,1.515,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,40.0,,,,,,
+2022-11-28 07:38:24.039,40.0,screenChange,4.632,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,41.0,,,,,,
+2022-11-28 07:38:29.622,41.0,screenChange,5.581,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,42.0,,,,,,
+2022-11-28 07:38:31.039,42.0,screenChange,1.416,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,43.0,,,,,,
+2022-11-28 07:38:35.022,43.0,screenChange,3.981,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,44.0,,,,,,
+2022-11-28 07:38:38.408,44.0,screenChange,3.385,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,45.0,,,,,,
+2022-11-28 07:38:45.144,45.0,screenChange,6.735,Instruction,a511ac42-e6e0-4fba-b067-19dbec25de9a,46.0,,,,,,
+2022-11-28 07:38:47.425,0.0,screenChange,,Problem Solving,a511ac42-e6e0-4fba-b067-19dbec25de9a,1.0,,,,,,
+2022-11-28 07:38:50.224,1.0,screenChange,2.798,Problem Solving,a511ac42-e6e0-4fba-b067-19dbec25de9a,2.0,,,,,,
+2022-11-28 07:38:52.257,2.0,screenChange,2.031,Problem Solving,a511ac42-e6e0-4fba-b067-19dbec25de9a,3.0,,,,,,
+2022-11-28 07:38:56.124,3.0,screenChange,3.865,Problem Solving,a511ac42-e6e0-4fba-b067-19dbec25de9a,4.0,,,,,,
+2022-11-28 07:39:41.662,4.0,screenChange,45.536,Problem Solving,a511ac42-e6e0-4fba-b067-19dbec25de9a,5.0,,,,,,
+2022-11-28 07:39:41.663,,,,ps,a511ac42-e6e0-4fba-b067-19dbec25de9a,,,4.0,5,0,6,000001000000000000000000000000
+2022-11-28 07:41:22.834,,,,ps,a511ac42-e6e0-4fba-b067-19dbec25de9a,,"ich wusste nicht richtig wie genau ich zählen soll. ja, ich denke dass man mit dem Raster längere Nachrichten verschicken kann.",5.0,,,,
+2022-11-28 07:41:24.767,5.0,screenChange,103.105,Problem Solving,a511ac42-e6e0-4fba-b067-19dbec25de9a,6.0,,,,,,
+2022-11-28 07:41:51.384,6.0,screenChange,26.616,Problem Solving,a511ac42-e6e0-4fba-b067-19dbec25de9a,7.0,,,,,,
+2022-11-28 07:41:51.385,,,,ps,a511ac42-e6e0-4fba-b067-19dbec25de9a,,,6.0,5,0,6,010000000000010000010000000000
+2022-11-28 07:42:22.636,,,,ps,a511ac42-e6e0-4fba-b067-19dbec25de9a,,wie ich die Glühbirnen anschalte dass sie sinn machen.,7.0,,,,
+2022-11-28 07:42:23.952,7.0,screenChange,32.567,Problem Solving,a511ac42-e6e0-4fba-b067-19dbec25de9a,8.0,,,,,,
+2022-11-28 07:43:26.222,8.0,screenChange,62.269,Problem Solving,a511ac42-e6e0-4fba-b067-19dbec25de9a,9.0,,,,,,
+2022-11-28 07:43:26.223,,,,ps,a511ac42-e6e0-4fba-b067-19dbec25de9a,,,8.0,5,0,6,010000000000001000000000000100
+2022-11-28 07:43:30.238,9.0,screenChange,4.015,Problem Solving,a511ac42-e6e0-4fba-b067-19dbec25de9a,10.0,,,,,,
+2022-11-28 07:44:07.543,10.0,screenChange,37.304,Problem Solving,a511ac42-e6e0-4fba-b067-19dbec25de9a,11.0,,,,,,
+2022-11-28 07:44:07.546,,,,ps,a511ac42-e6e0-4fba-b067-19dbec25de9a,,,10.0,1,3,9,000000000
+2022-11-28 07:44:07.546,,,,ps,a511ac42-e6e0-4fba-b067-19dbec25de9a,,,10.0,1,2,9,011111111
+2022-11-28 07:44:07.546,,,,ps,a511ac42-e6e0-4fba-b067-19dbec25de9a,,,10.0,1,0,9,010101010
+2022-11-28 07:44:07.546,,,,ps,a511ac42-e6e0-4fba-b067-19dbec25de9a,,,10.0,1,1,9,000100000
+2022-11-28 07:44:07.547,,,,ps,a511ac42-e6e0-4fba-b067-19dbec25de9a,,,10.0,1,4,9,011100000
+2022-11-28 07:45:07.642,11.0,screenChange,60.097,Problem Solving,a511ac42-e6e0-4fba-b067-19dbec25de9a,12.0,,,,,,
+2022-11-28 07:45:07.645,,,,ps,a511ac42-e6e0-4fba-b067-19dbec25de9a,,,11.0,1,0,9,100000000
+2022-11-28 07:45:07.646,,,,ps,a511ac42-e6e0-4fba-b067-19dbec25de9a,,,11.0,1,0,9,001000000
+2022-11-28 07:45:07.646,,,,ps,a511ac42-e6e0-4fba-b067-19dbec25de9a,,,11.0,1,0,9,001000000
+2022-11-28 07:45:07.646,,,,ps,a511ac42-e6e0-4fba-b067-19dbec25de9a,,,11.0,1,0,9,000010000
+2022-11-28 07:45:07.646,,,,ps,a511ac42-e6e0-4fba-b067-19dbec25de9a,,,11.0,1,0,9,000000001
+2022-11-28 07:45:42.743,,,,ps,a511ac42-e6e0-4fba-b067-19dbec25de9a,,"wahrscheinlich nicht , da es etwas kompliziert ist.",12.0,,,,
+2022-11-28 07:45:44.073,12.0,screenChange,36.429,Problem Solving,a511ac42-e6e0-4fba-b067-19dbec25de9a,13.0,,,,,,
+2022-11-28 07:46:13.540,,,,ps,a511ac42-e6e0-4fba-b067-19dbec25de9a,,"ich denke nicht , da ich viele brauche.",13.0,,,,
+2022-11-28 07:46:14.840,13.0,screenChange,30.766,Problem Solving,a511ac42-e6e0-4fba-b067-19dbec25de9a,14.0,,,,,,
+2022-11-28 07:48:22.139,14.0,screenChange,127.297,Problem Solving,a511ac42-e6e0-4fba-b067-19dbec25de9a,15.0,,,,,,
+2022-11-28 07:48:22.140,,,,ps,a511ac42-e6e0-4fba-b067-19dbec25de9a,,,14.0,1,0,4,0110
+2022-11-28 07:48:22.141,,,,ps,a511ac42-e6e0-4fba-b067-19dbec25de9a,,,14.0,1,3,4,0010
+2022-11-28 07:48:22.141,,,,ps,a511ac42-e6e0-4fba-b067-19dbec25de9a,,,14.0,1,1,4,1000
+2022-11-28 07:48:22.141,,,,ps,a511ac42-e6e0-4fba-b067-19dbec25de9a,,,14.0,1,2,4,1010
+2022-11-28 07:48:22.141,,,,ps,a511ac42-e6e0-4fba-b067-19dbec25de9a,,,14.0,1,4,4,1111
+2022-11-28 07:49:00.923,15.0,screenChange,38.783,Problem Solving,a511ac42-e6e0-4fba-b067-19dbec25de9a,16.0,,,,,,
+2022-11-28 07:49:00.926,,,,ps,a511ac42-e6e0-4fba-b067-19dbec25de9a,,,15.0,1,0,4,1000
+2022-11-28 07:49:00.927,,,,ps,a511ac42-e6e0-4fba-b067-19dbec25de9a,,,15.0,1,2,4,0100
+2022-11-28 07:49:00.927,,,,ps,a511ac42-e6e0-4fba-b067-19dbec25de9a,,,15.0,1,1,4,0001
+2022-11-28 07:49:00.928,,,,ps,a511ac42-e6e0-4fba-b067-19dbec25de9a,,,15.0,1,3,4,0010
+2022-11-28 07:49:00.928,,,,ps,a511ac42-e6e0-4fba-b067-19dbec25de9a,,,15.0,1,4,4,1000
+2022-11-28 07:49:42.505,,,,ps,a511ac42-e6e0-4fba-b067-19dbec25de9a,,wahrscheinlich vier.,16.0,,,,
+2022-11-28 07:49:43.702,16.0,screenChange,42.776,Problem Solving,a511ac42-e6e0-4fba-b067-19dbec25de9a,17.0,,,,,,
+2022-11-28 07:49:47.904,17.0,screenChange,4.2,Problem Solving,a511ac42-e6e0-4fba-b067-19dbec25de9a,18.0,,,,,,
+2022-11-28 07:49:53.255,0.0,screenChange,5.346,Assessment,a511ac42-e6e0-4fba-b067-19dbec25de9a,1.0,,,,,,
+2022-11-28 07:50:38.338,,,,assessment,a511ac42-e6e0-4fba-b067-19dbec25de9a,,Indem ich den Zahlen einen Buchstaben zuordne.,1.0,,,,
+2022-11-28 07:50:39.903,1.0,screenChange,46.648,Assessment,a511ac42-e6e0-4fba-b067-19dbec25de9a,2.0,,,,,,
+2022-11-28 07:51:36.969,,,,assessment,a511ac42-e6e0-4fba-b067-19dbec25de9a,,"Man braucht zu viele Glühbirnen bei dem ""one-hot"" System",2.0,,,,
+2022-11-28 07:51:38.320,2.0,screenChange,58.415,Assessment,a511ac42-e6e0-4fba-b067-19dbec25de9a,3.0,,,,,,
+2022-11-28 07:56:10.465,,,,assessment,a511ac42-e6e0-4fba-b067-19dbec25de9a,,"drei, da die höchste Zahl die man bekommen kann ist 7, weil 2 + 3 + 4  ergibt 7.",3.0,,,,
+2022-11-28 07:56:11.580,3.0,screenChange,273.259,Assessment,a511ac42-e6e0-4fba-b067-19dbec25de9a,4.0,,,,,,
+2022-11-28 07:56:27.297,,,,assessment,a511ac42-e6e0-4fba-b067-19dbec25de9a,,nein.,4.0,,,,
+2022-11-28 07:56:28.448,4.0,screenChange,16.867,Assessment,a511ac42-e6e0-4fba-b067-19dbec25de9a,5.0,,,,,,
+2022-11-28 07:56:56.115,5.0,screenChange,27.666,Assessment,a511ac42-e6e0-4fba-b067-19dbec25de9a,6.0,,,,,,
+2022-11-28 07:56:56.115,,,,assessment,a511ac42-e6e0-4fba-b067-19dbec25de9a,,,5.0,1,0,5,10101
+2022-11-28 07:57:49.779,,,,assessment,a511ac42-e6e0-4fba-b067-19dbec25de9a,,8,6.0,,,,
+2022-11-28 07:57:50.897,6.0,screenChange,54.781,Assessment,a511ac42-e6e0-4fba-b067-19dbec25de9a,7.0,,,,,,
+2022-11-28 08:10:05.034,,,,assessment,a511ac42-e6e0-4fba-b067-19dbec25de9a,,,7.0,8,0,8,0010000110001000010101001010010100101010000101001010001001000100
+2022-11-28 08:10:05.036,7.0,screenChange,734.139,Assessment,a511ac42-e6e0-4fba-b067-19dbec25de9a,8.0,,,,,,
+2022-11-28 08:10:13.180,,,,assessment,a511ac42-e6e0-4fba-b067-19dbec25de9a,, ,8.0,,,,

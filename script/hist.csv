@@ -1,109 +1,109 @@
-time,currentactivity,cause,timespent,part,uuid,nextactivity,group,message,slide,height,id,width,gridString
-2022-11-27 19:54:48.501,0.0,screenChange,,Problem Solving,ef499754-3675-47cf-a004-ea0aa30483dd,1.0,,,,,,,
-2022-11-27 19:54:49.116,1.0,screenChange,0.615,Problem Solving,ef499754-3675-47cf-a004-ea0aa30483dd,2.0,,,,,,,
-2022-11-27 19:54:49.333,2.0,screenChange,0.216,Problem Solving,ef499754-3675-47cf-a004-ea0aa30483dd,3.0,,,,,,,
-2022-11-27 19:54:49.489,3.0,screenChange,0.156,Problem Solving,ef499754-3675-47cf-a004-ea0aa30483dd,4.0,,,,,,,
-2022-11-27 19:54:52.414,4.0,screenChange,2.924,Problem Solving,ef499754-3675-47cf-a004-ea0aa30483dd,5.0,,,,,,,
-2022-11-27 19:54:52.415,,,,ps,ef499754-3675-47cf-a004-ea0aa30483dd,,,,4.0,5,0,6,000000000000001100000000000000
-2022-11-27 19:54:53.697,,,,ps,ef499754-3675-47cf-a004-ea0aa30483dd,,,asdf,5.0,,,,
-2022-11-27 19:54:54.678,5.0,screenChange,2.263,Problem Solving,ef499754-3675-47cf-a004-ea0aa30483dd,6.0,,,,,,,
-2022-11-27 19:54:55.998,,,,ps,ef499754-3675-47cf-a004-ea0aa30483dd,,,,6.0,5,0,6,000000000000001000000000000000
-2022-11-27 19:54:55.998,6.0,screenChange,1.32,Problem Solving,ef499754-3675-47cf-a004-ea0aa30483dd,7.0,,,,,,,
-2022-11-27 19:54:57.023,,,,ps,ef499754-3675-47cf-a004-ea0aa30483dd,,,asfd,7.0,,,,
-2022-11-27 19:54:59.100,7.0,screenChange,3.102,Problem Solving,ef499754-3675-47cf-a004-ea0aa30483dd,8.0,,,,,,,
-2022-11-27 19:55:00.556,,,,ps,ef499754-3675-47cf-a004-ea0aa30483dd,,,,8.0,5,0,6,000000000000000000000010000000
-2022-11-27 19:55:00.556,8.0,screenChange,1.456,Problem Solving,ef499754-3675-47cf-a004-ea0aa30483dd,9.0,,,,,,,
-2022-11-27 19:55:01.660,9.0,screenChange,1.104,Problem Solving,ef499754-3675-47cf-a004-ea0aa30483dd,10.0,,,,,,,
-2022-11-27 19:55:02.656,10.0,screenChange,0.996,Problem Solving,ef499754-3675-47cf-a004-ea0aa30483dd,11.0,,,,,,,
-2022-11-27 19:55:02.656,,,,ps,ef499754-3675-47cf-a004-ea0aa30483dd,,,,10.0,1,4,9,000000000
-2022-11-27 19:55:02.656,,,,ps,ef499754-3675-47cf-a004-ea0aa30483dd,,,,10.0,1,1,9,000000000
-2022-11-27 19:55:02.656,,,,ps,ef499754-3675-47cf-a004-ea0aa30483dd,,,,10.0,1,3,9,000000000
-2022-11-27 19:55:02.656,,,,ps,ef499754-3675-47cf-a004-ea0aa30483dd,,,,10.0,1,0,9,000000000
-2022-11-27 19:55:02.656,,,,ps,ef499754-3675-47cf-a004-ea0aa30483dd,,,,10.0,1,2,9,000010000
-2022-11-27 19:55:04.118,,,,ps,ef499754-3675-47cf-a004-ea0aa30483dd,,,,11.0,1,0,9,000000000
-2022-11-27 19:55:04.118,,,,ps,ef499754-3675-47cf-a004-ea0aa30483dd,,,,11.0,1,0,9,000000000
-2022-11-27 19:55:04.118,,,,ps,ef499754-3675-47cf-a004-ea0aa30483dd,,,,11.0,1,0,9,000000000
-2022-11-27 19:55:04.118,,,,ps,ef499754-3675-47cf-a004-ea0aa30483dd,,,,11.0,1,0,9,000000000
-2022-11-27 19:55:04.118,,,,ps,ef499754-3675-47cf-a004-ea0aa30483dd,,,,11.0,1,0,9,000001000
-2022-11-27 19:55:04.118,11.0,screenChange,1.462,Problem Solving,ef499754-3675-47cf-a004-ea0aa30483dd,12.0,,,,,,,
-2022-11-27 19:55:05.586,,,,ps,ef499754-3675-47cf-a004-ea0aa30483dd,,,asdf,12.0,,,,
-2022-11-27 19:55:06.676,12.0,screenChange,2.558,Problem Solving,ef499754-3675-47cf-a004-ea0aa30483dd,13.0,,,,,,,
-2022-11-27 19:55:07.715,,,,ps,ef499754-3675-47cf-a004-ea0aa30483dd,,,asdf,13.0,,,,
-2022-11-27 19:55:08.267,13.0,screenChange,1.591,Problem Solving,ef499754-3675-47cf-a004-ea0aa30483dd,14.0,,,,,,,
-2022-11-27 19:55:09.442,,,,ps,ef499754-3675-47cf-a004-ea0aa30483dd,,,,14.0,1,0,4,0000
-2022-11-27 19:55:09.442,14.0,screenChange,1.175,Problem Solving,ef499754-3675-47cf-a004-ea0aa30483dd,15.0,,,,,,,
-2022-11-27 19:55:09.443,,,,ps,ef499754-3675-47cf-a004-ea0aa30483dd,,,,14.0,1,4,4,0000
-2022-11-27 19:55:09.443,,,,ps,ef499754-3675-47cf-a004-ea0aa30483dd,,,,14.0,1,1,4,0000
-2022-11-27 19:55:09.443,,,,ps,ef499754-3675-47cf-a004-ea0aa30483dd,,,,14.0,1,2,4,0010
-2022-11-27 19:55:09.443,,,,ps,ef499754-3675-47cf-a004-ea0aa30483dd,,,,14.0,1,3,4,0000
-2022-11-27 19:55:11.607,,,,ps,ef499754-3675-47cf-a004-ea0aa30483dd,,,,15.0,1,2,4,0000
-2022-11-27 19:55:11.607,,,,ps,ef499754-3675-47cf-a004-ea0aa30483dd,,,,15.0,1,3,4,0010
-2022-11-27 19:55:11.607,,,,ps,ef499754-3675-47cf-a004-ea0aa30483dd,,,,15.0,1,0,4,0000
-2022-11-27 19:55:11.607,15.0,screenChange,2.165,Problem Solving,ef499754-3675-47cf-a004-ea0aa30483dd,16.0,,,,,,,
-2022-11-27 19:55:11.607,,,,ps,ef499754-3675-47cf-a004-ea0aa30483dd,,,,15.0,1,4,4,0000
-2022-11-27 19:55:11.607,,,,ps,ef499754-3675-47cf-a004-ea0aa30483dd,,,,15.0,1,1,4,0000
-2022-11-27 19:55:12.683,,,,ps,ef499754-3675-47cf-a004-ea0aa30483dd,,,asf,16.0,,,,
-2022-11-27 19:55:13.256,16.0,screenChange,1.649,Problem Solving,ef499754-3675-47cf-a004-ea0aa30483dd,17.0,,,,,,,
-2022-11-27 19:55:14.123,17.0,screenChange,0.867,Problem Solving,ef499754-3675-47cf-a004-ea0aa30483dd,18.0,,,,,,,
-2022-11-27 19:55:15.528,0.0,screenChange,1.404,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,1.0,,,,,,,
-2022-11-27 19:55:16.874,1.0,screenChange,1.346,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,2.0,,,,,,,
-2022-11-27 19:55:16.954,2.0,screenChange,0.08,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,3.0,,,,,,,
-2022-11-27 19:55:17.119,3.0,screenChange,0.165,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,4.0,,,,,,,
-2022-11-27 19:55:17.139,4.0,screenChange,0.019,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,5.0,,,,,,,
-2022-11-27 19:55:17.340,5.0,screenChange,0.201,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,6.0,,,,,,,
-2022-11-27 19:55:17.419,6.0,screenChange,0.078,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,7.0,,,,,,,
-2022-11-27 19:55:17.484,7.0,screenChange,0.065,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,8.0,,,,,,,
-2022-11-27 19:55:17.533,8.0,screenChange,0.049,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,9.0,,,,,,,
-2022-11-27 19:55:17.613,9.0,screenChange,0.08,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,10.0,,,,,,,
-2022-11-27 19:55:17.663,10.0,screenChange,0.05,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,11.0,,,,,,,
-2022-11-27 19:55:17.742,11.0,screenChange,0.079,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,12.0,,,,,,,
-2022-11-27 19:55:17.813,12.0,screenChange,0.071,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,13.0,,,,,,,
-2022-11-27 19:55:17.892,13.0,screenChange,0.078,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,14.0,,,,,,,
-2022-11-27 19:55:17.943,14.0,screenChange,0.051,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,15.0,,,,,,,
-2022-11-27 19:55:18.028,15.0,screenChange,0.085,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,16.0,,,,,,,
-2022-11-27 19:55:18.078,16.0,screenChange,0.049,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,17.0,,,,,,,
-2022-11-27 19:55:18.166,17.0,screenChange,0.088,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,18.0,,,,,,,
-2022-11-27 19:55:18.229,18.0,screenChange,0.063,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,19.0,,,,,,,
-2022-11-27 19:55:18.301,19.0,screenChange,0.072,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,20.0,,,,,,,
-2022-11-27 19:55:18.357,20.0,screenChange,0.055,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,21.0,,,,,,,
-2022-11-27 19:55:18.444,21.0,screenChange,0.086,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,22.0,,,,,,,
-2022-11-27 19:55:18.486,22.0,screenChange,0.042,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,23.0,,,,,,,
-2022-11-27 19:55:18.778,23.0,screenChange,0.291,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,24.0,,,,,,,
-2022-11-27 19:55:18.882,24.0,screenChange,0.104,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,25.0,,,,,,,
-2022-11-27 19:55:18.974,25.0,screenChange,0.092,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,26.0,,,,,,,
-2022-11-27 19:55:19.075,26.0,screenChange,0.101,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,27.0,,,,,,,
-2022-11-27 19:55:19.146,27.0,screenChange,0.071,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,28.0,,,,,,,
-2022-11-27 19:55:19.296,28.0,screenChange,0.15,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,29.0,,,,,,,
-2022-11-27 19:55:19.354,29.0,screenChange,0.058,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,30.0,,,,,,,
-2022-11-27 19:55:19.499,30.0,screenChange,0.145,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,31.0,,,,,,,
-2022-11-27 19:55:19.605,31.0,screenChange,0.106,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,32.0,,,,,,,
-2022-11-27 19:55:19.670,32.0,screenChange,0.065,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,33.0,,,,,,,
-2022-11-27 19:55:19.792,33.0,screenChange,0.122,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,34.0,,,,,,,
-2022-11-27 19:55:21.188,34.0,screenChange,1.395,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,35.0,,,,,,,
-2022-11-27 19:55:21.367,35.0,screenChange,0.179,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,36.0,,,,,,,
-2022-11-27 19:55:21.511,36.0,screenChange,0.143,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,37.0,,,,,,,
-2022-11-27 19:55:21.633,37.0,screenChange,0.122,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,38.0,,,,,,,
-2022-11-27 19:55:21.776,38.0,screenChange,0.142,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,39.0,,,,,,,
-2022-11-27 19:55:21.898,39.0,screenChange,0.122,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,40.0,,,,,,,
-2022-11-27 19:55:22.019,40.0,screenChange,0.121,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,41.0,,,,,,,
-2022-11-27 19:55:22.243,41.0,screenChange,0.223,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,42.0,,,,,,,
-2022-11-27 19:55:22.407,42.0,screenChange,0.163,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,43.0,,,,,,,
-2022-11-27 19:55:22.522,43.0,screenChange,0.115,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,44.0,,,,,,,
-2022-11-27 19:55:22.593,44.0,screenChange,0.071,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,45.0,,,,,,,
-2022-11-27 19:55:22.852,45.0,screenChange,0.259,Instruction,ef499754-3675-47cf-a004-ea0aa30483dd,46.0,,,,,,,
-2022-11-27 19:55:23.970,0.0,screenChange,1.116,Assessment,ef499754-3675-47cf-a004-ea0aa30483dd,1.0,,,,,,,
-2022-11-27 19:55:25.447,,,,assessment,ef499754-3675-47cf-a004-ea0aa30483dd,,,asdf,1.0,,,,
-2022-11-27 19:55:26.020,1.0,screenChange,2.05,Assessment,ef499754-3675-47cf-a004-ea0aa30483dd,2.0,,,,,,,
-2022-11-27 19:55:27.374,,,,assessment,ef499754-3675-47cf-a004-ea0aa30483dd,,,aasdf,2.0,,,,
-2022-11-27 19:55:28.335,2.0,screenChange,2.315,Assessment,ef499754-3675-47cf-a004-ea0aa30483dd,3.0,,,,,,,
-2022-11-27 19:55:29.567,,,,assessment,ef499754-3675-47cf-a004-ea0aa30483dd,,,fafsdf,3.0,,,,
-2022-11-27 19:55:30.163,3.0,screenChange,1.828,Assessment,ef499754-3675-47cf-a004-ea0aa30483dd,4.0,,,,,,,
-2022-11-27 19:55:31.976,,,,assessment,ef499754-3675-47cf-a004-ea0aa30483dd,,,asdsf,4.0,,,,
-2022-11-27 19:55:32.570,4.0,screenChange,2.406,Assessment,ef499754-3675-47cf-a004-ea0aa30483dd,5.0,,,,,,,
-2022-11-27 19:55:33.882,5.0,screenChange,1.312,Assessment,ef499754-3675-47cf-a004-ea0aa30483dd,6.0,,,,,,,
-2022-11-27 19:55:33.882,,,,assessment,ef499754-3675-47cf-a004-ea0aa30483dd,,,,5.0,1,0,5,00010
-2022-11-27 19:55:34.893,,,,assessment,ef499754-3675-47cf-a004-ea0aa30483dd,,,asdf,6.0,,,,
-2022-11-27 19:55:35.466,6.0,screenChange,1.584,Assessment,ef499754-3675-47cf-a004-ea0aa30483dd,7.0,,,,,,,
-2022-11-27 19:55:37.652,7.0,screenChange,2.186,Assessment,ef499754-3675-47cf-a004-ea0aa30483dd,8.0,,,,,,,
-2022-11-27 19:55:37.652,,,,assessment,ef499754-3675-47cf-a004-ea0aa30483dd,,,,7.0,8,0,8,0000000000000000000000000000001000000000000000000000000000000000
-2022-11-27 19:55:38.878,,,,assessment,ef499754-3675-47cf-a004-ea0aa30483dd,,,asdfsaf,8.0,,,,
+time,currentactivity,cause,timespent,part,uuid,nextactivity,message,slide,height,id,width,gridString
+2022-11-28 10:28:42.379,0.0,screenChange,3.506,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,1.0,,,,,,
+2022-11-28 10:28:44.625,1.0,screenChange,2.245,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,2.0,,,,,,
+2022-11-28 10:28:47.298,2.0,screenChange,2.673,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,3.0,,,,,,
+2022-11-28 10:28:49.392,3.0,screenChange,2.093,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,4.0,,,,,,
+2022-11-28 10:28:51.230,4.0,screenChange,1.838,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,5.0,,,,,,
+2022-11-28 10:28:52.990,5.0,screenChange,1.759,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,6.0,,,,,,
+2022-11-28 10:28:55.963,6.0,screenChange,2.973,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,7.0,,,,,,
+2022-11-28 10:28:58.599,7.0,screenChange,2.636,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,8.0,,,,,,
+2022-11-28 10:28:59.605,8.0,screenChange,1.006,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,9.0,,,,,,
+2022-11-28 10:29:00.966,9.0,screenChange,1.361,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,10.0,,,,,,
+2022-11-28 10:29:03.182,10.0,screenChange,2.216,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,11.0,,,,,,
+2022-11-28 10:29:04.921,11.0,screenChange,1.738,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,12.0,,,,,,
+2022-11-28 10:29:11.770,12.0,screenChange,6.848,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,13.0,,,,,,
+2022-11-28 10:29:12.890,13.0,screenChange,1.119,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,14.0,,,,,,
+2022-11-28 10:29:13.594,14.0,screenChange,0.704,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,15.0,,,,,,
+2022-11-28 10:29:14.486,15.0,screenChange,0.891,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,16.0,,,,,,
+2022-11-28 10:29:15.413,16.0,screenChange,0.927,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,17.0,,,,,,
+2022-11-28 10:29:16.289,17.0,screenChange,0.876,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,18.0,,,,,,
+2022-11-28 10:29:17.152,18.0,screenChange,0.863,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,19.0,,,,,,
+2022-11-28 10:29:18.142,19.0,screenChange,0.99,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,20.0,,,,,,
+2022-11-28 10:29:22.831,20.0,screenChange,4.689,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,21.0,,,,,,
+2022-11-28 10:29:23.558,21.0,screenChange,0.727,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,22.0,,,,,,
+2022-11-28 10:29:24.086,22.0,screenChange,0.528,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,23.0,,,,,,
+2022-11-28 10:29:24.663,23.0,screenChange,0.577,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,24.0,,,,,,
+2022-11-28 10:29:25.241,24.0,screenChange,0.578,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,25.0,,,,,,
+2022-11-28 10:29:25.674,25.0,screenChange,0.433,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,26.0,,,,,,
+2022-11-28 10:29:26.117,26.0,screenChange,0.442,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,27.0,,,,,,
+2022-11-28 10:29:26.551,27.0,screenChange,0.434,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,28.0,,,,,,
+2022-11-28 10:29:26.922,28.0,screenChange,0.371,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,29.0,,,,,,
+2022-11-28 10:29:27.315,29.0,screenChange,0.393,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,30.0,,,,,,
+2022-11-28 10:29:27.713,30.0,screenChange,0.398,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,31.0,,,,,,
+2022-11-28 10:29:28.112,31.0,screenChange,0.399,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,32.0,,,,,,
+2022-11-28 10:29:28.597,32.0,screenChange,0.485,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,33.0,,,,,,
+2022-11-28 10:29:29.196,33.0,screenChange,0.599,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,34.0,,,,,,
+2022-11-28 10:29:29.873,34.0,screenChange,0.677,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,35.0,,,,,,
+2022-11-28 10:29:30.478,35.0,screenChange,0.605,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,36.0,,,,,,
+2022-11-28 10:29:31.091,36.0,screenChange,0.613,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,37.0,,,,,,
+2022-11-28 10:29:31.719,37.0,screenChange,0.628,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,38.0,,,,,,
+2022-11-28 10:29:32.741,38.0,screenChange,1.022,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,39.0,,,,,,
+2022-11-28 10:29:32.966,39.0,screenChange,0.225,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,40.0,,,,,,
+2022-11-28 10:29:33.458,40.0,screenChange,0.492,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,41.0,,,,,,
+2022-11-28 10:29:33.815,41.0,screenChange,0.357,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,42.0,,,,,,
+2022-11-28 10:29:34.264,42.0,screenChange,0.449,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,43.0,,,,,,
+2022-11-28 10:29:34.806,43.0,screenChange,0.542,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,44.0,,,,,,
+2022-11-28 10:29:35.276,44.0,screenChange,0.47,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,45.0,,,,,,
+2022-11-28 10:29:35.889,45.0,screenChange,0.613,Instruction,8c7a33db-db12-4bde-8ce8-0c78b16de28a,46.0,,,,,,
+2022-11-28 10:29:36.737,0.0,screenChange,,Problem Solving,8c7a33db-db12-4bde-8ce8-0c78b16de28a,1.0,,,,,,
+2022-11-28 10:29:37.065,1.0,screenChange,0.328,Problem Solving,8c7a33db-db12-4bde-8ce8-0c78b16de28a,2.0,,,,,,
+2022-11-28 10:29:37.408,2.0,screenChange,0.343,Problem Solving,8c7a33db-db12-4bde-8ce8-0c78b16de28a,3.0,,,,,,
+2022-11-28 10:29:37.798,3.0,screenChange,0.39,Problem Solving,8c7a33db-db12-4bde-8ce8-0c78b16de28a,4.0,,,,,,
+2022-11-28 10:29:39.609,4.0,screenChange,1.811,Problem Solving,8c7a33db-db12-4bde-8ce8-0c78b16de28a,5.0,,,,,,
+2022-11-28 10:29:39.610,,,,ps,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,,4.0,5,0,6,000000001010000000000000000000
+2022-11-28 10:29:45.703,,,,ps,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,Puh Bruder keine Ahnung,5.0,,,,
+2022-11-28 10:29:46.515,5.0,screenChange,6.905,Problem Solving,8c7a33db-db12-4bde-8ce8-0c78b16de28a,6.0,,,,,,
+2022-11-28 10:29:48.596,6.0,screenChange,2.081,Problem Solving,8c7a33db-db12-4bde-8ce8-0c78b16de28a,7.0,,,,,,
+2022-11-28 10:29:48.596,,,,ps,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,,6.0,5,0,6,000000010000000100000000000000
+2022-11-28 10:29:54.946,,,,ps,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,Viel zu wenig Platz,7.0,,,,
+2022-11-28 10:29:55.738,7.0,screenChange,7.142,Problem Solving,8c7a33db-db12-4bde-8ce8-0c78b16de28a,8.0,,,,,,
+2022-11-28 10:29:58.738,8.0,screenChange,3.0,Problem Solving,8c7a33db-db12-4bde-8ce8-0c78b16de28a,9.0,,,,,,
+2022-11-28 10:29:58.738,,,,ps,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,,8.0,5,0,6,000000000100001000000000000000
+2022-11-28 10:30:00.370,9.0,screenChange,1.632,Problem Solving,8c7a33db-db12-4bde-8ce8-0c78b16de28a,10.0,,,,,,
+2022-11-28 10:30:08.401,10.0,screenChange,8.031,Problem Solving,8c7a33db-db12-4bde-8ce8-0c78b16de28a,11.0,,,,,,
+2022-11-28 10:30:08.402,,,,ps,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,,10.0,1,2,9,010000000
+2022-11-28 10:30:08.402,,,,ps,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,,10.0,1,0,9,000001000
+2022-11-28 10:30:08.402,,,,ps,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,,10.0,1,1,9,000000001
+2022-11-28 10:30:08.402,,,,ps,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,,10.0,1,3,9,000000000
+2022-11-28 10:30:08.402,,,,ps,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,,10.0,1,4,9,000000100
+2022-11-28 10:30:12.700,,,,ps,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,,11.0,1,0,9,100000000
+2022-11-28 10:30:12.700,11.0,screenChange,4.298,Problem Solving,8c7a33db-db12-4bde-8ce8-0c78b16de28a,12.0,,,,,,
+2022-11-28 10:30:12.700,,,,ps,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,,11.0,1,0,9,000000100
+2022-11-28 10:30:12.700,,,,ps,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,,11.0,1,0,9,001000000
+2022-11-28 10:30:12.700,,,,ps,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,,11.0,1,0,9,000000001
+2022-11-28 10:30:12.700,,,,ps,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,,11.0,1,0,9,001000000
+2022-11-28 10:30:22.541,,,,ps,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,Zahlen Buchstaben hä?,12.0,,,,
+2022-11-28 10:30:23.247,12.0,screenChange,10.547,Problem Solving,8c7a33db-db12-4bde-8ce8-0c78b16de28a,13.0,,,,,,
+2022-11-28 10:30:28.543,,,,ps,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,Glaub scho,13.0,,,,
+2022-11-28 10:30:29.240,13.0,screenChange,5.992,Problem Solving,8c7a33db-db12-4bde-8ce8-0c78b16de28a,14.0,,,,,,
+2022-11-28 10:30:34.144,,,,ps,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,,14.0,1,4,4,0100
+2022-11-28 10:30:34.144,,,,ps,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,,14.0,1,2,4,1000
+2022-11-28 10:30:34.144,,,,ps,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,,14.0,1,1,4,0000
+2022-11-28 10:30:34.144,14.0,screenChange,4.904,Problem Solving,8c7a33db-db12-4bde-8ce8-0c78b16de28a,15.0,,,,,,
+2022-11-28 10:30:34.144,,,,ps,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,,14.0,1,3,4,0001
+2022-11-28 10:30:34.144,,,,ps,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,,14.0,1,0,4,0001
+2022-11-28 10:30:35.434,,,,ps,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,,15.0,1,4,4,0000
+2022-11-28 10:30:35.434,,,,ps,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,,15.0,1,2,4,0010
+2022-11-28 10:30:35.434,,,,ps,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,,15.0,1,0,4,0000
+2022-11-28 10:30:35.434,,,,ps,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,,15.0,1,1,4,0000
+2022-11-28 10:30:35.434,,,,ps,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,,15.0,1,3,4,0000
+2022-11-28 10:30:35.434,15.0,screenChange,1.29,Problem Solving,8c7a33db-db12-4bde-8ce8-0c78b16de28a,16.0,,,,,,
+2022-11-28 10:30:38.663,,,,ps,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,Yea,16.0,,,,
+2022-11-28 10:30:40.992,16.0,screenChange,5.558,Problem Solving,8c7a33db-db12-4bde-8ce8-0c78b16de28a,17.0,,,,,,
+2022-11-28 10:30:41.770,17.0,screenChange,0.777,Problem Solving,8c7a33db-db12-4bde-8ce8-0c78b16de28a,18.0,,,,,,
+2022-11-28 10:30:43.502,0.0,screenChange,1.732,Assessment,8c7a33db-db12-4bde-8ce8-0c78b16de28a,1.0,,,,,,
+2022-11-28 10:30:45.953,,,,assessment,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,Haha,1.0,,,,
+2022-11-28 10:30:46.788,1.0,screenChange,3.286,Assessment,8c7a33db-db12-4bde-8ce8-0c78b16de28a,2.0,,,,,,
+2022-11-28 10:30:53.843,,,,assessment,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,Verschwendung,2.0,,,,
+2022-11-28 10:30:54.898,2.0,screenChange,8.11,Assessment,8c7a33db-db12-4bde-8ce8-0c78b16de28a,3.0,,,,,,
+2022-11-28 10:31:02.011,,,,assessment,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,3,3.0,,,,
+2022-11-28 10:31:03.265,3.0,screenChange,8.367,Assessment,8c7a33db-db12-4bde-8ce8-0c78b16de28a,4.0,,,,,,
+2022-11-28 10:31:09.110,,,,assessment,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,Ternary encoding,4.0,,,,
+2022-11-28 10:31:09.837,4.0,screenChange,6.572,Assessment,8c7a33db-db12-4bde-8ce8-0c78b16de28a,5.0,,,,,,
+2022-11-28 10:31:13.087,,,,assessment,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,,5.0,1,0,5,10101
+2022-11-28 10:31:13.087,5.0,screenChange,3.25,Assessment,8c7a33db-db12-4bde-8ce8-0c78b16de28a,6.0,,,,,,
+2022-11-28 10:31:17.419,,,,assessment,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,11,6.0,,,,
+2022-11-28 10:31:19.308,6.0,screenChange,6.221,Assessment,8c7a33db-db12-4bde-8ce8-0c78b16de28a,7.0,,,,,,
+2022-11-28 10:31:43.911,,,,assessment,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,,7.0,8,0,8,0011110001000010101001011000000110100101100110010100001000111100
+2022-11-28 10:31:43.911,7.0,screenChange,24.603,Assessment,8c7a33db-db12-4bde-8ce8-0c78b16de28a,8.0,,,,,,
+2022-11-28 10:31:49.727,,,,assessment,8c7a33db-db12-4bde-8ce8-0c78b16de28a,,Voll nice gemacht,8.0,,,,
