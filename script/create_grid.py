@@ -4,8 +4,8 @@ from matplotlib import pyplot as plt
 from matplotlib import colors
 import numpy as np
 import textwrap as twp
+from matplotlib import rc
 
-# time,currentactivity,cause,timespent,part,uuid,nextactivity,message,slide,height,id,width,gridString
 time_index = 0
 timespent_index = 3
 part_index = 4
@@ -16,7 +16,6 @@ id_index = 10
 width_index = 11
 gridstring_index = 12
 
-# load all csv files in data
 data = []
 users = []
 for filename in glob.glob('data/*/*.csv'):
@@ -80,14 +79,14 @@ for i in range(len(data)):
 
     user_datas.append(user_data)
 
-# add every different key from the user_datas to labels
+
 labels = []
 for user_data in user_datas:
     for key in user_data.keys():
         if key not in labels:
             labels.append(key)
 
-# sort labels alphabetically and put all the message and grid labels at the end
+
 labels_message = []
 labels_grid = []
 labels_standard = []
@@ -102,13 +101,53 @@ labels_message.sort()
 labels_grid.sort()
 labels = labels_standard + labels_message + labels_grid
 
+def make_matrix(gridstring, split):
+    # make a new string going back to line after every 5 characters
+    result = ''
+    result += '_' * (2 * split + 1) + '\n'
+    result += '|'
+    for i in range(len(gridstring)):
+        if i % split == 0 and i != 0:
+            result += '|\n|'
+        result += gridstring[i]
+    result += '|'
+    # replace the 0's with spaces
+    result = result.replace('0', '  ')
+    # replace the 1's with █
+    result = result.replace('1', '██')
+
+    # for the last line of result, replace ' ' with '_'
+    last_line = result.split('\n')[-1]
+    last_line = last_line.replace(' ', '_')
+
+    # remove last line and add the new one
+    result = result.split('\n')
+    result[-1] = last_line
+    result = '\n'.join(result)
+
+
+    return result
+
+
 
 rows = []
 for user_data in user_datas:
     row = []
     for label in labels:
         if label in user_data:
-            row.append(twp.fill(str(user_data[label]), 20))
+            # if row is a grid
+            if 'grid' in label.lower():
+                split = 0
+                length = len(user_data[label])
+                if length == 30:
+                    split = 6
+                elif length == 64:
+                    split = 8
+                else:
+                    split = length
+                row.append(make_matrix(user_data[label], split))
+            else:
+                row.append(twp.fill(str(user_data[label]), 40))
         else:
             row.append('')
     rows.append(row)
@@ -116,19 +155,26 @@ for user_data in user_datas:
 
 
 for i in range(len(labels)):
-    labels[i] = twp.fill(labels[i], 20)
+    labels[i] = twp.fill(labels[i], 40)
+
+# remove columns 8, 13, 15, 17, 18, 19, 22, 23, 25, 27, 29, 30, 31, 32, 33, 34, 36, 38, 39, 42, 43, 46, 48, 50
+labels = [labels[i] for i in range(len(labels)) if i not in [8, 13, 15, 17, 18, 19, 22, 23, 25, 27, 29, 30, 31, 32, 33, 34, 36, 38, 39, 42, 43, 46, 48, 50]]
+rows = [[row[i] for i in range(len(row)) if i not in [8, 13, 15, 17, 18, 19, 22, 23, 25, 27, 29, 30, 31, 32, 33, 34, 36, 38, 39, 42, 43, 46, 48, 50]] for row in rows]
 
 print(len(rows[0]))
 print(len(labels))
 
+plt.rcParams["font.family"] = "Consolas"
+
 plt.figure(figsize=(100, 50))
 table = plt.table(cellText=rows, loc='center', colLabels=labels, cellLoc='center')
+
 table.auto_set_font_size(False)
 table.set_fontsize(8)
+
 table.scale(1.2, 8)
 plt.axis('off')
-plt.savefig('table.png', dpi=100)
-# plt.show()
+plt.savefig('table.png', dpi=150)
 
 
 
