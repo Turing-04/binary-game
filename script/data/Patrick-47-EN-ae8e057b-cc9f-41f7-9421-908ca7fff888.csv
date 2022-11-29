@@ -1,0 +1,13 @@
+time,currentactivity,cause,timespent,part,uuid,nextactivity,message,slide,height,id,width,gridString
+2022-11-27 22:19:00.325,0.0,screenChange,,Problem Solving,ae8e057b-cc9f-41f7-9421-908ca7fff888,1.0,,,,,,
+2022-11-27 22:19:05.415,1.0,screenChange,5.085,Problem Solving,ae8e057b-cc9f-41f7-9421-908ca7fff888,2.0,,,,,,
+2022-11-27 22:19:06.723,2.0,screenChange,1.305,Problem Solving,ae8e057b-cc9f-41f7-9421-908ca7fff888,3.0,,,,,,
+2022-11-27 22:19:09.658,3.0,screenChange,2.932,Problem Solving,ae8e057b-cc9f-41f7-9421-908ca7fff888,4.0,,,,,,
+2022-11-27 22:20:14.062,4.0,screenChange,64.401,Problem Solving,ae8e057b-cc9f-41f7-9421-908ca7fff888,5.0,,,,,,
+2022-11-27 22:20:14.066,,,,ps,ae8e057b-cc9f-41f7-9421-908ca7fff888,,,4.0,5,0,6,011110010000011110010010011110
+2022-11-27 22:20:35.673,,,,ps,ae8e057b-cc9f-41f7-9421-908ca7fff888,,Bonjour,5.0,,,,
+2022-11-27 22:20:38.336,5.0,screenChange,24.272,Problem Solving,ae8e057b-cc9f-41f7-9421-908ca7fff888,6.0,,,,,,
+2022-11-27 22:21:01.967,6.0,screenChange,23.627,Problem Solving,ae8e057b-cc9f-41f7-9421-908ca7fff888,7.0,,,,,,
+2022-11-27 22:21:01.970,,,,ps,ae8e057b-cc9f-41f7-9421-908ca7fff888,,,6.0,5,0,6,110000000000001010000000010100
+2022-11-27 22:21:06.434,,,,ps,ae8e057b-cc9f-41f7-9421-908ca7fff888,,Je,7.0,,,,
+2022-11-27 22:21:08.166,7.0,screenChange,6.197,Problem Solving,ae8e057b-cc9f-41f7-9421-908ca7fff888,8.0,,,,,,

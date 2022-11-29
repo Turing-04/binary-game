@@ -1,0 +1,7 @@
+time,currentactivity,cause,timespent,part,uuid,nextactivity,message,slide,height,id,width,gridString
+2022-11-28 01:18:48.791,0.0,screenChange,,Problem Solving,bc925034-0617-45e8-b2d7-1a52ad1e1a9a,1.0,,,,,,
+2022-11-28 01:18:51.410,1.0,screenChange,2.613,Problem Solving,bc925034-0617-45e8-b2d7-1a52ad1e1a9a,2.0,,,,,,
+2022-11-28 01:18:52.326,2.0,screenChange,0.912,Problem Solving,bc925034-0617-45e8-b2d7-1a52ad1e1a9a,3.0,,,,,,
+2022-11-28 01:18:53.641,3.0,screenChange,1.314,Problem Solving,bc925034-0617-45e8-b2d7-1a52ad1e1a9a,4.0,,,,,,
+2022-11-28 01:19:13.274,4.0,screenChange,19.631,Problem Solving,bc925034-0617-45e8-b2d7-1a52ad1e1a9a,5.0,,,,,,
+2022-11-28 01:19:13.281,,,,ps,bc925034-0617-45e8-b2d7-1a52ad1e1a9a,,,4.0,5,0,6,000000000000000000000000010000
