@@ -56,19 +56,27 @@ for i in range(len(data)):
     grids = []
     grid_times = np.array([])
     for row in data[i]:
-        if row[part_index] == 'Instruction':
-            x = 4
-            # instruction_times = np.append(instruction_times, float(row[timespent_index]))
+        if row[part_index].lower() == 'instruction':
+            if row[timespent_index] != '':
+                instruction_times = np.append(instruction_times, float(row[timespent_index]))
+        elif row[part_index].lower() == 'assessment':
+            user_data['Assessment message ' + row[slide_index]] = row[message_index]
+            user_data['Assessment grid ' + row[slide_index]] = row[gridstring_index]
         else:
             user_data['Message ' + row[slide_index]] = row[message_index]
             user_data['Grid ' + row[slide_index]] = row[gridstring_index]
-            # grid_times = np.append(grid_times, float(row[timespent_index]))
+            if row[timespent_index] != '':
+                grid_times = np.append(grid_times, float(row[timespent_index]))
 
-    avg_instruction_time = 0 # np.mean(instruction_times)
-    avg_grid_time = 0 # np.mean(grid_times)
+    avg_instruction_time = round(np.mean(instruction_times))
+    avg_grid_time = round(np.mean(grid_times))
+    total_instruction_time = round(np.sum(instruction_times))
+    total_grid_time = round(np.sum(grid_times))
 
     user_data['Average time spent on instructions'] = avg_instruction_time
     user_data['Average time spent on problem solving'] = avg_grid_time
+    user_data['Total time spent on instructions'] = total_instruction_time
+    user_data['Total time spent on problem solving'] = total_grid_time
 
     user_datas.append(user_data)
 
@@ -79,12 +87,28 @@ for user_data in user_datas:
         if key not in labels:
             labels.append(key)
 
+# sort labels alphabetically and put all the message and grid labels at the end
+labels_message = []
+labels_grid = []
+labels_standard = []
+for label in labels:
+    if 'message' in label.lower():
+        labels_message.append(label)
+    elif 'grid' in label.lower():
+        labels_grid.append(label)
+    else:
+        labels_standard.append(label)
+labels_message.sort()
+labels_grid.sort()
+labels = labels_standard + labels_message + labels_grid
+
+
 rows = []
 for user_data in user_datas:
     row = []
     for label in labels:
         if label in user_data:
-            row.append(twp.fill(str(user_data[label]), 30))
+            row.append(twp.fill(str(user_data[label]), 20))
         else:
             row.append('')
     rows.append(row)
@@ -92,7 +116,7 @@ for user_data in user_datas:
 
 
 for i in range(len(labels)):
-    labels[i] = twp.fill(labels[i], 30)
+    labels[i] = twp.fill(labels[i], 20)
 
 print(len(rows[0]))
 print(len(labels))
@@ -100,7 +124,7 @@ print(len(labels))
 plt.figure(figsize=(100, 50))
 table = plt.table(cellText=rows, loc='center', colLabels=labels, cellLoc='center')
 table.auto_set_font_size(False)
-table.set_fontsize(10)
+table.set_fontsize(8)
 table.scale(1.2, 8)
 plt.axis('off')
 plt.savefig('table.png', dpi=100)
