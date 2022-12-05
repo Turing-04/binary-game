@@ -1,0 +1,118 @@
+time,currentactivity,cause,timespent,part,uuid,nextactivity,message,slide,height,id,width,gridString
+2022-12-04 18:49:05.153,0.0,screenChange,,Problem Solving,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,1.0,,,,,,
+2022-12-04 18:49:10.826,1.0,screenChange,5.666,Problem Solving,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,2.0,,,,,,
+2022-12-04 18:49:17.025,2.0,screenChange,6.197,Problem Solving,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,3.0,,,,,,
+2022-12-04 18:49:24.217,3.0,screenChange,7.191,Problem Solving,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,4.0,,,,,,
+2022-12-04 18:50:11.182,4.0,screenChange,46.964,Problem Solving,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,5.0,,,,,,
+2022-12-04 18:50:11.185,,,,ps,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,,4.0,5,0,6,100011000001010101000001001001
+2022-12-04 18:50:39.589,,,,ps,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,I wrote in roman numerals like a boss.,5.0,,,,
+2022-12-04 18:50:41.784,5.0,screenChange,30.6,Problem Solving,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,6.0,,,,,,
+2022-12-04 18:53:46.321,6.0,screenChange,184.536,Problem Solving,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,7.0,,,,,,
+2022-12-04 18:53:46.324,,,,ps,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,,6.0,5,0,6,110000000000110000110000000000
+2022-12-04 18:53:55.148,,,,ps,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,Oui,7.0,,,,
+2022-12-04 18:53:56.573,7.0,screenChange,10.249,Problem Solving,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,8.0,,,,,,
+2022-12-04 18:56:35.016,8.0,screenChange,158.442,Problem Solving,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,9.0,,,,,,
+2022-12-04 18:56:35.018,,,,ps,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,,8.0,5,0,6,100010110011110011001100001100
+2022-12-04 18:56:41.294,9.0,screenChange,6.276,Problem Solving,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,10.0,,,,,,
+2022-12-04 18:56:59.416,10.0,screenChange,18.12,Problem Solving,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,11.0,,,,,,
+2022-12-04 18:56:59.418,,,,ps,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,,10.0,1,0,9,111100000
+2022-12-04 18:56:59.418,,,,ps,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,,10.0,1,1,9,100000000
+2022-12-04 18:56:59.419,,,,ps,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,,10.0,1,3,9,000000000
+2022-12-04 18:56:59.419,,,,ps,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,,10.0,1,2,9,111111110
+2022-12-04 18:56:59.420,,,,ps,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,,10.0,1,4,9,111000000
+2022-12-04 18:57:43.190,11.0,screenChange,43.772,Problem Solving,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,12.0,,,,,,
+2022-12-04 18:57:43.192,,,,ps,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,,11.0,1,0,9,100000000
+2022-12-04 18:57:43.193,,,,ps,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,,11.0,1,0,9,111111111
+2022-12-04 18:57:43.193,,,,ps,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,,11.0,1,0,9,111110000
+2022-12-04 18:57:43.193,,,,ps,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,,11.0,1,0,9,111000000
+2022-12-04 18:57:43.193,,,,ps,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,,11.0,1,0,9,110000000
+2022-12-04 18:57:54.582,,,,ps,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,"Yes, Bob is a smart boy",12.0,,,,
+2022-12-04 18:57:58.371,12.0,screenChange,15.179,Problem Solving,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,13.0,,,,,,
+2022-12-04 18:58:02.357,13.0,screenChange,3.985,Problem Solving,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,14.0,,,,,,
+2022-12-04 19:02:47.820,14.0,screenChange,285.461,Problem Solving,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,15.0,,,,,,
+2022-12-04 19:02:47.822,,,,ps,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,,14.0,1,0,4,0111
+2022-12-04 19:02:47.822,,,,ps,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,,14.0,1,1,4,1000
+2022-12-04 19:02:47.823,,,,ps,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,,14.0,1,4,4,0000
+2022-12-04 19:02:47.823,,,,ps,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,,14.0,1,3,4,0110
+2022-12-04 19:02:47.823,,,,ps,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,,14.0,1,2,4,0011
+2022-12-04 19:03:41.182,15.0,screenChange,53.36,Problem Solving,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,16.0,,,,,,
+2022-12-04 19:03:41.183,,,,ps,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,,15.0,1,1,4,0000
+2022-12-04 19:03:41.183,,,,ps,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,,15.0,1,0,4,1000
+2022-12-04 19:03:41.184,,,,ps,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,,15.0,1,4,4,1001
+2022-12-04 19:03:41.184,,,,ps,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,,15.0,1,3,4,0010
+2022-12-04 19:03:41.184,,,,ps,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,,15.0,1,2,4,0111
+2022-12-04 19:04:26.555,,,,ps,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,"first lightbulb = 1
+second lightbulb = 2
+third lightbulb = 3
+etc. and we sum up ",16.0,,,,
+2022-12-04 19:04:29.293,16.0,screenChange,48.11,Problem Solving,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,17.0,,,,,,
+2022-12-04 19:04:34.181,17.0,screenChange,4.888,Problem Solving,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,18.0,,,,,,
+2022-12-04 19:04:37.281,0.0,screenChange,3.096,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,1.0,,,,,,
+2022-12-04 19:04:42.013,1.0,screenChange,4.731,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,2.0,,,,,,
+2022-12-04 19:04:46.327,2.0,screenChange,4.313,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,3.0,,,,,,
+2022-12-04 19:04:48.717,3.0,screenChange,2.389,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,4.0,,,,,,
+2022-12-04 19:04:51.295,4.0,screenChange,2.577,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,5.0,,,,,,
+2022-12-04 19:04:57.386,5.0,screenChange,6.091,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,6.0,,,,,,
+2022-12-04 19:05:01.785,6.0,screenChange,4.398,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,7.0,,,,,,
+2022-12-04 19:05:05.263,7.0,screenChange,3.477,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,8.0,,,,,,
+2022-12-04 19:05:09.815,8.0,screenChange,4.55,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,9.0,,,,,,
+2022-12-04 19:05:17.476,9.0,screenChange,7.66,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,10.0,,,,,,
+2022-12-04 19:05:20.065,10.0,screenChange,2.588,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,11.0,,,,,,
+2022-12-04 19:05:23.863,11.0,screenChange,3.797,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,12.0,,,,,,
+2022-12-04 19:05:31.086,12.0,screenChange,7.222,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,13.0,,,,,,
+2022-12-04 19:05:35.749,13.0,screenChange,4.662,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,14.0,,,,,,
+2022-12-04 19:05:39.239,14.0,screenChange,3.489,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,15.0,,,,,,
+2022-12-04 19:05:42.831,15.0,screenChange,3.591,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,16.0,,,,,,
+2022-12-04 19:06:04.498,16.0,screenChange,21.666,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,17.0,,,,,,
+2022-12-04 19:06:08.910,17.0,screenChange,4.41,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,18.0,,,,,,
+2022-12-04 19:06:13.542,18.0,screenChange,4.631,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,19.0,,,,,,
+2022-12-04 19:06:15.054,19.0,screenChange,1.511,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,20.0,,,,,,
+2022-12-04 19:06:20.750,20.0,screenChange,5.695,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,21.0,,,,,,
+2022-12-04 19:06:25.862,21.0,screenChange,5.11,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,22.0,,,,,,
+2022-12-04 19:06:30.499,22.0,screenChange,4.636,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,23.0,,,,,,
+2022-12-04 19:06:47.743,23.0,screenChange,17.243,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,24.0,,,,,,
+2022-12-04 19:06:56.513,24.0,screenChange,8.768,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,25.0,,,,,,
+2022-12-04 19:07:27.330,25.0,screenChange,30.816,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,26.0,,,,,,
+2022-12-04 19:07:29.040,26.0,screenChange,1.708,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,27.0,,,,,,
+2022-12-04 19:07:34.077,27.0,screenChange,5.036,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,28.0,,,,,,
+2022-12-04 19:07:36.457,28.0,screenChange,2.378,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,29.0,,,,,,
+2022-12-04 19:07:38.332,29.0,screenChange,1.875,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,30.0,,,,,,
+2022-12-04 19:07:41.831,30.0,screenChange,3.499,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,31.0,,,,,,
+2022-12-04 19:07:45.295,31.0,screenChange,3.462,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,32.0,,,,,,
+2022-12-04 19:07:49.620,32.0,screenChange,4.324,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,33.0,,,,,,
+2022-12-04 19:07:55.109,33.0,screenChange,5.487,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,34.0,,,,,,
+2022-12-04 19:07:58.357,34.0,screenChange,3.247,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,33.0,,,,,,
+2022-12-04 19:08:00.666,33.0,screenChange,5.556,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,34.0,,,,,,
+2022-12-04 19:08:18.261,34.0,screenChange,17.595,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,35.0,,,,,,
+2022-12-04 19:08:19.851,35.0,screenChange,1.589,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,36.0,,,,,,
+2022-12-04 19:08:21.122,36.0,screenChange,1.271,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,37.0,,,,,,
+2022-12-04 19:08:27.978,37.0,screenChange,6.855,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,38.0,,,,,,
+2022-12-04 19:08:36.348,38.0,screenChange,8.369,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,39.0,,,,,,
+2022-12-04 19:08:39.256,39.0,screenChange,2.907,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,40.0,,,,,,
+2022-12-04 19:08:49.222,40.0,screenChange,9.965,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,41.0,,,,,,
+2022-12-04 19:08:55.989,41.0,screenChange,6.765,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,42.0,,,,,,
+2022-12-04 19:08:58.884,42.0,screenChange,2.894,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,43.0,,,,,,
+2022-12-04 19:09:00.825,43.0,screenChange,1.94,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,44.0,,,,,,
+2022-12-04 19:09:01.034,44.0,screenChange,0.208,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,45.0,,,,,,
+2022-12-04 19:09:01.082,45.0,screenChange,0.047,Instruction,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,46.0,,,,,,
+2022-12-04 19:09:01.194,0.0,screenChange,0.109,Assessment,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,1.0,,,,,,
+2022-12-04 19:09:02.925,1.0,screenChange,1.73,Assessment,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,0.0,,,,,,
+2022-12-04 19:09:13.293,0.0,screenChange,12.098,Assessment,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,1.0,,,,,,
+2022-12-04 19:10:07.906,,,,assessment,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,Use the order of the letters in the alphabet ,1.0,,,,
+2022-12-04 19:10:10.914,1.0,screenChange,57.62,Assessment,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,2.0,,,,,,
+2022-12-04 19:10:25.479,,,,assessment,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,Too many ,2.0,,,,
+2022-12-04 19:10:27.207,2.0,screenChange,16.293,Assessment,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,3.0,,,,,,
+2022-12-04 19:11:21.455,,,,assessment,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,3,3.0,,,,
+2022-12-04 19:11:23.186,3.0,screenChange,55.979,Assessment,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,4.0,,,,,,
+2022-12-04 19:12:02.773,,,,assessment,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,You have more values with the same number of lightbulbs,4.0,,,,
+2022-12-04 19:12:05.711,4.0,screenChange,42.525,Assessment,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,5.0,,,,,,
+2022-12-04 19:12:18.447,,,,assessment,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,,5.0,1,0,5,10101
+2022-12-04 19:12:18.448,5.0,screenChange,12.737,Assessment,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,6.0,,,,,,
+2022-12-04 19:12:31.800,6.0,screenChange,13.352,Assessment,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,5.0,,,,,,
+2022-12-04 19:12:39.113,,,,assessment,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,,5.0,1,0,5,00000
+2022-12-04 19:12:39.114,5.0,screenChange,20.666,Assessment,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,6.0,,,,,,
+2022-12-04 19:13:04.788,,,,assessment,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,1+2+8=11,6.0,,,,
+2022-12-04 19:13:06.449,6.0,screenChange,27.335,Assessment,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,7.0,,,,,,
+2022-12-04 19:16:29.536,,,,assessment,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,,7.0,8,0,8,0011110001000010101001011000000110100101100110010100001000111100
+2022-12-04 19:16:29.537,7.0,screenChange,203.088,Assessment,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,8.0,,,,,,
+2022-12-04 19:18:30.626,,,,assessment,3ed6b9b5-b311-41b4-8fbe-84a9aa519389,,"I am a huge fan. Incredible user experience, never had that much fun in my entire life. Just found a new reason to live. Thank you very much, what is Alice's phone number (in binary hehe) ;)? Bob is a smart boy. ",8.0,,,,
