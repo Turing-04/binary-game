@@ -14,8 +14,7 @@ time,currentactivity,cause,timespent,part,uuid,nextactivity,message,slide,height
 2022-11-28 22:59:34.250,5.0,screenChange,129.506,Problem Solving,0ba2b00a-a6d5-4463-8dd2-becbd7cde5c5,6.0,,,,,,
 2022-11-28 23:00:13.805,6.0,screenChange,39.554,Problem Solving,0ba2b00a-a6d5-4463-8dd2-becbd7cde5c5,7.0,,,,,,
 2022-11-28 23:00:13.807,,,,ps,0ba2b00a-a6d5-4463-8dd2-becbd7cde5c5,,,6.0,5,0,6,000010000010000000000010000000
-2022-11-28 23:01:19.460,,,,ps,0ba2b00a-a6d5-4463-8dd2-becbd7cde5c5,,"we can not represent it in decimal digits representation, too few pixels
-we must be creative !",7.0,,,,
+2022-11-28 23:01:19.460,,,,ps,0ba2b00a-a6d5-4463-8dd2-becbd7cde5c5,,"we can not represent it in decimal digits representation, too few pixels we must be creative !",7.0,,,,
 2022-11-28 23:01:20.793,7.0,screenChange,66.986,Problem Solving,0ba2b00a-a6d5-4463-8dd2-becbd7cde5c5,8.0,,,,,,
 2022-11-28 23:02:49.146,8.0,screenChange,88.352,Problem Solving,0ba2b00a-a6d5-4463-8dd2-becbd7cde5c5,9.0,,,,,,
 2022-11-28 23:02:49.148,,,,ps,0ba2b00a-a6d5-4463-8dd2-becbd7cde5c5,,,8.0,5,0,6,100010110000110100000110000110
@@ -49,8 +48,7 @@ we must be creative !",7.0,,,,
 2022-11-28 23:22:17.097,,,,ps,0ba2b00a-a6d5-4463-8dd2-becbd7cde5c5,,,15.0,1,2,4,1000
 2022-11-28 23:22:17.098,,,,ps,0ba2b00a-a6d5-4463-8dd2-becbd7cde5c5,,,15.0,1,3,4,0011
 2022-11-28 23:22:17.098,,,,ps,0ba2b00a-a6d5-4463-8dd2-becbd7cde5c5,,,15.0,1,4,4,0101
-2022-11-28 23:22:47.997,,,,ps,0ba2b00a-a6d5-4463-8dd2-becbd7cde5c5,,"yes, with binary encoding it is possible
-",16.0,,,,
+2022-11-28 23:22:47.997,,,,ps,0ba2b00a-a6d5-4463-8dd2-becbd7cde5c5,,"yes, with binary encoding it is possible",16.0,,,,
 2022-11-28 23:22:49.169,16.0,screenChange,32.073,Problem Solving,0ba2b00a-a6d5-4463-8dd2-becbd7cde5c5,17.0,,,,,,
 2022-11-28 23:22:54.183,17.0,screenChange,5.013,Problem Solving,0ba2b00a-a6d5-4463-8dd2-becbd7cde5c5,18.0,,,,,,
 2022-11-28 23:22:59.782,0.0,screenChange,5.595,Instruction,0ba2b00a-a6d5-4463-8dd2-becbd7cde5c5,1.0,,,,,,

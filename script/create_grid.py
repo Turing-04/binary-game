@@ -1,4 +1,4 @@
-import csv
+import csv23
 import glob
 from matplotlib import pyplot as plt
 from matplotlib import colors
@@ -18,21 +18,26 @@ gridstring_index = 12
 
 data = []
 users = []
+
+
+
 for filename in glob.glob('data/*/*.csv'):
     with open(filename, 'r') as f:
-        name = filename.split('\\')[2].split('-')[0]
+
+        # name = filename.split('\\')[2].split('-')[0]
+        name = '#####'
         age = filename.split('-')[1]
         language = filename.split('-')[2]
         users.append((name, age, language))
-        reader = csv.reader(f, delimiter=',')
-        user_data = []
-        first = True
-        for row in reader:
-            if first:
-                first = False
-                continue
-            user_data.append(row)
-        data.append(user_data)
+        with csv23.open_reader(f.name) as csvreader:
+            user_data = []
+            first = True
+            for row in csvreader:
+                if first:
+                    first = False
+                    continue
+                user_data.append(row)
+            data.append(user_data)
 
 
 user_datas = []

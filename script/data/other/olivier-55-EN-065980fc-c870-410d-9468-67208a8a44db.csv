@@ -5,9 +5,7 @@ time,currentactivity,cause,timespent,part,uuid,nextactivity,message,slide,height
 2022-11-29 12:13:36.887,3.0,screenChange,14.055,Problem Solving,065980fc-c870-410d-9468-67208a8a44db,4.0,,,,,,
 2022-11-29 12:25:33.202,4.0,screenChange,716.313,Problem Solving,065980fc-c870-410d-9468-67208a8a44db,5.0,,,,,,
 2022-11-29 12:25:33.203,,,,ps,065980fc-c870-410d-9468-67208a8a44db,,,4.0,5,0,6,111000100000111000101000111000
-2022-11-29 12:27:16.739,,,,ps,065980fc-c870-410d-9468-67208a8a44db,,"did not use all the grid, 
-where do i position the 6
-yes could probably send longer messages",5.0,,,,
+2022-11-29 12:27:16.739,,,,ps,065980fc-c870-410d-9468-67208a8a44db,,"did not use all the grid where do i position the 6 yes could probably send longer messages",5.0,,,,
 2022-11-29 12:27:18.720,5.0,screenChange,105.517,Problem Solving,065980fc-c870-410d-9468-67208a8a44db,6.0,,,,,,
 2022-11-29 13:27:42.735,6.0,screenChange,3624.014,Problem Solving,065980fc-c870-410d-9468-67208a8a44db,7.0,,,,,,
 2022-11-29 13:27:42.736,,,,ps,065980fc-c870-410d-9468-67208a8a44db,,,6.0,5,0,6,001011001011000000000000000000
@@ -96,8 +94,7 @@ yes could probably send longer messages",5.0,,,,
 2022-11-29 13:46:05.612,1.0,screenChange,51.352,Assessment,065980fc-c870-410d-9468-67208a8a44db,2.0,,,,,,
 2022-11-29 13:46:15.428,,,,assessment,065980fc-c870-410d-9468-67208a8a44db,,blablabla,2.0,,,,
 2022-11-29 13:46:16.484,2.0,screenChange,10.872,Assessment,065980fc-c870-410d-9468-67208a8a44db,3.0,,,,,,
-2022-11-29 13:47:14.435,,,,assessment,065980fc-c870-410d-9468-67208a8a44db,,"3
-",3.0,,,,
+2022-11-29 13:47:14.435,,,,assessment,065980fc-c870-410d-9468-67208a8a44db,,"3",3.0,,,,
 2022-11-29 13:47:15.270,3.0,screenChange,58.786,Assessment,065980fc-c870-410d-9468-67208a8a44db,4.0,,,,,,
 2022-11-29 13:48:41.281,,,,assessment,065980fc-c870-410d-9468-67208a8a44db,,obviously it would improve the celerity,4.0,,,,
 2022-11-29 13:48:42.377,4.0,screenChange,87.107,Assessment,065980fc-c870-410d-9468-67208a8a44db,5.0,,,,,,
