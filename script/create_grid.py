@@ -23,8 +23,7 @@ users = []
 
 for filename in glob.glob('data/*/*.csv'):
     with open(filename, 'r') as f:
-
-        # name = filename.split('\\')[2].split('-')[0]
+        name = filename.split('\\')[2].split('-')[0]
         name = '#####'
         age = filename.split('-')[1]
         language = filename.split('-')[2]
@@ -42,6 +41,10 @@ for filename in glob.glob('data/*/*.csv'):
 
 user_datas = []
 
+
+num_ips = 0
+num_psi = 0
+
 for i in range(len(data)):
     user_data = {}
 
@@ -53,8 +56,10 @@ for i in range(len(data)):
     user_data['Language'] = users[i][2]
     if data[i][0][part_index] == 'Instruction':
         user_data['Group'] = 'IPS'
+        num_ips += 1
     else:
         user_data['Group'] = 'PSI'
+        num_psi += 1
 
     instruction_times = np.array([])
     grids = []
@@ -83,6 +88,10 @@ for i in range(len(data)):
     user_data['Total time spent on problem solving'] = total_grid_time
 
     user_datas.append(user_data)
+
+
+print(f'PSI: {num_psi}')
+print(f'IPS: {num_ips}')
 
 
 labels = []
@@ -179,7 +188,7 @@ table.set_fontsize(8)
 
 table.scale(1.2, 8)
 plt.axis('off')
-plt.savefig('table.png', dpi=150)
+plt.savefig('table_old.png', dpi=150)
 
 
 
